@@ -1,0 +1,320 @@
+---
+title: "R in 3 Months: Week 8 (More Data Tidying)"
+output:
+  xaringan::moon_reader:
+    css: ["style.css", "default"]
+    lib_dir: libs
+    df_print: paged
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=FALSE, eval = TRUE}
+options(htmltools.preserve.raw = FALSE)
+library(tidyverse)
+library(readxl)
+library(janitor)
+library(fivethirtyeight)
+library(here)
+library(gapminder)
+library(patchwork)
+library(tweetrmd)
+```
+
+
+<!---- PLAN
+
+Other types of tidy data - surveys! separate()
+
+- Compare SurveyMonkey & Qualtric which make multiple columns, vs Google Form uses one column
+--- Make a thread comparing 
+
+
+--->
+
+# Agenda
+
+--
+
+1. Housekeeping
+
+--
+
+1. One tip
+
+--
+
+1. Other functions for tidying data
+
+--
+
+1. David and Charlie tidy survey data
+
+--
+
+1. Next week
+
+---
+
+# Housekeeping
+
+--
+
+Next week is another catch-up week and assignment amnesty
+
+---
+
+class: inverse, center, middle
+
+# One tip
+
+---
+
+## pivot_longer() complains it can't combine
+
+Often you'll see this error:
+
+```{r}
+# Error in `pivot_longer_spec()`:
+#
+# ! Can't combine `ACO1` <double> and `ACO13` <character>.
+# Run `rlang::last_error()` to see where the error occurred.
+```
+
+Let's walk through an example from Mychal
+
+---
+
+## pivot_longer() complains it can't combine
+
+We want to combine together all of the columns from `ACO1:ACO28`
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+data_mychal <- read_csv(here::here("data", "Performance_Year_Financial_and_Quality_Results_2020.csv")) %>% 
+  select(contains(c("ACO"))) %>% 
+  mutate(across(ACO1:ACO28,
+                ~  ifelse(.x %in% c("^", "~", "-"), 0, .x))) 
+data_mychal
+```
+
+
+
+---
+class: inverse, center, middle
+
+# Other functions for tidying data
+
+---
+
+## separate()
+
+The `separate()` function is useful when a column contains **multiple variables**.
+
+```{r, eval=TRUE}
+location_data <- tribble(
+  ~id, ~address,
+  1, "Las Vegas, USA",
+  2, "Bristol, UK",
+  3, "Kassala, Sudan"
+)
+location_data
+```
+
+
+---
+
+## separate()
+
+```{r, eval=TRUE}
+location_data %>% 
+  separate(col = address,
+           into = c("city",
+                    "country"),
+           sep = ", ")
+```
+
+---
+
+## separate_rows()
+
+The `separate_rows()` function is useful when a column contains **multiple observations of the same variable**.
+
+---
+
+## separate_rows()
+
+Which of these devices do you own? Please select all that apply.
+
+--
+
+```{r, eval=TRUE, echo=TRUE}
+device_ownership <- tribble(
+  ~name, ~devices_owned,
+  "Charlie", "Smart TV, Cell phone",
+  "Mohammad", "Cell phone",
+  "Christina", "Smart TV, Games Console, Cell phone"
+)
+device_ownership
+```
+
+---
+
+## separate_rows()
+
+```{r, eval=TRUE, echo=TRUE}
+device_ownership %>% 
+  separate_rows(devices_owned,
+                sep = ", ")
+```
+
+---
+
+## Tidy data definition
+
+--
+
+1. Every column is a variable.
+
+--
+
+1. Every row is an observation.
+
+--
+
+1. Every cell is a single value.
+
+
+---
+
+class: inverse, center, middle
+
+# Multiple choice survey questions
+
+---
+
+class: middle
+
+```{r echo = FALSE}
+tweet_embed("https://twitter.com/charliejhadley/status/1519696924328214528",
+            align = "center")
+```
+
+
+
+---
+
+# Let's tidy the survey data!
+
+David and I till take turns to read in and tidy the survey data from:
+
+- Survey Monkey
+
+- Qualtrics
+
+- Google Forms
+
+---
+
+
+# User-defined functions
+
+
+
+---
+
+class: inverse, center, middle
+
+# Next Week
+
+---
+
+### Official Assignments Amnesty
+
+Jump back in where it makes sense for you
+
+--
+
+- Week 4: build a graph of your data, it doesn't matter how beautiful it is.
+
+```{r include=FALSE}
+gg_week_4_col <- msleep %>% 
+  count(vore) %>% 
+  ggplot(aes(x = vore,
+             y = n,
+             fill = vore)) +
+  geom_col()
+
+gg_week_4_scatter <- bechdel %>% 
+  ggplot(aes(x = budget_2013,
+             y = domgross_2013,
+             color = clean_test)) +
+  geom_point()
+
+gg_week_4_export <- gg_week_4_col + gg_week_4_scatter
+
+
+ggsave(here("slides", "images", "gg_week_4_export.png"),
+       gg_week_4_export,
+       width = 10,
+       height = 5)
+
+```
+
+<img src='images/gg_week_4_export.png' width='700px'/>
+
+---
+
+### Jump back in where it makes sense for you
+
+- Week 7: is your data long or wide? Use pivot_longer() or pivot_wider() to show us.
+
+```{r, eval=FALSE}
+billboard
+```
+
+```{r, echo=FALSE, eval=TRUE, paged.print=FALSE}
+billboard
+```
+
+
+---
+
+### Jump back in where it makes sense for you
+
+- Week 8: user-defined functions, they're much more exciting than they sound. Build a function that does something useful for you.
+
+.pull-left[
+```{r}
+gapminder %>% 
+  filter(year == 2007,
+         continent == "Asia") %>% 
+  ggplot(aes(x = lifeExp,
+             y = gdpPercap)) +
+  geom_point()
+```
+]
+
+.pull-right[
+```{r}
+gg_gapminder_plot <- 
+  function(filter_continent){
+  
+  gapminder %>% 
+  filter(year == 2007,
+         continent == filter_continent) %>% 
+  ggplot(aes(x = lifeExp,
+             y = gdpPercap)) +
+  geom_point()
+  
+}
+
+gg_gapminder_plot("Oceania")
+```
+
+]
+

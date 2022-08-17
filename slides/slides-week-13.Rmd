@@ -1,0 +1,502 @@
+---
+title: "R in 3 Months: Week 13 (Wrap-up)"
+output:
+  xaringan::moon_reader:
+    css: ["style.css", "default"]
+    lib_dir: libs
+    df_print: paged
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=FALSE, eval = TRUE}
+options(htmltools.preserve.raw = FALSE)
+library(tidyverse)
+library(fivethirtyeight)
+library(readxl)
+library(janitor)
+library(patchwork)
+library(here)
+library(gapminder)
+library(gt)
+library(ggtext)
+library(wakefield)
+```
+
+<!-- 
+
+Show parameterised reports.
+
+- Publish online with netlify
+
+-->
+
+# Agenda
+
+--
+
+1. How far you've come
+
+--
+
+1. Where to ask questions
+
+--
+
+1. How to ask good questions
+
+--
+
+1. Twitter and #rstats
+
+--
+
+1. Highlight stuff from everyone!
+
+---
+
+class: inverse, center, middle
+
+# How far you've come
+
+---
+
+
+
+## Data Analysis
+
+```{r echo = FALSE, warning=FALSE, message=FALSE, eval=FALSE}
+library(googlesheets4)
+library(tidyverse)
+library(janitor)
+library(scales)
+
+pre_survey <- read_sheet("https://docs.google.com/spreadsheets/d/19Ny92IGg0ZzIqiLs7QywaGF-Y85HQZn1iIIXN4I_tpg") %>% 
+  clean_names()
+
+pre_survey_tidy <- pre_survey %>% 
+  select(contains("rate"), contains("terrified")) %>% 
+  set_names(c("data_analysis", "visualization", "scared")) %>% 
+  pivot_longer(cols = everything()) %>% 
+  mutate(timing = "Pre")
+
+post_survey <- read_sheet("https://docs.google.com/spreadsheets/d/1dOVpnbdFOz5swIH1YQCMcF4BWmUX-0g9FIOzSV04O64/edit?resourcekey#gid=900919916") %>% 
+  clean_names()
+
+post_survey_tidy <- post_survey %>% 
+  select(contains("rate"), contains("terrified")) %>% 
+  set_names(c("data_analysis", "visualization", "scared")) %>% 
+  pivot_longer(cols = everything()) %>% 
+  mutate(timing = "Post")
+
+pre_post_plot <- function(area) {
+pre_survey_tidy %>% 
+  bind_rows(post_survey_tidy) %>% 
+  group_by(timing, name) %>% 
+  summarize(avg_response = mean(value, na.rm = TRUE)) %>% 
+  ungroup() %>% 
+  mutate(timing = fct_rev(timing)) %>% 
+  mutate(avg_response_formatted = number(avg_response, 0.1)) %>% 
+    filter(name == area) %>% 
+  ggplot(aes(timing, avg_response,
+             color = timing,
+             group = 1,
+             label = avg_response_formatted)) +
+  geom_line(color = "grey") +
+  geom_point(size = 10) +
+  geom_text(color = "white") +
+  theme_minimal(base_family = "Inter") +
+  theme(panel.grid.minor = element_blank(),
+        axis.title = element_blank(),
+        legend.position = "none",
+        axis.text.y = element_blank()) +
+  scale_y_continuous(limits = c(1, 10),
+                     breaks = seq(1, 10, 1)) +
+    scale_color_manual(values = rev(c("#6cabdd", "#ff7400")))
+}
+```
+
+```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3, eval=FALSE}
+pre_post_plot("data_analysis")
+```
+
+---
+
+## Data Visualization
+
+```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3, eval=FALSE}
+pre_post_plot("visualization")
+```
+
+---
+
+## How Scared/Excited You Are to Learn R
+
+```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3, eval=FALSE}
+pre_post_plot("scared")
+```
+
+
+
+---
+
+class: inverse, center, middle
+
+# Where to ask questions
+
+---
+
+## Where to ask questions
+
+There are three popular question and answer communities for (R) code questions:
+
+---
+
+## [stackoverflow.com](https://stackoverflow.com)
+
+- This is a general purpose code Q&A website.
+
+- Unfortunately, it has a well-earned reputation for not being welcoming to new users.
+
+---
+
+## [community.rstudio.com](https://community.rstudio.com/)
+
+- This community is run by RStudio and is specifically for R users.
+
+- The admins do work to make the site a welcoming place for all users.
+
+---
+
+## [R for Data Science Learning Community](https://www.rfordatasci.com/)
+
+- Slack community that is very welcoming to newbies
+
+- Has regular office hours where you can get 1-on-1 help
+
+---
+
+## Bonus: [R-Ladies](https://rladies.org/)
+
+- "A worldwide organization whose mission is to promote gender diversity in the R community"
+
+- Extremely welcoming
+
+- Have local chapters that often host events
+
+---
+
+class: inverse, center, middle
+
+# How to ask good (code) questions
+
+---
+
+## How to ask good (code) questions
+
+The most important part of asking good questions about code is to provide **reproducible examples**.
+
+> A **reproducible example** contains all necessary code to reproduce your error or to customise your chart.
+
+The `{reprex}` package is designed to help guarantee your examples are reproducible.
+
+---
+
+## Good code examples are *minimal*
+
+In addition to making your code reproducible you should try to make it *minimal*.
+
+This usually means creating a *minimal* dataset instead of sharing a 9,000 row dataset.
+
+---
+
+## Create datasets with `tribble()`
+
+One of the simplest ways to create minimal datasets is with the `tribble()` function.
+
+This allows you to create datasets by **row** instead of column:
+
+```{r}
+tribble(
+  ~city, ~customer_type, ~customer_count,
+  "Oregon", "Free trial", 10
+)
+```
+
+---
+
+## Solving your own Qs with `tribble()`
+
+I often discover that by creating reprexes with `tribble()` I end up solving my own question.
+
+.pull-left[
+Here's a real life example from several years ago...
+]
+
+.pull-right[
+```{r, eval=TRUE, echo=FALSE, out.width="350px", dpi=140}
+count_party_by_marital <- gss_cat %>%
+  count(partyid, marital, name = "n_subcategory") %>%
+  group_by(partyid) %>%
+  mutate(n_category = n()) %>%
+  ungroup() %>%
+  mutate(partyid = fct_reorder(partyid, n_category)) %>%
+  arrange(desc(n_category))
+
+count_party_by_marital %>%
+  ggplot(aes(x = n_subcategory,
+             y = partyid,
+             fill = marital)) +
+  geom_col()
+```
+
+]
+
+---
+
+## Create datasets with `{wakefield}`
+
+We mentioned earlier in the course the `{wakefield}` package to create fake datasets:
+
+```{r, eval=TRUE}
+set.seed(1980)
+r_data_frame(50,
+             id,
+             name,
+             gender_inclusive(x = c("Male", "Female", "Trans", "Nonbinary"),
+                              prob = c(50.52, 48.08, 1, 0.4)),
+             hair,
+             died)
+```
+
+---
+
+## Using the `{reprex}` package (I)
+
+The `{reprex}` package includes an "RStudio Addin" that gives you an interactive tool for creating your reproducible examples.
+
+![](https://p218.p3.n0.cdn.getcloudapp.com/items/7KuoyYYX/9bea35c6-62b7-4b52-b568-62fabe2f94f9.jpg?v=ed03f80d4e8224246d8f8e6612007c22)
+
+---
+
+## Using the `{reprex}` package (II)
+
+1. Select the code that makes your reprex
+
+1. Open the Addins menu and select "Render reprex..."
+
+1. Choose the options for where you're asking your question
+
+1. Copy and paste the output in the Viewer tab into your question
+
+---
+
+class: inverse, center, middle
+
+# Twitter
+
+---
+
+
+## Twitter and #rstats
+
+Twitter is a great place to learn about R and to ask (280 character) questions!
+
+The most widely used hashtags are:
+
+- \#rstats for general questions
+
+- \#tidytuesday for tweets about Tidy Tuesday
+
+---
+
+# Palette cleanser
+
+We're covering lots of topics today, so let's take a 2-minute breather.
+
+If you want to take the opportunity to follow us on Twitter please do - and we'll follow you back.
+
+.pull-left[
+![](https://p218.p3.n0.cdn.getcloudapp.com/items/jkuPnzlv/9c1418bb-c8c4-4362-b627-e27581535202.jpg?v=93c2370cffb5a2ec70a0a931157407ca)
+]
+
+.pull-right[
+![](https://p218.p3.n0.cdn.getcloudapp.com/items/nOuPmAel/025f96ed-8782-4fb9-9851-43eb8afc96b6.jpg?v=382011e59c338db21ea4346b9746012b)
+]
+
+---
+
+class: inverse, center, middle
+
+# Examples from you
+
+---
+
+## Daniel Dunleavy
+
+.pull-left[
+[{prettydoc}](https://prettydoc.statr.me/themes.html) is a package that provides **lightweight** themese for beautifying RMarkdown output.
+
+It can't be used alongside {bookdown}, but if you're building small reports and want a little bit of *style* then {prettydoc} is a good choice.
+]
+
+.pull-right[
+<img src='images/daniel-dunleavy_prettydoc.png'/>
+]
+
+---
+
+## Chris Matthis
+
+.pull-left[
+```{r, eval=FALSE}
+ggplot(data = mc_composite,
+       aes(x = network, y = mc)) +
+  geom_boxplot() +
+  coord_flip() +
+  geom_jitter(alpha = .2)
+```
+
+]
+
+.pull-right[
+<img src='images/chris-m_week-4.png' width='100%'/>
+]
+
+
+---
+
+## Hanan 
+
+.pull-left[
+This is a nice example of using {forcats} to design charts that are easy to read.
+
+- The y-axis categories have been ordered canonically ("much more than expected" to "much less than expected")
+
+- The fill aesthetic has been ordered canonically ("0-15mins" to "more than 90 minutes")
+]
+
+.pull-right[
+<center><img src='images/final-session-highlights_hanan.png' height='500px'/></center>
+]
+
+---
+
+## Carolyn Ford
+
+.pull-left[
+Carolyn wanted to combine a table and {ggplot2} chart together into one figure.
+
+The workflow is as follows:
+
+- Create the treemap with `geom_tile()` and store the chart as an object
+
+- Creat the table with {gt}
+
+- Export the {gt} table with `gtsave()`
+
+- Import the image with `png::readPNG()`
+
+- Combine these elements together with {patchwork}
+
+]
+
+.pull-right[
+<img src='images/carolyn-week-11.png'/>
+]
+
+---
+
+## Matt Traughber
+
+Matt needed to compute week numbers in the academic calendar. 
+
+Together we built up a function to do this.
+
+It's a little bit unwieldy **however** it was significantly easier to build thanks to {lubridate}
+
+(The script is in `misc/weeks-since-1st-monday-september.R`)
+
+---
+
+## Sam Bird
+
+.pull-left[
+This chart is still a work in progress, but it shows how annotations can improve a chart.
+
+These were added with
+
+```{r, eval=FALSE}
+annotate(geom = "text", 
+         x = 1925, 
+         y = 1500, 
+         label= str_wrap(success_mc, 20), 
+         size = 6, 
+         color = "red")
+```
+
+]
+
+.pull-right[
+<img src='images/sam-bird.png'/>
+]
+
+---
+
+class: inverse, center, middle
+
+# What happens next
+
+---
+
+## Your feedback
+
+We would love to hear [your reflections on the course in the discussion forum](https://github.com/rfortherestofus/rin3-spring-2022/discussions/38).
+
+--
+
+We also have a very short post-course survey - [rfor.us/rin3-spring22-feedback](https://rfor.us/rin3-spring22-feedback)
+
+--
+
+We'd also like to ask you to record a ~5min video with [loom.com](https://loom.com) about something you've learned thanks to R in 3 Months and submit it on the [final project submission page](https://rfortherestofus.com/courses/r-in-3-months-spring-2022/lessons/r-in-3-months-spring-2022-final-project-assignment/).
+
+
+---
+
+## Book 1:1 sessions with Charlie
+
+You can book a 1:1 anytime **before June 30th 2022** - [rfor.us/charliechat](https://rfor.us/charliechat).
+
+---
+
+## Assignment submissions
+
+Charlie will provide feedback on all submissions made before June 30th 2022.
+
+---
+
+class: middle, center, inverse
+
+# Any final questions?
+
+
+
+---
+
+class: middle, center
+
+# Thank you for making this fun!
+
+
+
+
+
+
+
+

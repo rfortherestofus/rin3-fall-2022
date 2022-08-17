@@ -1,0 +1,233 @@
+---
+title: "R in 3 Months: Week 10 (Advanced Data Viz Part 1)"
+output:
+  xaringan::moon_reader:
+    css: ["style.css", "default"]
+    lib_dir: libs
+    df_print: paged
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=FALSE, eval = TRUE}
+options(htmltools.preserve.raw = FALSE)
+library(tidyverse)
+library(readxl)
+library(janitor)
+library(tweetrmd)
+```
+
+
+<!---- PLAN
+
+- tidy data twitter thread (https://twitter.com/bmwiernik/status/1522569350984736774?s=20&t=v33LmZICAXn9ps040K1lUg)
+
+We do:User-defined functions for making charts
+
+
+Group work: Given a dataset and a VERY basic data visualisation, ask them to suggest alternative geoms or use of {ggtext}
+
+Nomimate someone to present to the group and then cycle. (this is all conceptual)
+
+
+--->
+
+
+
+# Agenda
+
+--
+
+1. Housekeeping
+
+--
+
+1. Examples of High-Quality Data Viz
+
+--
+
+1. Tidy data follow-up
+
+--
+
+1. Next Week
+
+---
+
+class: inverse, center, middle
+
+# Housekeeping
+
+---
+
+## Remaining Schedule
+
+- Week 10 (2022/05/19): Advanced data viz, part 1
+
+- Week 11 (2022/05/26): Advanced data viz, part 2
+
+- Week 12 (2022/06/02): Advanced RMarkdown
+
+- Week 13 (2022/06/09): Wrap-up
+
+---
+
+## 1:1 with Charlie
+
+Book another 1:1 with Charlie - [rfor.us/charliechat](https://rfor.us/charliechat)
+
+---
+
+## Deadline for Feedback
+
+Charlie will provide feedback for submissions made before June 30
+
+--
+
+You'll have access to materials FOREVER
+
+---
+
+class: inverse, center, middle
+
+# Tidy data follow-up
+
+---
+
+## Is that fully long?
+
+Jordan asked me about if his data was fully long, which lead to lots of discussion.
+
+I want to highlight some specific replies.
+
+---
+
+class: middle
+
+```{r, echo=FALSE}
+tweet_embed("https://twitter.com/charliejhadley/status/1522559488284413954?s=20&t=61mKY4heLMRPg6EufTPQig",
+            align = "center")
+```
+
+---
+
+class: middle
+
+```{r, echo=FALSE}
+tweet_embed("https://twitter.com/bmwiernik/status/1522569350984736774?s=20&t=06GHVzjmarHqZEdoKnKlEg",
+            align = "center")
+```
+
+---
+
+class: middle
+
+```{r, echo=FALSE}
+tweet_embed("https://twitter.com/hadleywickham/status/1523010611437010949",
+            align = "center")
+```
+
+
+---
+
+class: inverse, center, middle
+
+# Examples of High-Quality Data Viz
+
+---
+
+## Charlie's diverging bars
+
+.pull-left[
+I'm going to work on building and improving this diverging bar chart for a continuous variable:
+
+```{r, echo=FALSE, eval=TRUE}
+library(WDI)
+
+country_codes <- c("AF", "AL", "DZ", "AS", "AD", "AO", "AI", "AQ", "AG", "AR", 
+                   "AM", "AW", "AU", "AT", "AZ", "BS", "BH", "BD", "BB", "BY", "BE", 
+                   "BZ", "BJ", "BM", "BT", "BO", "BQ", "BA", "BW", "BV", "BR", "IO", 
+                   "BN", "BG", "BF", "BI", "CV", "KH", "CM", "CA", "KY", "CF", "TD", 
+                   "CL", "CN", "CX", "CC", "CO", "KM", "CD", "CG", "CK", "CR", "HR", 
+                   "CU", "CW", "CY", "CZ", "CI", "DK", "DJ", "DM", "DO", "EC", "EG", 
+                   "SV", "GQ", "ER", "EE", "SZ", "ET", "FK", "FO", "FJ", "FI", "FR", 
+                   "GF", "PF", "TF", "GA", "GM", "GE", "DE", "GH", "GI", "GR", "GL", 
+                   "GD", "GP", "GU", "GT", "GG", "GN", "GW", "GY", "HT", "HM", "VA", 
+                   "HN", "HK", "HU", "IS", "IN", "ID", "IR", "IQ", "IE", "IM", "IL", 
+                   "IT", "JM", "JP", "JE", "JO", "KZ", "KE", "KI", "KP", "KR", "KW", 
+                   "KG", "LA", "LV", "LB", "LS", "LR", "LY", "LI", "LT", "LU", "MO", 
+                   "MG", "MW", "MY", "MV", "ML", "MT", "MH", "MQ", "MR", "MU", "YT", 
+                   "MX", "FM", "MD", "MC", "MN", "ME", "MS", "MA", "MZ", "MM", NA, 
+                   "NR", "NP", "NL", "NC", "NZ", "NI", "NE", "NG", "NU", "NF", "MP", 
+                   "NO", "OM", "PK", "PW", "PS", "PA", "PG", "PY", "PE", "PH", "PN", 
+                   "PL", "PT", "PR", "QA", "MK", "RO", "RU", "RW", "RE", "BL", "SH", 
+                   "KN", "LC", "MF", "PM", "VC", "WS", "SM", "ST", "SA", "SN", "RS", 
+                   "SC", "SL", "SG", "SX", "SK", "SI", "SB", "SO", "ZA", "GS", "SS", 
+                   "ES", "LK", "SD", "SR", "SJ", "SE", "CH", "SY", "TW", "TJ", "TZ", 
+                   "TH", "TL", "TG", "TK", "TO", "TT", "TN", "TR", "TM", "TC", "TV", 
+                   "UG", "UA", "AE", "GB", "UM", "US", "UY", "UZ", "VU", "VE", "VN", 
+                   "VG", "VI", "WF", "EH", "YE", "ZM", "ZW", "AX")
+
+gdp_annual_growth <- WDI(country = country_codes,
+    indicator = c(gdp_growth = "NY.GDP.MKTP.KD.ZG"))
+
+
+gdp_recent_growth <- gdp_annual_growth %>% 
+  filter(year == 2020) %>% 
+  as_tibble() %>% 
+  drop_na()
+
+gdp_recent_extremes <- slice_max(gdp_recent_growth, gdp_growth, n = 5) %>% 
+  bind_rows(slice_min(gdp_recent_growth, gdp_growth, n = 5))
+
+gdp_recent_extremes %>% 
+  ggplot(aes(x = gdp_growth,
+             y = country)) +
+  geom_col()
+```
+
+
+]
+
+.pull-right[
+David has written an [awesome blogpost](https://rfortherestofus.com/2021/10/diverging-bar-chart/) on diverging bar charts for a categorical variable.
+
+
+<img src='https://rfortherestofus.com/wp-content/uploads/2021/10/diverging-bar-chart-featured-2048x1153.png'/>
+]
+
+???
+
+Charlie's example code is in misc/charlies-data-viz-example.R
+
+---
+
+## CBEM Bar Charts
+
+![](images/cbem-example.jpeg)
+
+---
+
+# Next Week
+
+--
+
+Course assignment: Advanced Data Viz, Part 2
+
+--
+
+Project assignment: Take one of your previous visualizations and try using a different geom to visualize it.
+
+--
+
+Please submit anything you're working on at any point
+
+--
+
+Book another 1:1 with Charlie - [rfor.us/charliechat](https://rfor.us/charliechat)
+

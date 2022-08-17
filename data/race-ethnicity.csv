@@ -1,0 +1,625 @@
+geography,population,value,year,tertile_numeric,tertile_text
+Baker,White,0.9112015018773467,2019,3,Top third
+Benton,White,0.8129837165293657,2019,2,Middle third
+Clackamas,White,0.8274886114180847,2019,2,Middle third
+Clatsop,White,0.8603140369795639,2019,2,Middle third
+Columbia,White,0.8908120381620093,2019,3,Top third
+Coos,White,0.8555013429538628,2019,2,Middle third
+Crook,White,0.8837776856840264,2019,3,Top third
+Curry,White,0.8679894534566742,2019,3,Top third
+Deschutes,White,0.8770997199422773,2019,3,Top third
+Douglas,White,0.8840633598572172,2019,3,Top third
+Gilliam,White,0.8602094240837697,2019,2,Middle third
+Grant,White,0.9180191427382438,2019,3,Top third
+Harney,White,0.8681028492008339,2019,3,Top third
+Hood River,White,0.642427413026419,2019,1,Bottom third
+Jackson,White,0.8168529259206866,2019,2,Middle third
+Jefferson,White,0.6021931562954155,2019,1,Bottom third
+Josephine,White,0.8740563693589228,2019,3,Top third
+Klamath,White,0.7872246962949498,2019,2,Middle third
+Lake,White,0.8521839374919944,2019,2,Middle third
+Lane,White,0.8262805010578561,2019,2,Middle third
+Lincoln,White,0.8289682288033483,2019,2,Middle third
+Linn,White,0.8574838528503229,2019,2,Middle third
+Malheur,White,0.6174024522533776,2019,1,Bottom third
+Marion,White,0.663353033563018,2019,1,Bottom third
+Morrow,White,0.6068322424459787,2019,1,Bottom third
+Multnomah,White,0.705435539451005,2019,1,Bottom third
+Polk,White,0.7887178972208972,2019,2,Middle third
+Sherman,White,0.9168195718654434,2019,3,Top third
+Tillamook,White,0.8468653250773994,2019,2,Middle third
+Umatilla,White,0.6699202460383653,2019,1,Bottom third
+Union,White,0.8933746609841147,2019,3,Top third
+Wallowa,White,0.9344405594405595,2019,3,Top third
+Wasco,White,0.7537664966714681,2019,1,Bottom third
+Washington,White,0.6709027375972563,2019,1,Bottom third
+Wheeler,White,0.8904593639575972,2019,3,Top third
+Yamhill,White,0.7764003673094583,2019,1,Bottom third
+Rural,White,0.843703366355902,2019,2,Middle third
+Urban,White,0.7296724542441232,2019,1,Bottom third
+Oregon,White,0.765192005121826,2019,1,Bottom third
+Baker,Black/African American,0.009386733416770964,2019,3,Top third
+Benton,Black/African American,0.009858468651202847,2019,3,Top third
+Clackamas,Black/African American,0.00884584035483371,2019,3,Top third
+Clatsop,Black/African American,0.007416953788695721,2019,2,Middle third
+Columbia,Black/African American,0.004820045013643516,2019,2,Middle third
+Coos,Black/African American,0.005721460243797778,2019,2,Middle third
+Crook,Black/African American,0.0016116406501818852,2019,1,Bottom third
+Curry,Black/African American,0.003306966975018993,2019,1,Bottom third
+Deschutes,Black/African American,0.005333074760011635,2019,2,Middle third
+Douglas,Black/African American,0.004183089164869488,2019,1,Bottom third
+Gilliam,Black/African American,0,2019,1,Bottom third
+Grant,Black/African American,0.004438895824663615,2019,2,Middle third
+Harney,Black/African American,0.00847810979847116,2019,3,Top third
+Hood River,Black/African American,0.0011770860580695788,2019,1,Bottom third
+Jackson,Black/African American,0.00580940255575989,2019,2,Middle third
+Jefferson,Black/African American,0.008147267362487338,2019,2,Middle third
+Josephine,Black/African American,0.00382185200085193,2019,1,Bottom third
+Klamath,Black/African American,0.007497955103153685,2019,2,Middle third
+Lake,Black/African American,0.0025618035096708082,2019,1,Bottom third
+Lane,Black/African American,0.010168624181846695,2019,3,Top third
+Lincoln,Black/African American,0.004312258228169193,2019,1,Bottom third
+Linn,Black/African American,0.0038406263937757075,2019,1,Bottom third
+Malheur,Black/African American,0.008809703823016995,2019,3,Top third
+Marion,Black/African American,0.010349429419614892,2019,3,Top third
+Morrow,Black/African American,0.0026001972563435847,2019,1,Bottom third
+Multnomah,Black/African American,0.05324182994930618,2019,3,Top third
+Polk,Black/African American,0.009728114879622423,2019,3,Top third
+Sherman,Black/African American,0.007951070336391437,2019,2,Middle third
+Tillamook,Black/African American,0.0029024767801857586,2019,1,Bottom third
+Umatilla,Black/African American,0.0075583819849874894,2019,2,Middle third
+Union,Black/African American,0.007671445176288261,2019,2,Middle third
+Wallowa,Black/African American,0.0021853146853146855,2019,1,Bottom third
+Wasco,Black/African American,0.003659438626542609,2019,1,Bottom third
+Washington,Black/African American,0.018592097834010113,2019,3,Top third
+Wheeler,Black/African American,0,2019,1,Bottom third
+Yamhill,Black/African American,0.008577066604145908,2019,3,Top third
+Rural,Black/African American,0.005276804948839079,2019,2,Middle third
+Urban,Black/African American,0.023822428011307174,2019,3,Top third
+Oregon,Black/African American,0.01804564178968763,2019,3,Top third
+Baker,American Indian/Alaska Native,0.010137672090112642,2019,2,Middle third
+Benton,American Indian/Alaska Native,0.004713934435517683,2019,1,Bottom third
+Clackamas,American Indian/Alaska Native,0.00550802326220991,2019,1,Bottom third
+Clatsop,American Indian/Alaska Native,0.0034717656032192735,2019,1,Bottom third
+Columbia,American Indian/Alaska Native,0.010954647758280717,2019,2,Middle third
+Coos,American Indian/Alaska Native,0.020056896743535543,2019,3,Top third
+Crook,American Indian/Alaska Native,0.009393562646774416,2019,2,Middle third
+Curry,American Indian/Alaska Native,0.020422755507887563,2019,3,Top third
+Deschutes,American Indian/Alaska Native,0.004009787760736021,2019,1,Bottom third
+Douglas,American Indian/Alaska Native,0.009583922064400981,2019,2,Middle third
+Gilliam,American Indian/Alaska Native,0.051832460732984295,2019,3,Top third
+Grant,American Indian/Alaska Native,0.009710084616451658,2019,2,Middle third
+Harney,American Indian/Alaska Native,0.03071577484364142,2019,3,Top third
+Hood River,American Indian/Alaska Native,0.005798238730490888,2019,1,Bottom third
+Jackson,American Indian/Alaska Native,0.0062809449710001415,2019,1,Bottom third
+Jefferson,American Indian/Alaska Native,0.1643105650240014,2019,3,Top third
+Josephine,American Indian/Alaska Native,0.012341150578602363,2019,3,Top third
+Klamath,American Indian/Alaska Native,0.031839801266321306,2019,3,Top third
+Lake,American Indian/Alaska Native,0.01882925579608044,2019,3,Top third
+Lane,American Indian/Alaska Native,0.008308778416985125,2019,2,Middle third
+Lincoln,American Indian/Alaska Native,0.028494725939078782,2019,3,Top third
+Linn,American Indian/Alaska Native,0.009151428052265556,2019,2,Middle third
+Malheur,American Indian/Alaska Native,0.0073304625094507084,2019,1,Bottom third
+Marion,American Indian/Alaska Native,0.0054319373708212665,2019,1,Bottom third
+Morrow,American Indian/Alaska Native,0.007262619922890702,2019,1,Bottom third
+Multnomah,American Indian/Alaska Native,0.005919141007966172,2019,1,Bottom third
+Polk,American Indian/Alaska Native,0.012489644264805564,2019,3,Top third
+Sherman,American Indian/Alaska Native,0.007951070336391437,2019,2,Middle third
+Tillamook,American Indian/Alaska Native,0.00565015479876161,2019,1,Bottom third
+Umatilla,American Indian/Alaska Native,0.023874061718098416,2019,3,Top third
+Union,American Indian/Alaska Native,0.008136381247578458,2019,2,Middle third
+Wallowa,American Indian/Alaska Native,0.0017482517482517483,2019,1,Bottom third
+Wasco,American Indian/Alaska Native,0.03604936349126017,2019,3,Top third
+Washington,American Indian/Alaska Native,0.0029017377213667534,2019,1,Bottom third
+Wheeler,American Indian/Alaska Native,0.01060070671378092,2019,2,Middle third
+Yamhill,American Indian/Alaska Native,0.008362151495613777,2019,2,Middle third
+Rural,American Indian/Alaska Native,0.013968060016478052,2019,3,Top third
+Urban,American Indian/Alaska Native,0.0062756690089768915,2019,1,Bottom third
+Oregon,American Indian/Alaska Native,0.008671776070668082,2019,2,Middle third
+Baker,Asian,0.007759699624530663,2019,1,Bottom third
+Benton,Asian,0.06581377692665073,2019,3,Top third
+Clackamas,Asian,0.04065136187937854,2019,3,Top third
+Clatsop,Asian,0.009363246626864101,2019,2,Middle third
+Columbia,Asian,0.01161192662377756,2019,2,Middle third
+Coos,Asian,0.010775416792485816,2019,2,Middle third
+Crook,Asian,0.003315375051802735,2019,1,Bottom third
+Curry,Asian,0.0054073378915851095,2019,1,Bottom third
+Deschutes,Asian,0.011384831252388476,2019,2,Middle third
+Douglas,Asian,0.009128430133115192,2019,2,Middle third
+Gilliam,Asian,0,2019,1,Bottom third
+Grant,Asian,0.003884033846580663,2019,1,Bottom third
+Harney,Asian,0.004308547602501737,2019,1,Bottom third
+Hood River,Asian,0.018702589589327752,2019,3,Top third
+Jackson,Asian,0.011637666808129391,2019,2,Middle third
+Jefferson,Asian,0.006385696040868455,2019,1,Bottom third
+Josephine,Asian,0.006117329673190241,2019,1,Bottom third
+Klamath,Asian,0.009648883637795752,2019,2,Middle third
+Lake,Asian,0.008197771230946586,2019,2,Middle third
+Lane,Asian,0.025231724126546548,2019,3,Top third
+Lincoln,Asian,0.011731879003107362,2019,2,Middle third
+Linn,Asian,0.012331301518079853,2019,3,Top third
+Malheur,Asian,0.015712829952992998,2019,3,Top third
+Marion,Asian,0.01960339291820622,2019,3,Top third
+Morrow,Asian,0.006007352281897247,2019,1,Bottom third
+Multnomah,Asian,0.0698780786318629,2019,3,Top third
+Polk,Asian,0.01944367735294856,2019,3,Top third
+Sherman,Asian,0.0012232415902140672,2019,1,Bottom third
+Tillamook,Asian,0.006617647058823529,2019,1,Bottom third
+Umatilla,Asian,0.007506255212677231,2019,1,Bottom third
+Union,Asian,0.009531189461449052,2019,2,Middle third
+Wallowa,Asian,0.002768065268065268,2019,1,Bottom third
+Wasco,Asian,0.008798224782964145,2019,2,Middle third
+Washington,Asian,0.09737078089957366,2019,3,Top third
+Wheeler,Asian,0.0035335689045936395,2019,1,Bottom third
+Yamhill,Asian,0.01380341128890452,2019,3,Top third
+Rural,Asian,0.011843300587259898,2019,2,Middle third
+Urban,Asian,0.05401614671324826,2019,3,Top third
+Oregon,Asian,0.04087970391990116,2019,3,Top third
+Baker,Native Hawaiian/Pacific Islander,0.0036921151439299124,2019,3,Top third
+Benton,Native Hawaiian/Pacific Islander,0.0025496039615179773,2019,2,Middle third
+Clackamas,Native Hawaiian/Pacific Islander,0.002497737285042079,2019,2,Middle third
+Clatsop,Native Hawaiian/Pacific Islander,0.0032876568212303727,2019,2,Middle third
+Columbia,Native Hawaiian/Pacific Islander,0.002410022506821758,2019,2,Middle third
+Coos,Native Hawaiian/Pacific Islander,0.0016210804024093706,2019,2,Middle third
+Crook,Native Hawaiian/Pacific Islander,0.004282359441911866,2019,3,Top third
+Curry,Native Hawaiian/Pacific Islander,2.234437145283103e-4,2019,1,Bottom third
+Deschutes,Native Hawaiian/Pacific Islander,0.0010380958356386286,2019,1,Bottom third
+Douglas,Native Hawaiian/Pacific Islander,6.78590020078828e-4,2019,1,Bottom third
+Gilliam,Native Hawaiian/Pacific Islander,0.007329842931937173,2019,3,Top third
+Grant,Native Hawaiian/Pacific Islander,0,2019,1,Bottom third
+Harney,Native Hawaiian/Pacific Islander,0.001250868658790827,2019,2,Middle third
+Hood River,Native Hawaiian/Pacific Islander,3.0517045949952047e-4,2019,1,Bottom third
+Jackson,Native Hawaiian/Pacific Islander,0.0027302305842410524,2019,2,Middle third
+Jefferson,Native Hawaiian/Pacific Islander,0.0036992997753996565,2019,3,Top third
+Josephine,Native Hawaiian/Pacific Islander,5.916179567882244e-5,2019,1,Bottom third
+Klamath,Native Hawaiian/Pacific Islander,0.0011663485716016844,2019,2,Middle third
+Lake,Native Hawaiian/Pacific Islander,0,2019,1,Bottom third
+Lane,Native Hawaiian/Pacific Islander,0.0022477721743963067,2019,2,Middle third
+Lincoln,Native Hawaiian/Pacific Islander,0.0020715750311793182,2019,2,Middle third
+Linn,Native Hawaiian/Pacific Islander,0.001040685861539224,2019,2,Middle third
+Malheur,Native Hawaiian/Pacific Islander,8.875447881397719e-4,2019,1,Bottom third
+Marion,Native Hawaiian/Pacific Islander,0.008176654471286385,2019,3,Top third
+Morrow,Native Hawaiian/Pacific Islander,0.00268985923070026,2019,2,Middle third
+Multnomah,Native Hawaiian/Pacific Islander,0.005787238144278903,2019,3,Top third
+Polk,Native Hawaiian/Pacific Islander,0.0039791127959229785,2019,3,Top third
+Sherman,Native Hawaiian/Pacific Islander,0,2019,1,Bottom third
+Tillamook,Native Hawaiian/Pacific Islander,0.004411764705882353,2019,3,Top third
+Umatilla,Native Hawaiian/Pacific Islander,0.001615929941618015,2019,2,Middle third
+Union,Native Hawaiian/Pacific Islander,0.012049593180937622,2019,3,Top third
+Wallowa,Native Hawaiian/Pacific Islander,0.0010198135198135198,2019,1,Bottom third
+Wasco,Native Hawaiian/Pacific Islander,0.0063066921010627944,2019,3,Top third
+Washington,Native Hawaiian/Pacific Islander,0.003697093542584749,2019,3,Top third
+Wheeler,Native Hawaiian/Pacific Islander,0,2019,1,Bottom third
+Yamhill,Native Hawaiian/Pacific Islander,0.0024617548795498505,2019,2,Middle third
+Rural,Native Hawaiian/Pacific Islander,0.0014787177108747964,2019,2,Middle third
+Urban,Native Hawaiian/Pacific Islander,0.0045717988928091775,2019,3,Top third
+Oregon,Native Hawaiian/Pacific Islander,0.0036083333519662856,2019,3,Top third
+Baker,Some other race,0.0013141426783479348,2019,3,Top third
+Benton,Some other race,0.0011784836088794208,2019,3,Top third
+Clackamas,Some other race,7.500712567693931e-4,2019,2,Middle third
+Clatsop,Some other race,0,2019,1,Bottom third
+Columbia,Some other race,1.5934033102953771e-4,2019,1,Bottom third
+Coos,Some other race,9.694696524212902e-4,2019,2,Middle third
+Crook,Some other race,0,2019,1,Bottom third
+Curry,Some other race,0.0012959735442641999,2019,3,Top third
+Deschutes,Some other race,8.783887840019165e-4,2019,2,Middle third
+Douglas,Some other race,4.5549193128578865e-4,2019,2,Middle third
+Gilliam,Some other race,0,2019,1,Bottom third
+Grant,Some other race,2.7743098904147595e-4,2019,1,Bottom third
+Harney,Some other race,0.006810284920083391,2019,3,Top third
+Hood River,Some other race,0,2019,1,Bottom third
+Jackson,Some other race,0.0018342999952845758,2019,3,Top third
+Jefferson,Some other race,2.642356982428326e-4,2019,1,Bottom third
+Josephine,Some other race,8.992592943181012e-4,2019,2,Middle third
+Klamath,Some other race,0.0010906116513678089,2019,3,Top third
+Lake,Some other race,0.0011528115793518637,2019,3,Top third
+Lane,Some other race,0.0016177356652937924,2019,3,Top third
+Lincoln,Some other race,0,2019,1,Bottom third
+Linn,Some other race,8.094223367527297e-4,2019,2,Middle third
+Malheur,Some other race,7.560566713783242e-4,2019,2,Middle third
+Marion,Some other race,0.0010863874741642533,2019,3,Top third
+Morrow,Some other race,0,2019,1,Bottom third
+Multnomah,Some other race,0.0027331795312121494,2019,3,Top third
+Polk,Some other race,4.518866266663319e-4,2019,2,Middle third
+Sherman,Some other race,0,2019,1,Bottom third
+Tillamook,Some other race,0,2019,1,Bottom third
+Umatilla,Some other race,4.561092577147623e-4,2019,2,Middle third
+Union,Some other race,3.487020534676482e-4,2019,2,Middle third
+Wallowa,Some other race,0.0011655011655011655,2019,3,Top third
+Wasco,Some other race,0,2019,1,Bottom third
+Washington,Some other race,0.0014054199566137769,2019,3,Top third
+Wheeler,Some other race,0,2019,1,Bottom third
+Yamhill,Some other race,7.326651427231698e-4,2019,2,Middle third
+Rural,Some other race,8.095461038500098e-4,2019,2,Middle third
+Urban,Some other race,0.0016252077516347699,2019,3,Top third
+Oregon,Some other race,0.001371136861023267,2019,3,Top third
+Baker,Two or more races,0.01702127659574468,2019,1,Bottom third
+Benton,Two or more races,0.03143378395222609,2019,2,Middle third
+Clackamas,Two or more races,0.030355383761457338,2019,2,Middle third
+Clatsop,Two or more races,0.033060676994292625,2019,2,Middle third
+Columbia,Two or more races,0.03075268388870078,2019,2,Middle third
+Coos,Two or more races,0.04251362820044182,2019,3,Top third
+Crook,Two or more races,0.022056453469632087,2019,1,Bottom third
+Curry,Two or more races,0.033650623407963536,2019,2,Middle third
+Deschutes,Two or more races,0.02220498400077572,2019,1,Bottom third
+Douglas,Two or more races,0.037071465754443374,2019,3,Top third
+Gilliam,Two or more races,0,2019,1,Bottom third
+Grant,Two or more races,0.02802052989318907,2019,2,Middle third
+Harney,Two or more races,0.03043780403057679,2019,2,Middle third
+Hood River,Two or more races,0.020490016566396374,2019,1,Bottom third
+Jackson,Two or more races,0.03259301174140614,2019,2,Middle third
+Jefferson,Two or more races,0.017043202536662704,2019,1,Bottom third
+Josephine,Two or more races,0.03134391935064013,2019,2,Middle third
+Klamath,Two or more races,0.03844406071071526,2019,3,Top third
+Lake,Two or more races,0.038427052645062125,2019,3,Top third
+Lane,Two or more races,0.04181076344467647,2019,3,Top third
+Lincoln,Two or more races,0.035893208193290636,2019,3,Top third
+Linn,Two or more races,0.028759271189520458,2019,2,Middle third
+Malheur,Two or more races,0.01781663982117616,2019,1,Bottom third
+Marion,Two or more races,0.03183811313560476,2019,2,Middle third
+Morrow,Two or more races,0.02385008517887564,2019,1,Bottom third
+Multnomah,Two or more races,0.0441697031805078,2019,3,Top third
+Polk,Two or more races,0.031217834458865765,2019,2,Middle third
+Sherman,Two or more races,0.021406727828746176,2019,1,Bottom third
+Tillamook,Two or more races,0.030495356037151703,2019,2,Middle third
+Umatilla,Two or more races,0.02923008757297748,2019,2,Middle third
+Union,Two or more races,0.023091824874079812,2019,1,Bottom third
+Wallowa,Two or more races,0.029574592074592076,2019,2,Middle third
+Wasco,Two or more races,0.01767430996223771,2019,1,Bottom third
+Washington,Two or more races,0.04079388747200959,2019,3,Top third
+Wheeler,Two or more races,0.03462897526501767,2019,3,Top third
+Yamhill,Two or more races,0.03241310591407303,2019,2,Middle third
+Rural,Two or more races,0.027950476515585954,2019,2,Middle third
+Urban,Two or more races,0.03913308300900143,2019,3,Top third
+Oregon,Two or more races,0.03564980682597096,2019,3,Top third
+Baker,Hispanic/Latino,0.03948685857321652,2019,1,Bottom third
+Benton,Hispanic/Latino,0.07146823193463948,2019,1,Bottom third
+Clackamas,Hispanic/Latino,0.0839029707822243,2019,2,Middle third
+Clatsop,Hispanic/Latino,0.08308566318613397,2019,2,Middle third
+Columbia,Hispanic/Latino,0.04847929571573685,2019,1,Bottom third
+Coos,Hispanic/Latino,0.06284070501104559,2019,1,Bottom third
+Crook,Hispanic/Latino,0.07556292305567067,2019,2,Middle third
+Curry,Hispanic/Latino,0.06770344550207803,2019,1,Bottom third
+Deschutes,Hispanic/Latino,0.07805111766417029,2019,2,Middle third
+Douglas,Hispanic/Latino,0.054835651074589126,2019,1,Bottom third
+Gilliam,Hispanic/Latino,0.0806282722513089,2019,2,Middle third
+Grant,Hispanic/Latino,0.035649882091829656,2019,1,Bottom third
+Harney,Hispanic/Latino,0.049895760945100766,2019,1,Bottom third
+Hood River,Hispanic/Latino,0.31109948556979683,2019,3,Top third
+Jackson,Hispanic/Latino,0.12226151742349224,2019,2,Middle third
+Jefferson,Hispanic/Latino,0.1979565772669221,2019,3,Top third
+Josephine,Hispanic/Latino,0.07136095794779564,2019,1,Bottom third
+Klamath,Hispanic/Latino,0.12308764276409465,2019,2,Middle third
+Lake,Hispanic/Latino,0.0786473677468938,2019,2,Middle third
+Lane,Hispanic/Latino,0.08433410093239901,2019,2,Middle third
+Lincoln,Hispanic/Latino,0.08852812480182637,2019,2,Middle third
+Linn,Hispanic/Latino,0.08658341179774352,2019,2,Middle third
+Malheur,Hispanic/Latino,0.33128431018046745,2019,3,Top third
+Marion,Hispanic/Latino,0.2601610516472842,2019,3,Top third
+Morrow,Hispanic/Latino,0.3507576436833139,2019,3,Top third
+Multnomah,Hispanic/Latino,0.11283529010386083,2019,2,Middle third
+Polk,Hispanic/Latino,0.13397183240027113,2019,3,Top third
+Sherman,Hispanic/Latino,0.044648318042813454,2019,1,Bottom third
+Tillamook,Hispanic/Latino,0.10305727554179567,2019,2,Middle third
+Umatilla,Hispanic/Latino,0.2598389282735613,2019,3,Top third
+Union,Hispanic/Latino,0.04579620302208447,2019,1,Bottom third
+Wallowa,Hispanic/Latino,0.027097902097902096,2019,1,Bottom third
+Wasco,Hispanic/Latino,0.17374547436446452,2019,3,Top third
+Washington,Hispanic/Latino,0.16433624497658508,2019,3,Top third
+Wheeler,Hispanic/Latino,0.0607773851590106,2019,1,Bottom third
+Yamhill,Hispanic/Latino,0.15724947736553152,2019,3,Top third
+Rural,Hispanic/Latino,0.09496972776121022,2019,2,Middle third
+Urban,Hispanic/Latino,0.14088321236889906,2019,3,Top third
+Oregon,Hispanic/Latino,0.12658159605895664,2019,3,Top third
+Baker,White,0.9080955955955956,2020,3,Top third
+Benton,White,0.8058253508576521,2020,2,Middle third
+Clackamas,White,0.8231046753477185,2020,2,Middle third
+Clatsop,White,0.8570094912089622,2020,2,Middle third
+Columbia,White,0.8880258008692061,2020,3,Top third
+Coos,White,0.8535730081506286,2020,2,Middle third
+Crook,White,0.8827953619554998,2020,3,Top third
+Curry,White,0.8649309103834363,2020,3,Top third
+Deschutes,White,0.875199291408326,2020,3,Top third
+Douglas,White,0.880699389787949,2020,3,Top third
+Gilliam,White,0.8793917147351862,2020,3,Top third
+Grant,White,0.9157733537519143,2020,3,Top third
+Harney,White,0.865661317100166,2020,3,Top third
+Hood River,White,0.6382776360728027,2020,1,Bottom third
+Jackson,White,0.8124956246178833,2020,2,Middle third
+Jefferson,White,0.6020827031931901,2020,1,Bottom third
+Josephine,White,0.8712813373732174,2020,3,Top third
+Klamath,White,0.7836525410948575,2020,1,Bottom third
+Lake,White,0.847124824684432,2020,2,Middle third
+Lane,White,0.8212273843668165,2020,2,Middle third
+Lincoln,White,0.826277646665692,2020,2,Middle third
+Linn,White,0.8536257833482542,2020,2,Middle third
+Malheur,White,0.614472084387631,2020,1,Bottom third
+Marion,White,0.6580420976716048,2020,1,Bottom third
+Morrow,White,0.5986625055728935,2020,1,Bottom third
+Multnomah,White,0.699689600036061,2020,1,Bottom third
+Polk,White,0.7844572439117247,2020,1,Bottom third
+Sherman,White,0.9183800623052959,2020,3,Top third
+Tillamook,White,0.8446464181622948,2020,2,Middle third
+Umatilla,White,0.6642435433951468,2020,1,Bottom third
+Union,White,0.8898493929614262,2020,3,Top third
+Wallowa,White,0.9313980358174465,2020,3,Top third
+Wasco,White,0.7503286167169257,2020,1,Bottom third
+Washington,White,0.6634291302651503,2020,1,Bottom third
+Wheeler,White,0.8520336605890603,2020,2,Middle third
+Yamhill,White,0.7732903101521865,2020,1,Bottom third
+Oregon,White,0.7603136545512762,2020,1,Bottom third
+Rural,White,0.8391742444409092,2020,2,Middle third
+Urban,White,0.724707979920497,2020,1,Bottom third
+Baker,Black/African American,0.009321821821821822,2020,3,Top third
+Benton,Black/African American,0.009656939184673646,2020,3,Top third
+Clackamas,Black/African American,0.008570977949076857,2020,3,Top third
+Clatsop,Black/African American,0.007053576059333022,2020,2,Middle third
+Columbia,Black/African American,0.005289964799118994,2020,2,Middle third
+Coos,Black/African American,0.006571049472420547,2020,2,Middle third
+Crook,Black/African American,0.0012982943098894212,2020,1,Bottom third
+Curry,Black/African American,0.004531923401608388,2020,2,Middle third
+Deschutes,Black/African American,0.0055912311780336585,2020,2,Middle third
+Douglas,Black/African American,0.004348107050210943,2020,1,Bottom third
+Gilliam,Black/African American,0,2020,1,Bottom third
+Grant,Black/African American,0.0030627871362940277,2020,1,Bottom third
+Harney,Black/African American,0.0051189817376867735,2020,2,Middle third
+Hood River,Black/African American,0.0053607712593489254,2020,2,Middle third
+Jackson,Black/African American,0.005908516010398241,2020,2,Middle third
+Jefferson,Black/African American,0.00877155079289634,2020,3,Top third
+Josephine,Black/African American,0.004433733812192183,2020,1,Bottom third
+Klamath,Black/African American,0.007480018096817976,2020,2,Middle third
+Lake,Black/African American,0.0019125334693357134,2020,1,Bottom third
+Lane,Black/African American,0.009558612239144225,2020,3,Top third
+Lincoln,Black/African American,0.004490298865938472,2020,2,Middle third
+Linn,Black/African American,0.004036786847888012,2020,1,Bottom third
+Malheur,Black/African American,0.010121257927771023,2020,3,Top third
+Marion,Black/African American,0.011586843211057568,2020,3,Top third
+Morrow,Black/African American,0.0018724921979491752,2020,1,Bottom third
+Multnomah,Black/African American,0.05293327339863544,2020,3,Top third
+Polk,Black/African American,0.01047564075797954,2020,3,Top third
+Sherman,Black/African American,0.005607476635514018,2020,2,Middle third
+Tillamook,Black/African American,0.0036815462494247586,2020,1,Bottom third
+Umatilla,Black/African American,0.00910296756742698,2020,3,Top third
+Union,Black/African American,0.006531427693253419,2020,2,Middle third
+Wallowa,Black/African American,0.002310803004043905,2020,1,Bottom third
+Wasco,Black/African American,0.003170184798577283,2020,1,Bottom third
+Washington,Black/African American,0.0192980315251598,2020,3,Top third
+Wheeler,Black/African American,0,2020,1,Bottom third
+Yamhill,Black/African American,0.008360624157195145,2020,2,Middle third
+Oregon,Black/African American,0.018215834958988892,2020,3,Top third
+Rural,Black/African American,0.005430322543044855,2020,2,Middle third
+Urban,Black/African American,0.02398851299382232,2020,3,Top third
+Baker,American Indian/Alaska Native,0.012262262262262262,2020,2,Middle third
+Benton,American Indian/Alaska Native,0.004522165292938293,2020,1,Bottom third
+Clackamas,American Indian/Alaska Native,0.006081993553283981,2020,1,Bottom third
+Clatsop,American Indian/Alaska Native,0.0030081427311861417,2020,1,Bottom third
+Columbia,American Indian/Alaska Native,0.00932135061257399,2020,2,Middle third
+Coos,American Indian/Alaska Native,0.020613508561319265,2020,3,Top third
+Crook,American Indian/Alaska Native,0.008058378475175718,2020,2,Middle third
+Curry,American Indian/Alaska Native,0.015284133825032213,2020,3,Top third
+Deschutes,American Indian/Alaska Native,0.003991364038972542,2020,1,Bottom third
+Douglas,American Indian/Alaska Native,0.01022866796525207,2020,2,Middle third
+Gilliam,American Indian/Alaska Native,0.04299947561615102,2020,3,Top third
+Grant,American Indian/Alaska Native,0.013504106919114576,2020,3,Top third
+Harney,American Indian/Alaska Native,0.015633646928610957,2020,3,Top third
+Hood River,American Indian/Alaska Native,0.005620163417059358,2020,1,Bottom third
+Jackson,American Indian/Alaska Native,0.008666756896768985,2020,2,Middle third
+Jefferson,American Indian/Alaska Native,0.15978913710409196,2020,3,Top third
+Josephine,American Indian/Alaska Native,0.008937658660988992,2020,2,Middle third
+Klamath,American Indian/Alaska Native,0.035590408686472626,2020,3,Top third
+Lake,American Indian/Alaska Native,0.022695397169450467,2020,3,Top third
+Lane,American Indian/Alaska Native,0.008555581459653764,2020,2,Middle third
+Lincoln,American Indian/Alaska Native,0.02579311209039076,2020,3,Top third
+Linn,American Indian/Alaska Native,0.007853829250427281,2020,2,Middle third
+Malheur,American Indian/Alaska Native,0.00768952712694292,2020,2,Middle third
+Marion,American Indian/Alaska Native,0.005432822832756673,2020,1,Bottom third
+Morrow,American Indian/Alaska Native,0.005706642888987963,2020,1,Bottom third
+Multnomah,American Indian/Alaska Native,0.0064859693957405465,2020,1,Bottom third
+Polk,American Indian/Alaska Native,0.017230157073206676,2020,3,Top third
+Sherman,American Indian/Alaska Native,0.009345794392523364,2020,2,Middle third
+Tillamook,American Indian/Alaska Native,0.007209694738456818,2020,1,Bottom third
+Umatilla,American Indian/Alaska Native,0.0252022159223907,2020,3,Top third
+Union,American Indian/Alaska Native,0.009067158444751805,2020,2,Middle third
+Wallowa,American Indian/Alaska Native,0.01025418833044483,2020,2,Middle third
+Wasco,American Indian/Alaska Native,0.03378953065800665,2020,3,Top third
+Washington,American Indian/Alaska Native,0.003059360181224122,2020,1,Bottom third
+Wheeler,American Indian/Alaska Native,0.0070126227208976155,2020,1,Bottom third
+Yamhill,American Indian/Alaska Native,0.009699479869004046,2020,2,Middle third
+Oregon,American Indian/Alaska Native,0.009009434967612237,2020,2,Middle third
+Rural,American Indian/Alaska Native,0.014670927966909292,2020,3,Top third
+Urban,American Indian/Alaska Native,0.0064532623858508985,2020,1,Bottom third
+Baker,Asian,0.008696196196196196,2020,2,Middle third
+Benton,Asian,0.0712296725328581,2020,3,Top third
+Clackamas,Asian,0.04136149910790856,2020,3,Top third
+Clatsop,Asian,0.010372905969607386,2020,2,Middle third
+Columbia,Asian,0.011189553794418989,2020,2,Middle third
+Coos,Asian,0.01102546281670563,2020,2,Middle third
+Crook,Asian,0.003671039083135605,2020,1,Bottom third
+Curry,Asian,0.005642688941218288,2020,1,Bottom third
+Deschutes,Asian,0.011929805137289636,2020,2,Middle third
+Douglas,Asian,0.01050561745889608,2020,2,Middle third
+Gilliam,Asian,0.0047194546407970635,2020,1,Bottom third
+Grant,Asian,0.004315745510232494,2020,1,Bottom third
+Harney,Asian,0,2020,1,Bottom third
+Hood River,Asian,0.015131209199775194,2020,3,Top third
+Jackson,Asian,0.012554429753531809,2020,3,Top third
+Jefferson,Asian,0.005962926154776823,2020,1,Bottom third
+Josephine,Asian,0.009557679484329852,2020,2,Middle third
+Klamath,Asian,0.010209621474890665,2020,2,Middle third
+Lake,Asian,0.010200178503123805,2020,2,Middle third
+Lane,Asian,0.025954099142815316,2020,3,Top third
+Lincoln,Asian,0.011340615275370189,2020,2,Middle third
+Linn,Asian,0.010905835435826483,2020,2,Middle third
+Malheur,Asian,0.012322960139331603,2020,2,Middle third
+Marion,Asian,0.019883595139962986,2020,3,Top third
+Morrow,Asian,0.006152474364690147,2020,1,Bottom third
+Multnomah,Asian,0.07205937041020626,2020,3,Top third
+Polk,Asian,0.01860562221376202,2020,3,Top third
+Sherman,Asian,0.0012461059190031153,2020,1,Bottom third
+Tillamook,Asian,0.00613591041570793,2020,1,Bottom third
+Umatilla,Asian,0.008348721683268745,2020,2,Middle third
+Union,Asian,0.010603964960811434,2020,2,Middle third
+Wallowa,Asian,0.0034662045060658577,2020,1,Bottom third
+Wasco,Asian,0.0070749246114590585,2020,1,Bottom third
+Washington,Asian,0.10110326028108302,2020,3,Top third
+Wheeler,Asian,0.004207573632538569,2020,1,Bottom third
+Yamhill,Asian,0.014168753612020805,2020,3,Top third
+Oregon,Asian,0.04226051172199122,2020,3,Top third
+Rural,Asian,0.012935902504642749,2020,3,Top third
+Urban,Asian,0.055500616772294925,2020,3,Top third
+Baker,Native Hawaiian/Pacific Islander,0.002815315315315315,2020,2,Middle third
+Benton,Native Hawaiian/Pacific Islander,0.002528402762307864,2020,2,Middle third
+Clackamas,Native Hawaiian/Pacific Islander,0.002624523150019222,2020,2,Middle third
+Clatsop,Native Hawaiian/Pacific Islander,0.0032674653804263265,2020,2,Middle third
+Columbia,Native Hawaiian/Pacific Islander,0.002182847928260998,2020,2,Middle third
+Coos,Native Hawaiian/Pacific Islander,8.529727680545902e-4,2020,1,Bottom third
+Crook,Native Hawaiian/Pacific Islander,0.004476876930653176,2020,3,Top third
+Curry,Native Hawaiian/Pacific Islander,0,2020,1,Bottom third
+Deschutes,Native Hawaiian/Pacific Islander,5.591231178033658e-4,2020,1,Bottom third
+Douglas,Native Hawaiian/Pacific Islander,6.092888860168201e-4,2020,1,Bottom third
+Gilliam,Native Hawaiian/Pacific Islander,0.0068169900367068695,2020,3,Top third
+Grant,Native Hawaiian/Pacific Islander,8.353055826256439e-4,2020,1,Bottom third
+Harney,Native Hawaiian/Pacific Islander,5.534034311012728e-4,2020,1,Bottom third
+Hood River,Native Hawaiian/Pacific Islander,2.161601314253599e-4,2020,1,Bottom third
+Jackson,Native Hawaiian/Pacific Islander,0.0033229568715667833,2020,3,Top third
+Jefferson,Native Hawaiian/Pacific Islander,7.777729767100203e-4,2020,1,Bottom third
+Josephine,Native Hawaiian/Pacific Islander,7.019103660462558e-4,2020,1,Bottom third
+Klamath,Native Hawaiian/Pacific Islander,9.500829437490574e-4,2020,1,Bottom third
+Lake,Native Hawaiian/Pacific Islander,0,2020,1,Bottom third
+Lane,Native Hawaiian/Pacific Islander,0.0022907054288363216,2020,2,Middle third
+Lincoln,Native Hawaiian/Pacific Islander,0.002276477099475784,2020,2,Middle third
+Linn,Native Hawaiian/Pacific Islander,8.13868316106454e-4,2020,1,Bottom third
+Malheur,Native Hawaiian/Pacific Islander,6.900857678025698e-4,2020,1,Bottom third
+Marion,Native Hawaiian/Pacific Islander,0.008907683734015194,2020,3,Top third
+Morrow,Native Hawaiian/Pacific Islander,0.0024966562639322336,2020,2,Middle third
+Multnomah,Native Hawaiian/Pacific Islander,0.00604271974977681,2020,3,Top third
+Polk,Native Hawaiian/Pacific Islander,0.004335171380500325,2020,3,Top third
+Sherman,Native Hawaiian/Pacific Islander,0.008722741433021807,2020,3,Top third
+Tillamook,Native Hawaiian/Pacific Islander,0.0044868844914864245,2020,3,Top third
+Umatilla,Native Hawaiian/Pacific Islander,0.0016645426409009336,2020,2,Middle third
+Union,Native Hawaiian/Pacific Islander,0.012371292454280007,2020,3,Top third
+Wallowa,Native Hawaiian/Pacific Islander,8.665511265164644e-4,2020,1,Bottom third
+Wasco,Native Hawaiian/Pacific Islander,0.005876440114435939,2020,3,Top third
+Washington,Native Hawaiian/Pacific Islander,0.003865450026726433,2020,3,Top third
+Wheeler,Native Hawaiian/Pacific Islander,0,2020,1,Bottom third
+Yamhill,Native Hawaiian/Pacific Islander,0.002562126757850125,2020,2,Middle third
+Oregon,Native Hawaiian/Pacific Islander,0.0037484599858449764,2020,3,Top third
+Rural,Native Hawaiian/Pacific Islander,0.0014861520868347559,2020,2,Middle third
+Urban,Native Hawaiian/Pacific Islander,0.00476989539584549,2020,3,Top third
+Baker,Some other race,0.001438938938938939,2020,3,Top third
+Benton,Some other race,0.00170416573847182,2020,3,Top third
+Clackamas,Some other race,0.0013430658373337803,2020,3,Top third
+Clatsop,Some other race,0,2020,1,Bottom third
+Columbia,Some other race,1.5732237320799985e-4,2020,1,Bottom third
+Coos,Some other race,0.0010267264800657104,2020,3,Top third
+Crook,Some other race,0,2020,1,Bottom third
+Curry,Some other race,8.886124316879193e-4,2020,2,Middle third
+Deschutes,Some other race,8.359167404782994e-4,2020,2,Middle third
+Douglas,Some other race,6.646787847456219e-4,2020,2,Middle third
+Gilliam,Some other race,0,2020,1,Bottom third
+Grant,Some other race,2.7843519420854795e-4,2020,1,Bottom third
+Harney,Some other race,0.006502490315439956,2020,3,Top third
+Hood River,Some other race,0,2020,1,Bottom third
+Jackson,Some other race,0.001493463762501925,2020,3,Top third
+Jefferson,Some other race,3.456768785377868e-4,2020,2,Middle third
+Josephine,Some other race,9.124834758601326e-4,2020,2,Middle third
+Klamath,Some other race,3.016136329362087e-4,2020,1,Bottom third
+Lake,Some other race,6.375111564452378e-4,2020,2,Middle third
+Lane,Some other race,0.0020494358629588867,2020,3,Top third
+Lincoln,Some other race,0,2020,1,Bottom third
+Linn,Some other race,9.929193456498738e-4,2020,2,Middle third
+Malheur,Some other race,6.243633137261345e-4,2020,2,Middle third
+Marion,Some other race,9.715305778818846e-4,2020,2,Middle third
+Morrow,Some other race,0,2020,1,Bottom third
+Multnomah,Some other race,0.0031991605803314855,2020,3,Top third
+Polk,Some other race,4.2983285642354504e-4,2020,2,Middle third
+Sherman,Some other race,0,2020,1,Bottom third
+Tillamook,Some other race,0,2020,1,Bottom third
+Umatilla,Some other race,7.022289266300814e-4,2020,2,Middle third
+Union,Some other race,5.763024435223605e-4,2020,2,Middle third
+Wallowa,Some other race,0.0010109763142692085,2020,2,Middle third
+Wasco,Some other race,0,2020,1,Bottom third
+Washington,Some other race,0.0016242108827285368,2020,3,Top third
+Wheeler,Some other race,0,2020,1,Bottom third
+Yamhill,Some other race,5.682912733577345e-4,2020,2,Middle third
+Oregon,Some other race,0.0015703305999128355,2020,3,Top third
+Rural,Some other race,0.0010435355140731594,2020,3,Top third
+Urban,Some other race,0.0018081793713936422,2020,3,Top third
+Baker,Two or more races,0.01664164164164164,2020,1,Bottom third
+Benton,Two or more races,0.03163288037424816,2020,2,Middle third
+Clackamas,Two or more races,0.031501670823188464,2020,2,Middle third
+Clatsop,Two or more races,0.03474923499818474,2020,3,Top third
+Columbia,Two or more races,0.03400129790957897,2020,3,Top third
+Coos,Two or more races,0.042506476274720414,2020,3,Top third
+Crook,Two or more races,0.023996060348301027,2020,1,Bottom third
+Curry,Two or more races,0.039276669480606034,2020,3,Top third
+Deschutes,Two or more races,0.02328941541186891,2020,1,Bottom third
+Douglas,Two or more races,0.03635423686567026,2020,3,Top third
+Gilliam,Two or more races,0.0036706869428421605,2020,1,Bottom third
+Grant,Two or more races,0.02561603786718641,2020,1,Bottom third
+Harney,Two or more races,0.056032097399003875,2020,3,Top third
+Hood River,Two or more races,0.02066490856426441,2020,1,Bottom third
+Jackson,Two or more races,0.03016330092828107,2020,2,Middle third
+Jefferson,Two or more races,0.02255541632459059,2020,1,Bottom third
+Josephine,Two or more races,0.031106327721949906,2020,2,Middle third
+Klamath,Two or more races,0.03494193937565978,2020,3,Top third
+Lake,Two or more races,0.03748565599897998,2020,3,Top third
+Lane,Two or more races,0.04365352605982401,2020,3,Top third
+Lincoln,Two or more races,0.03918046824418872,2020,3,Top third
+Linn,Two or more races,0.03297794416863351,2020,2,Middle third
+Malheur,Two or more races,0.019716736222930565,2020,1,Bottom third
+Marion,Two or more races,0.03208137015613033,2020,2,Middle third
+Morrow,Two or more races,0.02630405706642889,2020,1,Bottom third
+Multnomah,Two or more races,0.045484425534685534,2020,3,Top third
+Polk,Two or more races,0.0278286072187358,2020,2,Middle third
+Sherman,Two or more races,0.020560747663551402,2020,1,Bottom third
+Tillamook,Two or more races,0.03048780487804878,2020,2,Middle third
+Umatilla,Two or more races,0.026580665296886786,2020,1,Bottom third
+Union,Two or more races,0.023935761487628708,2020,1,Bottom third
+Wallowa,Two or more races,0.021374927787406125,2020,1,Bottom third
+Wasco,Two or more races,0.02203665042913477,2020,1,Bottom third
+Washington,Two or more races,0.04220885805084382,2020,3,Top third
+Wheeler,Two or more races,0.03997194950911641,2020,3,Top third
+Yamhill,Two or more races,0.03301868618763244,2020,2,Middle third
+Oregon,Two or more races,0.03652231302592907,2020,3,Top third
+Rural,Two or more races,0.02771630325378311,2020,1,Bottom third
+Urban,Two or more races,0.04049823964759526,2020,3,Top third
+Baker,Hispanic/Latino,0.040728228228228226,2020,1,Bottom third
+Benton,Hispanic/Latino,0.07290042325685007,2020,1,Bottom third
+Clackamas,Hispanic/Latino,0.08541159423147061,2020,2,Middle third
+Clatsop,Hispanic/Latino,0.08453918365230019,2020,2,Middle third
+Columbia,Hispanic/Latino,0.04983186171363395,2020,1,Bottom third
+Coos,Hispanic/Latino,0.06383079547608517,2020,1,Bottom third
+Crook,Hispanic/Latino,0.07570398889734521,2020,2,Middle third
+Curry,Hispanic/Latino,0.06944506153641089,2020,1,Bottom third
+Deschutes,Hispanic/Latino,0.07860385296722763,2020,2,Middle third
+Douglas,Hispanic/Latino,0.0565900132012592,2020,1,Bottom third
+Gilliam,Hispanic/Latino,0.062401678028316726,2020,1,Bottom third
+Grant,Hispanic/Latino,0.036614228038424054,2020,1,Bottom third
+Harney,Hispanic/Latino,0.050498063087991145,2020,1,Bottom third
+Hood River,Hispanic/Latino,0.31472915135532403,2020,3,Top third
+Jackson,Hispanic/Latino,0.1253949511590679,2020,3,Top third
+Jefferson,Hispanic/Latino,0.19971481657520632,2020,3,Top third
+Josephine,Hispanic/Latino,0.07306886910541524,2020,1,Bottom third
+Klamath,Hispanic/Latino,0.1268737746946162,2020,3,Top third
+Lake,Hispanic/Latino,0.07994389901823282,2020,2,Middle third
+Lane,Hispanic/Latino,0.08671065543995099,2020,2,Middle third
+Lincoln,Hispanic/Latino,0.09064138175894405,2020,2,Middle third
+Linn,Hispanic/Latino,0.08879303328721413,2020,2,Middle third
+Malheur,Hispanic/Latino,0.33436298511386414,2020,3,Top third
+Marion,Hispanic/Latino,0.2630940566765906,2020,3,Top third
+Morrow,Hispanic/Latino,0.35880517164511816,2020,3,Top third
+Multnomah,Hispanic/Latino,0.11410548089456293,2020,2,Middle third
+Polk,Hispanic/Latino,0.1366377245876675,2020,3,Top third
+Sherman,Hispanic/Latino,0.03613707165109034,2020,1,Bottom third
+Tillamook,Hispanic/Latino,0.10335174106458046,2020,2,Middle third
+Umatilla,Hispanic/Latino,0.26415511456734897,2020,3,Top third
+Union,Hispanic/Latino,0.04706469955432611,2020,1,Bottom third
+Wallowa,Hispanic/Latino,0.02931831311380705,2020,1,Bottom third
+Wasco,Hispanic/Latino,0.1777236526714606,2020,3,Top third
+Washington,Hispanic/Latino,0.165411698787084,2020,3,Top third
+Wheeler,Hispanic/Latino,0.0967741935483871,2020,2,Middle third
+Yamhill,Hispanic/Latino,0.15833172799075323,2020,3,Top third
+Oregon,Hispanic/Latino,0.12835946018844457,2020,3,Top third
+Rural,Hispanic/Latino,0.09754261168980297,2020,2,Middle third
+Urban,Hispanic/Latino,0.14227331351270045,2020,3,Top third

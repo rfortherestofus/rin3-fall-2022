@@ -1,0 +1,378 @@
+---
+title: "R in 3 Months: Week 7 (Tidy Data)"
+output:
+  xaringan::moon_reader:
+    css: ["style.css", "default"]
+    lib_dir: libs
+    df_print: paged
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=FALSE, eval = TRUE}
+options(htmltools.preserve.raw = FALSE)
+library("tidyverse")
+library("wakefield")
+library(palmerpenguins)
+library(janitor)
+```
+
+
+
+# Agenda
+
+--
+
+1. Housekeeping
+
+--
+
+1. Tidy Data
+
+--
+
+1. Group work
+
+--
+
+1. More Complicated Tidying Examples
+
+--
+
+1. Next Week
+
+---
+class: inverse, center, middle
+
+# Housekeeping
+
+---
+
+# Polly
+
+We're going to use a new tool during today's session.
+
+It will allow us to ask you questions and get live responses.
+
+We'll post links in the Zoom chat.
+
+<!-- --- -->
+
+<!-- ## Etherpad -->
+
+<!-- We're going to use a new tool during today's live session. -->
+
+<!-- It will allow us to ask you questions and share code more easily. -->
+
+<!-- This week's etherpad is available here: [pad.riseup.net/p/rin3-2022-spring_week-7](https://pad.riseup.net/p/rin3-2022-spring_week-7) -->
+
+---
+
+class: inverse, center, middle
+
+# Tidy Data
+
+---
+
+## What is tidy data?
+
+> "Tidy datasets are all alike, but every messy dataset is messy in its own way"
+> 
+> Hadley Wickham
+
+--
+
+Tidy data is both a philisophical approach to wrangling data - and a requirement for using parts of the tidyverse.
+
+---
+
+## Defining tidy data
+
+From the [tidy data vignette](https://tidyr.tidyverse.org/articles/tidy-data.html#defining):
+
+--
+
+1. Every column is a variable.
+
+--
+
+1. Every row is an observation.
+
+--
+
+1. Every cell is a single value.
+
+---
+
+class: inverse, center, middle
+
+## What questions do you have about tidy data?
+
+---
+
+# Tidy data and `ggplot2`
+
+`ggplot` needs data in a tidy format. This dataset is the exact opposite of what {ggplot2} needs for a bar chart.
+
+```{r, echo=FALSE}
+msleep %>% 
+  drop_na(vore) %>% 
+  count(vore) %>% 
+  pivot_wider(names_from = vore,
+              values_from = n)
+```
+
+---
+
+## Tidy data and `ggplot2`
+
+The previous dataset is wide. What `ggplot2` needs is long.
+
+```{r, echo=FALSE}
+msleep %>% 
+  drop_na(vore) %>% 
+  count(vore)
+```
+
+---
+
+## Is this dataset wide or long?
+
+`data_mike_week_3`
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+data_mike_week_3 <- read_csv(here::here("data", "mike-data-week-3.csv")) %>% 
+  slice(1:10) 
+data_mike_week_3
+```
+
+---
+
+## Is this dataset wide or long?
+
+`wakefield_dataset`
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(wakefield)
+
+r_data_frame(
+  100,
+  name = name(),
+  age = age(),
+  gender = gender_inclusive(prob = c(0.5052, 0.4808, 0.017)),
+  religion = religion()
+) %>% 
+  mutate(across(where(is.factor), ~as.character(.x)))
+```
+
+---
+
+## Is this dataset wide or long?
+
+`tidycensus`
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(tidycensus)
+library(tidyverse)
+
+acs_poverty <- get_acs(year = 2019,
+        geography = "county",
+        state = "OR",
+        variables = c("n_in_poverty_male" = "S1701_C02_011",
+                      "n_in_poverty_female" = "S1701_C02_012",
+                      "n_in_poverty_under_18" = "S1701_C02_002"))
+
+acs_poverty
+```
+
+---
+
+
+## Is this dataset wide or long?
+
+`tidycensus v2`
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+acs_poverty_wide <- get_acs(year = 2019,
+                            geography = "county",
+                            state = "OR",
+                            variables = c("n_in_poverty_male" = "S1701_C02_011",
+                                          "n_in_poverty_female" = "S1701_C02_012",
+                                          "n_in_poverty_under_18" = "S1701_C02_002"),
+                            output = "wide")
+
+acs_poverty_wide
+```
+
+
+
+---
+
+## Is this dataset wide or long?
+
+
+`wdi_dataset`
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(WDI)
+
+WDI(country = 'US', 
+    indicator = c("gdp_per_capita" = "NY.GDP.PCAP.KD",
+                         "population" = "SP.POP.TOTL"),
+    start = 2000,
+    end = 2008)
+```
+
+---
+
+## Is this dataset wide or long?
+
+`wikipedia_calendars`
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+read_csv(here::here("data", "wikipedia-tables.csv"))
+```
+
+---
+
+# `pivot_longer()`
+
+```{r eval = FALSE}
+your_data %>% 
+  pivot_longer(cols = columns_to_pivot,
+               names_to = "name_column_name",
+               values_to = "value_column_name")
+```
+
+
+
+---
+
+## `pivot_longer()`
+
+```{r}
+relig_income
+```
+
+---
+
+## `pivot_longer()`
+
+```{r}
+relig_income %>% 
+  pivot_longer(cols = -religion,
+               names_to = "income_group",
+               values_to = "n")
+```
+
+
+
+---
+
+class: inverse, center, middle
+
+# Group Work
+
+---
+
+## Group Work
+
+Copy the code from [this gist](https://gist.githubusercontent.com/dgkeyes/1d5ceb8b607266f1d197a218dd5c6882/raw/3591c9dc6e02ee78e3471bc40753cc948456c4d1/tidy-data-exercise.R) into a new R script file. Then tidy the `gapminder_wide` data.
+
+
+---
+
+class: inverse, center, middle
+
+# More complicated tidying
+
+---
+
+### pivot_longer(names_sep)
+
+It's possible to tell `pivot_longer()` to split column names into two "name" columns.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+gapminder_wide <- read_csv("https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_wide.csv")
+
+gapminder_wide
+```
+
+
+---
+
+### Complicated pivot_longer() or mutate()?
+
+In the documentation for `pivot_longer()` there's this example.
+
+Let's walk through what this does and if it's worth getting very deep into `pivot_longer()` or wrangling on your own with `mutate()` etc.
+
+```{r}
+billboard %>%
+  pivot_longer(
+    cols = starts_with("wk"),
+    names_to = "week",
+    names_prefix = "wk",
+    values_to = "rank",
+    values_drop_na = TRUE
+  )
+```
+
+
+---
+
+## Why is wide data sometimes desirable?
+
+Do you have any ideas?
+
+--
+
+- If you're making beautiful tables, you likely want wide data.
+
+--
+
+- You can't mix different data types (eg age and religion)
+
+--
+
+- Joining datsets with `left_join()` sometimes requires wide data
+
+
+---
+
+# Next Week: Separating columns and multiple choice responses
+
+Next week we will talk about survey datasets and separating columns that contain multiple choice (i.e. check all that apply) items.
+
+---
+
+## Next Week
+
+--
+
+There are two big topics in the next week:
+
+--
+
+1. Reducing repetitive code with user-defined functions
+
+--
+
+1. Joining together datasets by shared columns (i.e. data merging)
+
+--
+
+These skills will equip you to deal with more complex and larger scale data wrangling
+
+---
+
+## Project assignment 
+
+Create a function that can help you do your work more efficiently
+
+<!-- Example from the video https://gist.github.com/charliejhadley/80e3182e76639022b08b75dfa426ff84 -->

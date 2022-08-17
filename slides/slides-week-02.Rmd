@@ -1,0 +1,314 @@
+---
+title: "R in 3 Months: Week 2 (RMarkdown)"
+output:
+  xaringan::moon_reader:
+    css: ["style.css", "default"]
+    lib_dir: libs
+    df_print: paged
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+library(tidyverse)
+```
+
+
+# Agenda
+
+--
+
+1. Housekeeping
+
+--
+
+1. Whole group: discuss common issues, visual editor, and cheatsheets
+
+--
+
+1. Breakout groups: discuss projects + do some exercises
+
+--
+
+1. Project datasets
+
+--
+
+1. Next Week
+
+---
+
+class: inverse, center, middle
+
+# Housekeeping
+
+---
+
+---
+
+## Feedback
+
+
+## Feedback
+
+You should be getting emails when we post feedback
+
+--
+
+You can see everyone's feedback here: https://rfor.us/spring22feedback
+
+???
+
+- Hopefully you've recieved an email with your feedback, let us know if that's not working
+
+- You can see everyone's feedback on the feedback page.
+
+---
+
+class: inverse, center, middle
+
+# RMarkdown
+
+???
+
+Show PSC
+
+https://housingprofiles.pschousing.org
+
+https://housing-profiles.s3.amazonaws.com/2020/East%20Hartford.pdf
+
+
+---
+
+class: inverse, center, middle
+
+## Common Issues with RMarkdown
+
+
+---
+
+### Empty lines everywhere
+
+The language behind RMarkdown is called Markdown, and it's very fussy about spacing.
+
+For it to work perfectly you should add an empty line between **everything**.
+
+This includes bullet points.
+
+---
+
+## Things can break without empty lines
+
+```{yml}
+---
+title: "Report"
+output: html_document
+---
+# Bechdel Test
+The Bechdel test is a simple test of whether a film has women with agency: 
+- Does the movie contain 2 characters who are women
+- Are they named
+- Do they have a conversation about something other than man (or further the plot line of a man)
+In this report we'll look at whether it's common to see movies that fail the test. 
+```
+
+---
+
+#### Bullets with/without spacing
+
+... without spacing bullets look scrunched up
+
+````
+- Bullet point one
+- Second bullet point
+````
+
+- Bullet point one
+- Second bullet point
+
+--
+
+... adding an empty line adds the same spacing as you'd see in paragraphs of text.
+
+````
+- Bullet point one
+
+- Second bullet point
+````
+
+- Bullet point one
+
+- Second bullet point
+
+---
+
+### Styling RMarkdown
+
+The way you style the text (images and spacing!) in your RMarkdown document depends on your output type:
+
+.pull-left[
+```{yaml}
+---
+title: "My report"
+output: 
+  html_document:
+    css: charlie-styles.css
+---
+```
+]
+
+.pull-right[
+```{yaml}
+---
+title: "My report"
+output:
+  word_document:
+    reference_docx: charlie-styles.docx
+---
+```
+]
+
+<br>
+
+There's a [discussion thread explaining the differences between CSS and reference documents](https://github.com/rfortherestofus/rin3-spring-2022/discussions/11) for styling RMarkdown reports.
+
+---
+
+### Comments
+
+
+
+---
+
+### Addendum: The visual editor
+
+Since the course was recorded there's now a WYSIWYG visual editor for RMarkdown documents!
+
+--
+
+Unfortunately, the visual editor does not work with ALL RMarkdown output formats.
+
+---
+
+class: inverse, center, middle
+
+# Breakout Groups
+
+---
+
+## Breakout Groups
+
+1. Discuss your projects (what went well, what confused you, etc.).
+
+--
+
+1. Look at the gist at [rfor.us/noknit](https://rfor.us/noknit). Figure out why it's not knitting. 
+
+--
+
+1. Look at the RMarkdown document at [rfor.us/rmdknit](https://rfor.us/rmdknit). Guess what will happen when you knit it, then knit it and see if you were right. Discuss why/why not.
+
+---
+
+class: inverse, center, middle 
+
+## Project Data Sets
+
+---
+
+## Adding data files to Gists
+
+While we're using gists in the course we're limited to data files being .csv files.
+
+--
+
+You can add a .csv file by dragging it into your gist.
+
+--
+
+Once we've introduced GitHub we can progress to working with Excel files (and any other file types).
+
+---
+
+## Picking a project dataset
+
+As mentioned in the previous week, we're asking you to work with a dataset that's interesting/means something to you.
+
+While we continue working with Gists we need you to work with .csv files. You might choose to work with a different dataset to begin with and switch later on.
+
+---
+
+## SPSS Datasets
+
+--
+
+We often have folks working with labelled .SAV (SPSS) files.
+
+--
+
+To properly import these into R requires a [little bit of code](https://gist.github.com/charliejhadley/5e023be42089c9bf42d75b2f5b129b64).
+
+--
+
+In the follow-up email to this week's live session we'll provide you some resources about this and will bring this subject up again later in the course.
+
+---
+
+## Tidy Tuesday
+
+The [Tidy Tuesday project](https://github.com/rfordatascience/tidytuesday) provides over 100 datasets covering all sorts of subjects:
+
+- [Kenyan Census data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-19/readme.md)
+
+- [Plastic Pollution](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-01-26/readme.md)
+
+- [Video Games](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-03-16/readme.md)
+
+- [Deforestation](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-04-06/readme.md)
+
+- [Survivor TV Show](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-06-01/readme.md)
+
+- [Paralympics](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-08-03/readme.md)
+
+
+
+---
+
+class: inverse, center, middle
+
+# Next Week
+
+---
+
+## For Next Week
+
+1. Complete data wrangling and analysis lessons in Fundamentals
+
+--
+
+1. Do some simple data analysis using your data and add it to your report
+
+--
+
+1. Post your code as a [gist](http://gist.github.com/)
+
+--
+
+1. Post the URL to your gist in the Week 3 Project Assignment Lesson
+
+
+
+
+
+
+
+
+

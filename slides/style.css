@@ -1,0 +1,116 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+/* Text and fonts */
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #404e6b;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.remark-slide-content h1 {
+  font-size: 55px;
+  line-height: 1;
+}
+
+.remark-slide-content h2 {
+  font-size: 50px;
+  line-height: 1
+}
+.remark-slide-content h3 {
+  font-size: 40px;
+}
+
+.middle h1 {
+  font-size: 95px;
+  line-height: 1;
+  letter-spacing: -2px
+
+}
+
+.xl {
+  font-size: 200%;
+}
+
+.large {
+  font-size: 130%;
+}
+
+.small {
+  font-size: 70%;
+}
+
+.small code {
+  font-size: 13px;
+}
+
+a,
+a > code {
+  color: #6cabdd;
+  text-decoration: underline;
+}
+
+.error-text {
+  color: #ff0000;
+}
+
+.hljs-github .hljs-string,
+.hljs-github .hljs-doctag {
+  color: #19751e;
+}
+
+.title-slide h1 {
+  font-size: 100px;
+  letter-spacing: -2px
+}
+
+.title-slide h2,
+.title-slide h3 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+/* Slide layout */
+
+.remark-slide-content {
+  background-image: url("https://raw.githubusercontent.com/rfortherestofus/rfortherestofus/main/inst/assets/rru-hex-bg-gradient-light.svg");
+  background-size: cover;
+}
+
+/* Inverse etc (slides with dark bg) */
+
+.inverse,
+.title-slide {
+  background-image: url("https://raw.githubusercontent.com/rfortherestofus/rfortherestofus/main/inst/assets/rru-hex-bg-gradient-dark.svg");
+  background-size: cover;
+}
+
+.inverse,
+.inverse a,
+.inverse a code {
+  color: #f3f3f3;
+}
+
+/* My Turn */
+
+.my-turn {
+  background-color: #ff7400;
+  color: #ffffff;
+  background-image: url("https://raw.githubusercontent.com/rfortherestofus/rfortherestofus/main/inst/assets/rru-hex-bg-gradient-white-hex.svg");
+  background-size: cover;
+}
+
+/* Footer */
+
+.remark-slide-number {
+  display: none;
+}

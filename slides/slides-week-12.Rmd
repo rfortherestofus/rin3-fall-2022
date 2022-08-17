@@ -1,0 +1,289 @@
+---
+title: "R in 3 Months: Week 12 (Advanced RMarkdown)"
+output:
+  xaringan::moon_reader:
+    css: ["style.css", "default"]
+    lib_dir: libs
+    df_print: paged
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r, include=FALSE, eval = TRUE}
+options(htmltools.preserve.raw = FALSE)
+library(tidyverse)
+library(fivethirtyeight)
+library(readxl)
+library(janitor)
+library(patchwork)
+library(here)
+library(gapminder)
+library(ggtext)
+```
+
+
+<!---- PLAN
+
+Get everyone to say what they wish they'd been able to do.
+
+We don't care what YOU HAVE been able to do. What's next? Put everyone at the same level (as many will be behind)
+
+just do this in Zoom chat.
+
+--->
+
+# Agenda
+
+1. Housekeeping
+
+--
+
+1. What else can RMarkdown do?
+
+--
+
+1. Final assignment: show us what you can do!
+
+--
+
+1. Final week: let's see what you did!
+
+---
+
+class: inverse, center, middle
+
+# What else can RMarkdown do?
+
+---
+
+## RMarkdown can do a lot...
+
+We've seen that you can make the following:
+
+--
+
+.pull-left[
+
+- HTML reports
+
+- PDF reports
+
+- Word reports
+
+... but there's a lot more.
+]
+
+--
+
+.pull-right[
+
+- Beautiful books with `bookdown`
+
+- Beautiful reports with `pagedown`
+
+- Beautiful slides with `xaringan`
+
+- Programmatically generated reports
+
+- Dashboards (... and even shiny apps!)
+
+- Websites all in RMarkdown!
+
+
+]
+
+---
+
+## Beautiful books with `bookdown`
+
+.pull-left[
+The `bookdown` package was used for writing R for Data Science and many other extremely useful R books.
+]
+
+.pull-right[
+<img src='https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png' height='300px'/>
+<img src='https://www.tidytextmining.com/images/cover.png' style='align:right' height='300px'/>
+]
+
+???
+
+https://rfortherestofus.com/2022/04/bookdown/
+
+
+---
+
+## Beautiful reports with `pagedown`
+
+.pull-left[
+The `pagedown` package is designed to simplify designing documents you need to print.
+
+Instead of learning `LaTeX` you can use HTML and CSS!
+
+]
+
+.pull-right[
+<center><img src='https://raw.githubusercontent.com/rstudio/hex-stickers/master/SVG/pagedown.svg' height='300px'/></center>
+]
+
+---
+
+## `pagedreport`
+
+.pull-left[
+R for the Rest of Us has created a package called [`pagedreport`](https://pagedreport.rfortherestofus.com/) that adds several templates to `pagedown`.
+
+]
+
+.pull-right[
+<center><img src='https://camo.githubusercontent.com/f0956be0c95edd980629ffe24ae98167d9727caf38f58299de86f4f1eabe3a1d/68747470733a2f2f6d6b3072666f72746865726573746f306f3038712e6b696e73746163646e2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032312f30312f677269642e676966' height='300px'/></center>
+]
+
+
+
+---
+
+class: inverse, center, middle
+
+## Websites created all in RMarkdown
+
+---
+
+## `distill` for websites (and blogs)
+
+Using `distill` is the easiest way to create a fully functioning data blog with RMarkdown.
+
+--
+
+We'll put together a thorough discussion thread about this.
+
+
+---
+
+## Parameterized reports
+
+Use [parametrized RMarkdown reporting](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html) to make a separate report for each region
+
+```{yaml}
+---
+params:
+  state: "Alaska"
+title: "`r params$state` Report"
+---
+  
+```
+
+```{r eval = FALSE}
+qualitative_data %>% 
+  filter(state == params$state)
+```
+
+???
+
+https://rfortherestofus.com/2020/10/parameterized-reporting-with-rmarkdown/
+
+---
+
+# Final Week
+
+Charlie will host her office hours as usual at 12pm Wednesday.
+
+--
+
+In the final live session we'll cover:
+
+- What resources to use next.
+
+- How to ask reproducible questions with {reprex}
+
+- Highlighted assignment submissions from **you folks**!
+
+---
+
+class: inverse, center, middle
+
+## Final assignment:<br>Show us what you can do!
+
+---
+
+### Final assignment
+
+We'd love to understand how R in 3 Months is going to help you with your work/datasets.
+
+--
+
+We'd like you to record a 5 minute video showing something you can now do with your real data/project.
+
+--
+
+> [Loom.com](https://www.loom.com/pricing) has a free tier that will allow you to record and share 5 minute videos.
+
+There's a form to fill on [Week 13's assignment submission page](https://rfortherestofus.com/courses/r-in-3-months-spring-2022/lessons/r-in-3-months-spring-2022-final-project-assignment/).
+
+
+---
+
+# Feedback
+
+We love doing R in 3 Months and want to continually improve it.
+
+--
+
+There are two ways we want to collect feedback:
+
+--
+
+1. [Open-ended discussion of what went well, what can be improved, etc](https://github.com/rfortherestofus/rin3-spring-2022/discussions/38). David will start it out. 
+
+--
+
+2. [Post-survey that shows your skill now](https://rfor.us/rin3-spring22-feedback) (we'll compare this to what you told us in the pre-survey) and allows you to provide anonymous feedback.
+
+
+---
+
+## Post-Survey
+
+🔗 [rfor.us/rin3-spring22-feedback](https://rfor.us/rin3-spring22-feedback)
+
+
+---
+
+# Next Week
+
+--
+
+- No course assignments
+
+--
+
+- Record a <5 minutes video showing what you've learned
+
+--
+
+- Please provide any feedback to reflection thread David will create
+
+--
+
+- Please complete post-survey [rfor.us/rin3-spring22-feedback](https://rfor.us/rin3-spring22-feedback)
+
+--
+
+- Charlie's office hours are still on
+
+--
+
+- The live session will give you pointers of where to go next
+
+
+
+
+
+
+
+

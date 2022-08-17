@@ -1,0 +1,203 @@
+---
+title: "R in 3 Months: Week 11 (Advanced Data Viz Part 2)"
+output:
+  xaringan::moon_reader:
+    css: ["style.css", "default"]
+    lib_dir: libs
+    df_print: paged
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: 16:9
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=FALSE, eval = TRUE}
+options(htmltools.preserve.raw = FALSE)
+library(tidyverse)
+library(fivethirtyeight)
+library(readxl)
+library(janitor)
+library(patchwork)
+library(here)
+library(gapminder)
+library(ggtext)
+```
+
+<!---- PLAN
+
+2022-05-24: Decypher the dataviz example from before
+
+Group work: give them broken tidytuesday visualisations and they fix the code.
+
+
+--->
+
+# Agenda
+
+--
+
+1. Housekeeping
+
+--
+
+1. One quick reminder
+
+--
+
+1. Group work
+
+--
+
+1. Novel data viz: maps
+
+--
+
+1. Next week
+
+---
+
+class: inverse, center, middle
+
+# Housekeeping
+
+
+---
+
+## 1:1 with Charlie
+
+Book another 1:1 with Charlie - [rfor.us/charliechat](https://rfor.us/charliechat)
+
+
+---
+
+## Remaining Schedule
+
+--
+
+- Week 12
+
+  - Office hours
+  
+  - Live session (June 2)
+  
+--
+  
+- Week 13
+
+  - Office hours
+  
+  - Last Live session (June 9)
+
+--
+
+- Assignments
+
+  - Please submit before end of June
+
+---
+
+class: inverse, center, middle
+
+# One quick reminder
+
+---
+
+## Reminder about tidy evaluation
+
+If you create a function where you provide column names things get complicated
+
+```{r}
+make_sleep_chart <- function(y_axis){
+  
+  msleep %>% 
+  ggplot(aes(x = sleep_total,
+             y = y_axis)) +
+  geom_point()
+  
+}
+```
+
+```{r, eval=FALSE}
+make_sleep_chart(y_axis = sleep_rem)
+# Error in FUN(X[[i]], ...) : object 'sleep_rem' not found
+```
+
+---
+
+## Tidy evaluation thread
+
+I started a [discussion thread about tidy evaluation](https://github.com/rfortherestofus/rin3-spring-2022/discussions/35) and have just added new examples using **curly curly**
+
+```{r}
+make_sleep_chart <- function(y_axis){
+  
+  msleep %>% 
+  ggplot(aes(x = sleep_total,
+             y = {{ y_axis }})) +
+  geom_point()
+  
+}
+```
+
+
+---
+
+class: inverse, center, middle
+
+# Group work
+
+???
+
+---
+
+## Group work
+
+--
+
+Your task is decipher how I made [this graph](https://share.rfor.us/v1ub7qWe)
+
+![](https://p218.p3.n0.cdn.getcloudapp.com/items/v1ub7qWe/1633a0d2-bde3-405a-8a91-cebf912a1809.jpg?source=viewer&v=362ab84fc710116e10f7aa692d1ed927)
+
+--
+
+- Why is the y aesthetic property set to 1?
+
+--
+
+- What does shape = 124 do?
+
+--
+
+- What does geom_hline() do in this viz?
+
+--
+
+- Why do I have to specifically add x axis text using the line `theme(axis.text.x = element_text(color = "grey80")`)?
+
+--
+
+[Link to starter code](https://gist.githubusercontent.com/dgkeyes/8e6ae05003dac8fc6a928a9d1230f955/raw/d23ea91d8a7f2d5f1c10ce410a39ca057daba268/data-viz-exercise.R)
+
+
+---
+
+# Maps
+
+
+
+
+---
+
+# Next Week
+
+--
+
+Course assignment: Advanced RMarkdown
+
+--
+
+Project assignment: Switch your report to some other format (slides, dashboard, etc)
+

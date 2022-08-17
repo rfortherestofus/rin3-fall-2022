@@ -1,0 +1,176 @@
+R in 3 Months: TEMPLATE
+================
+
+### Week 1 (2022/03/17): Welcome
+
+| Videos to watch            | Project Assignment                                                                                                 | Live Session                                                                      |
+|:---------------------------|:-------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|
+| Complete “Getting Started” | \- Create an RStudio Project <br> - Create an RMarkdown document <br> - Use GitHub Gists to submit your assignment | \- Introductions and getting to know one another <br> - Getting started questions |
+
+#### In Week Tasks for Charlie:
+
+-   Add survey image
+
+-   Add signups map
+
+<hr>
+
+### Week 2 (2022/03/24): RMarkdown
+
+| Videos to watch                           | Project Assignment                                                                 | Live Session                                                                                                                                                                                           |
+|:------------------------------------------|:-----------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Complete “Fundamentals RMarkdown lessons” | \- Analyse your dataset in your .Rmd report <br> - Add your data file to your Gist | \- Common issues from last week’s assignment <br> - Choosing datasets <br> - Using {wakefield} to create fake datasets <br> **Group Work** <br> - Sharing projects <br> - Debugging a broken .Rmd file |
+
+#### In Week Tasks for Charlie:
+
+-   Follow up email: link to resources about labelled SPSS files
+    <https://app.searchie.io/watch/3w2VLdXVNM> and
+    <https://gist.github.com/charliejhadley/5e023be42089c9bf42d75b2f5b129b64>
+
+-   Follow up email: {wakefield} resources
+
+<hr>
+
+### Week 3 (2022/03/31): Data wrangling and analysis
+
+| Videos to watch                                | Project Assignment                             | Live Session                                                                                                                                               |
+|:-----------------------------------------------|:-----------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Complete “Fundamentals data wrangling lessons” | \- Create a data visualisation of your dataset | \- Four tips from last week’s assignment <br> - Code chunk behaviour <br> - Typos happen to everyone <br> - Workflow advice <br> **Group Work** <br> - ??? |
+
+#### Task: Decide group work
+
+What should the group work be for this week? Previously we’ve done
+
+-   Each person share your code (either share your Gist link or by
+    sharing your screen)
+
+-   Presenter gives a short (\~1 minute overview)
+
+-   Others look for one thing that doesn’t make sense
+
+-   Presenter responds to questions
+
+… but based on feedback we might want to do something else?
+
+#### In Week Tasks for Charlie:
+
+-   Follow up email: Change default code chunk output for all projects
+    <https://app.searchie.io/watch/Ml2RQKRWqa>
+
+<hr>
+
+### Week 4 (2022/04/07): Data viz
+
+| Videos to watch                          | Project Assignment                                                           | Live Session                                                                                                  |
+|:-----------------------------------------|:-----------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
+| Complete “Fundamentals data viz lessons” | \- **No new assignment** <br> - Book a 1:1 with Charlie to discuss your work | \- Four tips from last week’s assignment <br> - Work flow advice <br> - Dataviz examples from David & Charlie |
+
+### Week 5 (2022/04/14): Catch-up week!
+
+> There’s not a live session this week. Charlie’s office hours will go
+> ahead and you’re invited to book a 1:1 to discuss your project.
+
+### Week 6 (2022/04/21): Git & GitHub
+
+| Videos to watch         | Project Assignment                                                                                 | Live Session                                                                                         |
+|:------------------------|:---------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
+| Complete “Git + GitHub” | \- Figure out ways that your data is **not** tidy <br> - Use the {tidyr} package to tidy your data | \- Four tips from last week’s assignment <br> - Intro to Git & GitHub <br> **Group Work** <br> - ??? |
+
+#### TASK: Figure out group work
+
+Last time we did
+
+-   In a group, nominate one person to create a new project, add a local
+    Git repository, and then push it to GitHub.
+
+-   Have the nominated person share their screen and then walk through
+    the steps as a group
+
+-   Add any questions that come up to [this discussion
+    thread](https://rfortherestofus.com/groups/r-in-3-months-fall-2021/forum/discussion/general-git-github-questions/).
+
+<hr>
+
+### Week 7 (2022/04/28): Going Deeper data wrangling lessons, part 1
+
+| Videos to watch                                        | Project Assignment                                                   | Live Session                                                                                       |
+|:-------------------------------------------------------|:---------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| Complete “Going Deeper data wrangling lessons, part 1” | \- Create a function that can help you do your work more efficiently | \- Questions about Tidy Data <br> - separate() and separate\_rows() <br> **Group Work** <br> - ??? |
+
+#### TASK: Discuss widening up this topic
+
+We received feedback about not going into enough detail about the
+complexities of tidy data. We should discuss how to expand on this?
+Should we make this a longer session? Or provide an asynchronous
+session?
+
+<hr>
+
+### Week 8 (2022/05/05): Going Deeper data wrangling lessons, part 2
+
+| Videos to watch                                        | Project Assignment                                          | Live Session                                                          |
+|:-------------------------------------------------------|:------------------------------------------------------------|:----------------------------------------------------------------------|
+| Complete “Going Deeper data wrangling lessons, part 2” | \- **No new assignment** <br> - Official assignment amnesty | \- A Few of David’s Favorite Functions <br> **Group Work** <br> - ??? |
+
+#### TASK: Discuss group work
+
+Last time we did:
+
+-   Have one person share their screen.
+
+-   Copy the code from
+    <https://raw.githubusercontent.com/rfortherestofus/rin3-fall-2021/main/misc/function-exercise.R>.
+
+-   Working together, create a function that creates a scatterplot for
+    any year.
+
+This worked okay, but is there room for being more inventive? Could we
+ask folks to suggest functions they want us to build live in the
+session?
+
+### Week 9 (2022/05/12): Official Assignment Amnesty!
+
+> This is the official assignment amnesty! This week there’s no live
+> session and we’re encouraging you to jump back into the assignments at
+> a place that makes sense for you.
+
+<hr>
+
+### Week 10 (2022/05/19): Advanced data viz, part 1
+
+| Videos to watch                      | Project Assignment                                                                                                                                                                                                                                                                          | Live Session                                                                |
+|:-------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
+| Complete “Advanced data viz, part 1” | \- Improve your existing dataviz using these lessons <br> - Example improvements include; reordering or using color to highlight findings. <br> - You could also consider experimenting with other geoms. <br> - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Example functions from you <br> - Examples of High-Quality Data Viz <br> |
+
+<hr>
+
+### Week 11 (2022/05/26): Advanced data viz, part 2
+
+| Videos to watch                      | Project Assignment                                                                                                                                    | Live Session                                                           |
+|:-------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------|
+| Complete “Advanced data viz, part 2” | \- Switch your report to some other format (slides, dashboard, etc) <br> - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Four Tips / Example dataviz from you <br> **Group Work** <br> - ??? |
+
+#### TASK: Discuss group work
+
+Last time we did
+
+Copy code from
+<https://gist.githubusercontent.com/dgkeyes/8e6ae05003dac8fc6a928a9d1230f955/raw/d23ea91d8a7f2d5f1c10ce410a39ca057daba268/data-viz-exercise.R>
+
+Decipher the visualization.
+
+<hr>
+
+### Week 12 (2022/06/02): Advanced RMarkdown
+
+| Videos to watch               | Project Assignment                                                                                    | Live Session                   |
+|:------------------------------|:------------------------------------------------------------------------------------------------------|:-------------------------------|
+| Complete “Advanced RMarkdown” | \- Use [loom.com](loom.com) to record a video about something you can do thanks to R in 3 Months <br> | \- What else can RMarkdown do? |
+
+<hr>
+
+### Week 12 (2022/06/09): Wrap-up
+
+| Videos to watch  | Project Assignment                                                                                                                                                                 | Live Session                                                                       |
+|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
+| You’re finished! | \- Use [loom.com](loom.com) to record a video about something you can do thanks to R in 3 Months <br> - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Where to ask questions <br> - How to ask good questions <br> - Where to go next |
