@@ -337,117 +337,6 @@ class: inverse, center, middle
 
 ---
 
-## Daniel Dunleavy
-
-.pull-left[
-[{prettydoc}](https://prettydoc.statr.me/themes.html) is a package that provides **lightweight** themese for beautifying RMarkdown output.
-
-It can't be used alongside {bookdown}, but if you're building small reports and want a little bit of *style* then {prettydoc} is a good choice.
-]
-
-.pull-right[
-<img src='images/daniel-dunleavy_prettydoc.png'/>
-]
-
----
-
-## Chris Matthis
-
-.pull-left[
-```{r, eval=FALSE}
-ggplot(data = mc_composite,
-       aes(x = network, y = mc)) +
-  geom_boxplot() +
-  coord_flip() +
-  geom_jitter(alpha = .2)
-```
-
-]
-
-.pull-right[
-<img src='images/chris-m_week-4.png' width='100%'/>
-]
-
-
----
-
-## Hanan 
-
-.pull-left[
-This is a nice example of using {forcats} to design charts that are easy to read.
-
-- The y-axis categories have been ordered canonically ("much more than expected" to "much less than expected")
-
-- The fill aesthetic has been ordered canonically ("0-15mins" to "more than 90 minutes")
-]
-
-.pull-right[
-<center><img src='images/final-session-highlights_hanan.png' height='500px'/></center>
-]
-
----
-
-## Carolyn Ford
-
-.pull-left[
-Carolyn wanted to combine a table and {ggplot2} chart together into one figure.
-
-The workflow is as follows:
-
-- Create the treemap with `geom_tile()` and store the chart as an object
-
-- Creat the table with {gt}
-
-- Export the {gt} table with `gtsave()`
-
-- Import the image with `png::readPNG()`
-
-- Combine these elements together with {patchwork}
-
-]
-
-.pull-right[
-<img src='images/carolyn-week-11.png'/>
-]
-
----
-
-## Matt Traughber
-
-Matt needed to compute week numbers in the academic calendar. 
-
-Together we built up a function to do this.
-
-It's a little bit unwieldy **however** it was significantly easier to build thanks to {lubridate}
-
-(The script is in `misc/weeks-since-1st-monday-september.R`)
-
----
-
-## Sam Bird
-
-.pull-left[
-This chart is still a work in progress, but it shows how annotations can improve a chart.
-
-These were added with
-
-```{r, eval=FALSE}
-annotate(geom = "text", 
-         x = 1925, 
-         y = 1500, 
-         label= str_wrap(success_mc, 20), 
-         size = 6, 
-         color = "red")
-```
-
-]
-
-.pull-right[
-<img src='images/sam-bird.png'/>
-]
-
----
-
 class: inverse, center, middle
 
 # What happens next
@@ -456,15 +345,15 @@ class: inverse, center, middle
 
 ## Your feedback
 
-We would love to hear [your reflections on the course in the discussion forum](https://github.com/rfortherestofus/rin3-spring-2022/discussions/38).
+We would love to hear your reflections on the course in the discussion forum TODO: SET THIS UP
 
 --
 
-We also have a very short post-course survey - [rfor.us/rin3-spring22-feedback](https://rfor.us/rin3-spring22-feedback)
+We also have a very short post-course survey - [rfor.us/rin3-fall22-feedback](https://rfor.us/rin3-fall22-feedback)
 
 --
 
-We'd also like to ask you to record a ~5min video with [loom.com](https://loom.com) about something you've learned thanks to R in 3 Months and submit it on the [final project submission page](https://rfortherestofus.com/courses/r-in-3-months-spring-2022/lessons/r-in-3-months-spring-2022-final-project-assignment/).
+We'd also like to ask you to record a ~5min video with [loom.com](https://loom.com) about something you've learned thanks to R in 3 Months and submit it on the [final project submission page](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/lessons/r-in-3-months-fall-2022-final-project-assignment/).
 
 
 ---

@@ -223,7 +223,7 @@ We'd like you to record a 5 minute video showing something you can now do with y
 
 > [Loom.com](https://www.loom.com/pricing) has a free tier that will allow you to record and share 5 minute videos.
 
-There's a form to fill on [Week 13's assignment submission page](https://rfortherestofus.com/courses/r-in-3-months-spring-2022/lessons/r-in-3-months-spring-2022-final-project-assignment/).
+There's a form to fill on [Week 13's assignment submission page](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/lessons/r-in-3-months-sfall-2022-final-project-assignment/).
 
 
 ---
@@ -238,18 +238,18 @@ There are two ways we want to collect feedback:
 
 --
 
-1. [Open-ended discussion of what went well, what can be improved, etc](https://github.com/rfortherestofus/rin3-spring-2022/discussions/38). David will start it out. 
+1. Open-ended discussion of what went well, what can be improved, etc XXX[DECIDE WHERE TO DO THIS!!]
 
 --
 
-2. [Post-survey that shows your skill now](https://rfor.us/rin3-spring22-feedback) (we'll compare this to what you told us in the pre-survey) and allows you to provide anonymous feedback.
+2. [Post-survey that shows your skill now](https://rfor.us/rin3-fall22-feedback) (we'll compare this to what you told us in the pre-survey) and allows you to provide anonymous feedback.
 
 
 ---
 
 ## Post-Survey
 
-🔗 [rfor.us/rin3-spring22-feedback](https://rfor.us/rin3-spring22-feedback)
+🔗 [rfor.us/rin3-fall22-feedback](https://rfor.us/rin3-fall22-feedback)
 
 
 ---
@@ -270,7 +270,7 @@ There are two ways we want to collect feedback:
 
 --
 
-- Please complete post-survey [rfor.us/rin3-spring22-feedback](https://rfor.us/rin3-spring22-feedback)
+- Please complete post-survey [rfor.us/rin3-fall22-feedback](https://rfor.us/rin3-fall22-feedback)
 
 --
 

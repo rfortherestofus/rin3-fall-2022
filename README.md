@@ -1,43 +1,40 @@
-R in 3 Months: Spring 2022
+R in 3 Months: Fall 2022
 ================
 
 # Welcome to R in 3 Months!
 
-Thanks for joining us for the 3rd edition of R in 3 Months.
+Thanks for joining us for the 4th edition of R in 3 Months.
 
 We’re really excited to have you on the course and to see what you end
 up building with R.
 
 Below is a work-in-progress schedule for our time together. Lessons will
-be added to the [R in 3 Months (Spring 2022) course on the R for the
-Rest of Us
-website](https://rfortherestofus.com/courses/r-in-3-months-spring-2022/).
+be added to the [R in 3 Months (Fall 2022) course on the R for the Rest
+of Us
+website](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/).
 
 Here are some links you’ll use throughout our time together:
 
--   A list of all participants can be
-    found [here](https://docs.google.com/spreadsheets/d/1I3jbDqx2CS2n3zOhgsF7m1c9iqIiJtYeNthQD-prQjQ/edit?usp=sharing "Opens in a new window").
+-   A list of all participants can be found
+    [here](https://docs.google.com/spreadsheets/d/1lD5SgbdG24HfV4Glo80u7j7I3o-XpRJESYcQ50eXbEc "Opens in a new window").
 
--   We’re using a [GitHub repository for R in 3 Months Spring 2022
-    Cohort](https://github.com/rfortherestofus/rin3-spring-2022 "Opens in a new window")
-    (you’re here right now!). You’ll use this repo to find all code we
-    post and [participate in
-    discussions](https://github.com/rfortherestofus/rin3-spring-2022/discussions "Opens in a new window") between
-    live sessions. 
+-   We’re using a [GitHub repository for R in 3 Months Fall 2022
+    Cohort](https://github.com/rfortherestofus/rin3-fall-2022 "Opens in a new window")
+    (you’re here right now!).
 
 -   Live sessions will happen Thursdays at 10am Pacific time. [You can
     join the Zoom call with this
     link](https://us02web.zoom.us/j/81827757156?pwd=SWZOMmVaUTYwUGFNTGFQSnAyQ05xUT09 "Opens in a new window").
 
--   Charlie will hold office hours Wednesdays at 12pm Pacific time. [You
+-   Charlie will hold office hours Tuesdays at 12pm Pacific time. [You
     can join with this
-    link](https://us02web.zoom.us/j/88442606548?pwd=bE5yNW1HczRiSzIvNk12ZkxKUHB5UT09 "Opens in a new window").
+    link](https://us02web.zoom.us/j/83230184104?pwd=RGkweWNMNy9zK3NvUVVPeGNQQWp5dz09 "Opens in a new window").
 
 <hr>
 
 # Weekly Agenda
 
-### Week 1 (2022/03/17): Welcome
+### Week 01 (2022/09/22): Welcome
 
 | Videos to watch            | Project Assignment                                                                                                 | Live Session                                                                      |
 |:---------------------------|:-------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|
@@ -45,7 +42,7 @@ Here are some links you’ll use throughout our time together:
 
 <hr>
 
-### Week 2 (2022/03/24): RMarkdown
+### Week 02 (2022/09/29): RMarkdown
 
 | Videos to watch                           | Project Assignment                                                                 | Live Session                                                                                                                                                                                           |
 |:------------------------------------------|:-----------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,7 +50,7 @@ Here are some links you’ll use throughout our time together:
 
 <hr>
 
-### Week 3 (2022/03/31): Data wrangling and analysis
+### Week 03 (2022/10/06): Data wrangling and analysis
 
 | Videos to watch                                | Project Assignment                             | Live Session                                                                                                                                               |
 |:-----------------------------------------------|:-----------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -61,18 +58,18 @@ Here are some links you’ll use throughout our time together:
 
 <hr>
 
-### Week 4 (2022/04/07): Data viz
+### Week 04 (2022/10/13): Data viz
 
 | Videos to watch                          | Project Assignment                                                           | Live Session                                                                                                  |
 |:-----------------------------------------|:-----------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
 | Complete “Fundamentals data viz lessons” | \- **No new assignment** <br> - Book a 1:1 with Charlie to discuss your work | \- Four tips from last week’s assignment <br> - Work flow advice <br> - Dataviz examples from David & Charlie |
 
-### Week 5 (2022/04/14): Catch-up week!
+### Week 05 (2022/10/20): Catch-up week!
 
 > There’s not a live session this week. Charlie’s office hours will go
 > ahead and you’re invited to book a 1:1 to discuss your project.
 
-### Week 6 (2022/04/21): Git & GitHub
+### Week 06 (2022/10/27): Git & GitHub
 
 | Videos to watch         | Project Assignment                                                                                 | Live Session                                                                                         |
 |:------------------------|:---------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
@@ -80,7 +77,7 @@ Here are some links you’ll use throughout our time together:
 
 <hr>
 
-### Week 7 (2022/04/28): Going Deeper data wrangling lessons, part 1
+### Week 07 (2022/11/03): Going Deeper data wrangling lessons, part 1
 
 | Videos to watch                                        | Project Assignment                                                   | Live Session                                                                                      |
 |:-------------------------------------------------------|:---------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
@@ -88,21 +85,15 @@ Here are some links you’ll use throughout our time together:
 
 <hr>
 
-### Week 8 (2022/05/05): Going Deeper data wrangling lessons, part 2
+### Week 08 (2022/11/10): Going Deeper data wrangling lessons, part 2
 
 | Videos to watch                                        | Project Assignment                                          | Live Session                                                          |
 |:-------------------------------------------------------|:------------------------------------------------------------|:----------------------------------------------------------------------|
 | Complete “Going Deeper data wrangling lessons, part 2” | \- **No new assignment** <br> - Official assignment amnesty | \- A Few of David’s Favorite Functions <br> **Group Work** <br> - ??? |
 
-### Week 9 (2022/05/12): Official Assignment Amnesty!
-
-> This is the official assignment amnesty! This week there’s no live
-> session and we’re encouraging you to jump back into the assignments at
-> a place that makes sense for you.
-
 <hr>
 
-### Week 10 (2022/05/19): Advanced data viz, part 1
+### Week 09 (2022/11/17): Advanced data viz, part 1
 
 | Videos to watch                      | Project Assignment                                                                                                                                                                                                                                                                          | Live Session                                                                |
 |:-------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
@@ -110,7 +101,15 @@ Here are some links you’ll use throughout our time together:
 
 <hr>
 
-### Week 11 (2022/05/26): Advanced data viz, part 2
+### Week 10 (2022/12/01): Official Assignment Amnesty!
+
+> This is the official assignment amnesty! This week there’s no live
+> session and we’re encouraging you to jump back into the assignments at
+> a place that makes sense for you.
+
+<hr>
+
+### Week 11 (2022/12/08): Advanced data viz, part 2
 
 | Videos to watch                      | Project Assignment                                                                                                                                    | Live Session                                                           |
 |:-------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------|
@@ -118,7 +117,7 @@ Here are some links you’ll use throughout our time together:
 
 <hr>
 
-### Week 12 (2022/06/02): Advanced RMarkdown
+### Week 12 (2022/12/15): Advanced RMarkdown
 
 | Videos to watch               | Project Assignment                                                                                    | Live Session                   |
 |:------------------------------|:------------------------------------------------------------------------------------------------------|:-------------------------------|
@@ -126,7 +125,7 @@ Here are some links you’ll use throughout our time together:
 
 <hr>
 
-### Week 13 (2022/06/09): Wrap-up
+### Week 13 (2022/12/22): Wrap-up
 
 | Videos to watch  | Project Assignment                                                                                                                                                                 | Live Session                                                                       |
 |:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|

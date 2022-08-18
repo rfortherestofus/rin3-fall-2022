@@ -1,5 +1,5 @@
 ---
-title: "R in 3 Months: Week 10 (Advanced Data Viz Part 1)"
+title: "R in 3 Months: Week 09 (Advanced Data Viz Part 1)"
 output:
   xaringan::moon_reader:
     css: ["style.css", "default"]
@@ -67,13 +67,13 @@ class: inverse, center, middle
 
 ## Remaining Schedule
 
-- Week 10 (2022/05/19): Advanced data viz, part 1
+- Week 10 (2022/11/17): Official Assignment Amnesty!
 
-- Week 11 (2022/05/26): Advanced data viz, part 2
+- Week 11 (2022/12/01): Advanced data viz, part 2
 
-- Week 12 (2022/06/02): Advanced RMarkdown
+- Week 12 (2022/12/08): Advanced RMarkdown
 
-- Week 13 (2022/06/09): Wrap-up
+- Week 13 (2022/12/15): Wrap-up
 
 ---
 

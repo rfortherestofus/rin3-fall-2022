@@ -81,7 +81,7 @@ Book another 1:1 with Charlie - [rfor.us/charliechat](https://rfor.us/charliecha
 
   - Office hours
   
-  - Live session (June 2)
+  - Live session (December 6)
   
 --
   
@@ -89,7 +89,7 @@ Book another 1:1 with Charlie - [rfor.us/charliechat](https://rfor.us/charliecha
 
   - Office hours
   
-  - Last Live session (June 9)
+  - Last Live session (December 13)
 
 --
 
@@ -125,25 +125,7 @@ make_sleep_chart(y_axis = sleep_rem)
 # Error in FUN(X[[i]], ...) : object 'sleep_rem' not found
 ```
 
----
 
-## Tidy evaluation thread
-
-I started a [discussion thread about tidy evaluation](https://github.com/rfortherestofus/rin3-spring-2022/discussions/35) and have just added new examples using **curly curly**
-
-```{r}
-make_sleep_chart <- function(y_axis){
-  
-  msleep %>% 
-  ggplot(aes(x = sleep_total,
-             y = {{ y_axis }})) +
-  geom_point()
-  
-}
-```
-
-
----
 
 class: inverse, center, middle
 

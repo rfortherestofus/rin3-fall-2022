@@ -53,26 +53,6 @@ class: inverse, center, middle
 
 ---
 
-# Polly
-
-We're going to use a new tool during today's session.
-
-It will allow us to ask you questions and get live responses.
-
-We'll post links in the Zoom chat.
-
-<!-- --- -->
-
-<!-- ## Etherpad -->
-
-<!-- We're going to use a new tool during today's live session. -->
-
-<!-- It will allow us to ask you questions and share code more easily. -->
-
-<!-- This week's etherpad is available here: [pad.riseup.net/p/rin3-2022-spring_week-7](https://pad.riseup.net/p/rin3-2022-spring_week-7) -->
-
----
-
 class: inverse, center, middle
 
 # Tidy Data

@@ -71,38 +71,7 @@ Next week is another catch-up week and assignment amnesty
 
 class: inverse, center, middle
 
-# One tip
-
----
-
-## pivot_longer() complains it can't combine
-
-Often you'll see this error:
-
-```{r}
-# Error in `pivot_longer_spec()`:
-#
-# ! Can't combine `ACO1` <double> and `ACO13` <character>.
-# Run `rlang::last_error()` to see where the error occurred.
-```
-
-Let's walk through an example from Mychal
-
----
-
-## pivot_longer() complains it can't combine
-
-We want to combine together all of the columns from `ACO1:ACO28`
-
-```{r message=FALSE, warning=FALSE, echo=FALSE}
-data_mychal <- read_csv(here::here("data", "Performance_Year_Financial_and_Quality_Results_2020.csv")) %>% 
-  select(contains(c("ACO"))) %>% 
-  mutate(across(ACO1:ACO28,
-                ~  ifelse(.x %in% c("^", "~", "-"), 0, .x))) 
-data_mychal
-```
-
-
+# Four tips
 
 ---
 class: inverse, center, middle
@@ -204,8 +173,6 @@ tweet_embed("https://twitter.com/charliejhadley/status/1519696924328214528",
             align = "center")
 ```
 
-
-
 ---
 
 # Let's tidy the survey data!
@@ -222,8 +189,6 @@ David and I till take turns to read in and tidy the survey data from:
 
 
 # User-defined functions
-
-
 
 ---
 
