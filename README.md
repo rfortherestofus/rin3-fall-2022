@@ -16,19 +16,16 @@ website](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/).
 Here are some links you’ll use throughout our time together:
 
 -   A list of all participants can be found
-    [here](https://docs.google.com/spreadsheets/d/1lD5SgbdG24HfV4Glo80u7j7I3o-XpRJESYcQ50eXbEc "Opens in a new window").
-
--   We’re using a [GitHub repository for R in 3 Months Fall 2022
-    Cohort](https://github.com/rfortherestofus/rin3-fall-2022 "Opens in a new window")
-    (you’re here right now!).
+    \[here\]<https://docs.google.com/spreadsheets/d/1lD5SgbdG24HfV4Glo80u7j7I3o-XpRJESYcQ50eXbEc/edit?usp=sharing>
+    “Opens in a new window”).
 
 -   Live sessions will happen Thursdays at 10am Pacific time. [You can
     join the Zoom call with this
-    link](https://us02web.zoom.us/j/81827757156?pwd=SWZOMmVaUTYwUGFNTGFQSnAyQ05xUT09 "Opens in a new window").
+    link](https://us02web.zoom.us/j/82684048094 "Opens in a new window").
 
 -   Charlie will hold office hours Tuesdays at 12pm Pacific time. [You
     can join with this
-    link](https://us02web.zoom.us/j/83230184104?pwd=RGkweWNMNy9zK3NvUVVPeGNQQWp5dz09 "Opens in a new window").
+    link](https://us02web.zoom.us/j/85743952145?pwd=eXBRNXBCRDNhUU9STXVYWW5NT29SQT09 "Opens in a new window").
 
 <hr>
 
@@ -44,9 +41,9 @@ Here are some links you’ll use throughout our time together:
 
 ### Week 02 (2022/09/29): RMarkdown
 
-| Videos to watch                           | Project Assignment                                                                 | Live Session                                                                                                                                                                                           |
-|:------------------------------------------|:-----------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Complete “Fundamentals RMarkdown lessons” | \- Analyse your dataset in your .Rmd report <br> - Add your data file to your Gist | \- Common issues from last week’s assignment <br> - Choosing datasets <br> - Using {wakefield} to create fake datasets <br> **Group Work** <br> - Sharing projects <br> - Debugging a broken .Rmd file |
+| Videos to watch                           | Project Assignment                                                                 | Live Session                                                                                                                 |
+|:------------------------------------------|:-----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| Complete “Fundamentals RMarkdown lessons” | \- Analyse your dataset in your .Rmd report <br> - Add your data file to your Gist | \- Common issues from last week’s assignment <br> **Group Work** <br> - Sharing projects <br> - Debugging a broken .Rmd file |
 
 <hr>
 
