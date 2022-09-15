@@ -45,7 +45,7 @@ Here are some links you'll use throughout our time together:
 
 | Videos to watch                           | Project Assignment                                                                 | Live Session                                                                                                                                                                                           |
 |:------------------------------------------|:-----------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Complete "Fundamentals RMarkdown lessons" | \- Analyse your dataset in your .Rmd report <br> - Add your data file to your Gist | \- Common issues from last week's assignment <br> - Choosing datasets <br> - Using {wakefield} to create fake datasets <br> **Group Work** <br> - Sharing projects <br> - Debugging a broken .Rmd file |
+| Complete "Fundamentals RMarkdown lessons" | \- Analyse your dataset in your .Rmd report <br> - Add your data file to your Gist | \- Common issues from last week's assignment <br> **Group Work** <br> - Sharing projects <br> - Debugging a broken .Rmd file |
 
 <hr>
 
@@ -71,7 +71,7 @@ Here are some links you'll use throughout our time together:
 
 | Videos to watch         | Project Assignment                                                                                 | Live Session                                                                                         |
 |:------------------------|:---------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| Complete "Git + GitHub" | \- Figure out ways that your data is **not** tidy <br> - Use the {tidyr} package to tidy your data | \- Four tips from last week's assignment <br> - Intro to Git & GitHub <br> **Group Work** <br> - ??? |
+| Complete "Git + GitHub" | \- Setup a GitHub repository and add us as collaborators | \- Four tips from last week's assignment <br> - Intro to Git & GitHub <br> **Group Work** <br> - ??? |
 
 <hr>
 
@@ -79,7 +79,7 @@ Here are some links you'll use throughout our time together:
 
 | Videos to watch                                        | Project Assignment                                                   | Live Session                                                                                      |
 |:-------------------------------------------------------|:---------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
-| Complete "Going Deeper data wrangling lessons, part 1" | \- Create a function that can help you do your work more efficiently | \- Questions about Tidy Data <br> - separate() and separate_rows() <br> **Group Work** <br> - ??? |
+| Complete "Going Deeper data wrangling lessons, part 1" | \- **No new assignemnts**  | \- Questions about Tidy Data <br> - separate() and separate_rows() <br> **Group Work** <br> - ??? |
 
 <hr>
 
@@ -87,7 +87,7 @@ Here are some links you'll use throughout our time together:
 
 | Videos to watch                                        | Project Assignment                                          | Live Session                                                          |
 |:-------------------------------------------------------|:------------------------------------------------------------|:----------------------------------------------------------------------|
-| Complete "Going Deeper data wrangling lessons, part 2" | \- **No new assignment** <br> - Official assignment amnesty | \- A Few of David's Favorite Functions <br> **Group Work** <br> - ??? |
+| Complete "Going Deeper data wrangling lessons, part 2" | \- Use the pivot_*() functions to tidy your data for plotting with `{ggplot2}` <br> - Official assignment amnesty | \- A Few of David's Favorite Functions <br> **Group Work** <br> - ??? |
 
 <hr>
 
@@ -95,7 +95,7 @@ Here are some links you'll use throughout our time together:
 
 | Videos to watch                      | Project Assignment                                                                                                                                                                                                                                                                          | Live Session                                                                |
 |:-------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
-| Complete "Advanced data viz, part 1" | \- Improve your existing dataviz using these lessons <br> - Example improvements include; reordering or using color to highlight findings. <br> - You could also consider experimenting with other geoms. <br> - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Example functions from you <br> - Examples of High-Quality Data Viz <br> |
+| Complete "Advanced data viz, part 1" | - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Example functions from you <br> - Examples of High-Quality Data Viz <br> |
 
 <hr>
 
@@ -109,7 +109,7 @@ Here are some links you'll use throughout our time together:
 
 | Videos to watch                      | Project Assignment                                                                                                                                    | Live Session                                                           |
 |:-------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------|
-| Complete "Advanced data viz, part 2" | \- Switch your report to some other format (slides, dashboard, etc) <br> - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Four Tips / Example dataviz from you <br> **Group Work** <br> - ??? |
+| Complete "Advanced data viz, part 2" | \- Improve your existing dataviz using these lessons <br> - Example improvements include; reordering or using color to highlight findings. <br> - You could also consider experimenting with other geoms. <br> - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Four Tips / Example dataviz from you <br> **Group Work** <br> - ??? |
 
 <hr>
 

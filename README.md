@@ -71,33 +71,33 @@ Here are some links you’ll use throughout our time together:
 
 ### Week 06 (2022/10/27): Git & GitHub
 
-| Videos to watch         | Project Assignment                                                                                 | Live Session                                                                                         |
-|:------------------------|:---------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| Complete “Git + GitHub” | \- Figure out ways that your data is **not** tidy <br> - Use the {tidyr} package to tidy your data | \- Four tips from last week’s assignment <br> - Intro to Git & GitHub <br> **Group Work** <br> - ??? |
+| Videos to watch         | Project Assignment                                       | Live Session                                                                                         |
+|:------------------------|:---------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
+| Complete “Git + GitHub” | \- Setup a GitHub repository and add us as collaborators | \- Four tips from last week’s assignment <br> - Intro to Git & GitHub <br> **Group Work** <br> - ??? |
 
 <hr>
 
 ### Week 07 (2022/11/03): Going Deeper data wrangling lessons, part 1
 
-| Videos to watch                                        | Project Assignment                                                   | Live Session                                                                                      |
-|:-------------------------------------------------------|:---------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
-| Complete “Going Deeper data wrangling lessons, part 1” | \- Create a function that can help you do your work more efficiently | \- Questions about Tidy Data <br> - separate() and separate_rows() <br> **Group Work** <br> - ??? |
+| Videos to watch                                        | Project Assignment        | Live Session                                                                                      |
+|:-------------------------------------------------------|:--------------------------|:--------------------------------------------------------------------------------------------------|
+| Complete “Going Deeper data wrangling lessons, part 1” | \- **No new assignemnts** | \- Questions about Tidy Data <br> - separate() and separate_rows() <br> **Group Work** <br> - ??? |
 
 <hr>
 
 ### Week 08 (2022/11/10): Going Deeper data wrangling lessons, part 2
 
-| Videos to watch                                        | Project Assignment                                          | Live Session                                                          |
-|:-------------------------------------------------------|:------------------------------------------------------------|:----------------------------------------------------------------------|
-| Complete “Going Deeper data wrangling lessons, part 2” | \- **No new assignment** <br> - Official assignment amnesty | \- A Few of David’s Favorite Functions <br> **Group Work** <br> - ??? |
+| Videos to watch                                        | Project Assignment                                                                                                  | Live Session                                                          |
+|:-------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------|
+| Complete “Going Deeper data wrangling lessons, part 2” | \- Use the pivot\_\*() functions to tidy your data for plotting with `{ggplot2}` <br> - Official assignment amnesty | \- A Few of David’s Favorite Functions <br> **Group Work** <br> - ??? |
 
 <hr>
 
 ### Week 09 (2022/11/17): Advanced data viz, part 1
 
-| Videos to watch                      | Project Assignment                                                                                                                                                                                                                                                                          | Live Session                                                                |
-|:-------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
-| Complete “Advanced data viz, part 1” | \- Improve your existing dataviz using these lessons <br> - Example improvements include; reordering or using color to highlight findings. <br> - You could also consider experimenting with other geoms. <br> - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Example functions from you <br> - Examples of High-Quality Data Viz <br> |
+| Videos to watch                      | Project Assignment                                                            | Live Session                                                                |
+|:-------------------------------------|:------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
+| Complete “Advanced data viz, part 1” | \- Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Example functions from you <br> - Examples of High-Quality Data Viz <br> |
 
 <hr>
 
@@ -111,9 +111,9 @@ Here are some links you’ll use throughout our time together:
 
 ### Week 11 (2022/12/08): Advanced data viz, part 2
 
-| Videos to watch                      | Project Assignment                                                                                                                                    | Live Session                                                           |
-|:-------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------|
-| Complete “Advanced data viz, part 2” | \- Switch your report to some other format (slides, dashboard, etc) <br> - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Four Tips / Example dataviz from you <br> **Group Work** <br> - ??? |
+| Videos to watch                      | Project Assignment                                                                                                                                                                                                                                                                          | Live Session                                                           |
+|:-------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------|
+| Complete “Advanced data viz, part 2” | \- Improve your existing dataviz using these lessons <br> - Example improvements include; reordering or using color to highlight findings. <br> - You could also consider experimenting with other geoms. <br> - Book a 1:1 with Charlie [rfor.us/charliechat](https://rfor.us/charliechat) | \- Four Tips / Example dataviz from you <br> **Group Work** <br> - ??? |
 
 <hr>
 
