@@ -60,7 +60,7 @@ world_sf <- countries110 %>%
 
 # Survey
 
-If you haven't yet completed the pre-survey, [please do so now](https://forms.gle/JpSFepUULeMySAzk7).
+If you haven't yet completed the pre-survey, [please do so now](https://docs.google.com/forms/d/e/1FAIpQLSdRWALRAzMBCYKMVTCeNx4B8uh9LF8LU2xZZfY4IyDqvOZ8aw/viewform?usp=sf_link).
 
 <center><img src='images/rin3-survey-screenshot.png' width='350px'/></center>
 
@@ -288,11 +288,11 @@ https://rfortherestofus.com/code-of-conduct/
 
 --
 
-1. Office hours Wednesdays at 12pm Pacific
+1. Drop-in Sessions / Office hours Tuesdays at 12pm Pacific
 
 --
 
-1. [Course materials](https://rfortherestofus.com/courses/r-in-3-months-spring-2022/)
+1. [Course materials](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/)
 
 --
 
@@ -304,11 +304,7 @@ https://rfortherestofus.com/code-of-conduct/
 
 --
 
-1. [GitHub repository](https://github.com/rfortherestofus/rin3-spring-2022) for discussion and code
-
---
-
-1. [Google Sheet with contact information etc](https://docs.google.com/spreadsheets/d/1I3jbDqx2CS2n3zOhgsF7m1c9iqIiJtYeNthQD-prQjQ/edit#gid=0)
+1. [Google Sheet with contact information etc](https://docs.google.com/spreadsheets/d/1lD5SgbdG24HfV4Glo80u7j7I3o-XpRJESYcQ50eXbEc/edit?usp=sharing)
 
 
 
@@ -319,19 +315,13 @@ https://rfortherestofus.com/code-of-conduct/
 
 ## Google Sheet with Contact Info etc
 
-[![](images/rin3-google-sheet.png)](https://docs.google.com/spreadsheets/d/1I3jbDqx2CS2n3zOhgsF7m1c9iqIiJtYeNthQD-prQjQ/edit#gid=0)
-
----
-
-## Github Discussion Group
-
-[![](images/github-discussion-group.png)](https://github.com/rfortherestofus/rin3-spring-2022/discussions)
+[![](images/rin3-google-sheet.png)](https://docs.google.com/spreadsheets/d/1lD5SgbdG24HfV4Glo80u7j7I3o-XpRJESYcQ50eXbEc/edit?usp=sharing)
 
 ---
 
 ## Course Materials
 
-[![](images/rin3-course-page.png)](https://rfortherestofus.com/courses/r-in-3-months-spring-2022/)
+[![](images/rin3-course-page.png)](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/)
 
 
 
@@ -410,9 +400,9 @@ Sessions will be recorded and made available within 24 hours
 
 ---
 
-## Office Hours
+## Drop-in Sessions / Office Hours
 
-[Wednesdays at 12:00PM Pacific time](https://us02web.zoom.us/j/88442606548?pwd=bE5yNW1HczRiSzIvNk12ZkxKUHB5UT09)
+[Tuesdays at 12:00PM Pacific time](https://us02web.zoom.us/j/85743952145?pwd=eXBRNXBCRDNhUU9STXVYWW5NT29SQT09)
 
 --
 
@@ -458,7 +448,7 @@ class: inverse, center, middle
 
 ---
 
-## Wednesday
+## Tuesday
 
 --
 
