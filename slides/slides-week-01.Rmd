@@ -107,13 +107,11 @@ class: center, middle
 
 ### Where are you from?
 
-**TODO: REDO THE SURVEY**
-
-```{r, echo=FALSE, eval=FALSE}
-participants_2022_spring <- read_sheet("https://docs.google.com/spreadsheets/d/1I3jbDqx2CS2n3zOhgsF7m1c9iqIiJtYeNthQD-prQjQ/edit#gid=0") %>% 
+```{r, echo=FALSE, eval=TRUE}
+participants_2022_fall <- read_sheet("https://docs.google.com/spreadsheets/d/1lD5SgbdG24HfV4Glo80u7j7I3o-XpRJESYcQ50eXbEc/edit#gid=0") %>% 
   clean_names()
 
-geocoded_participants <- participants_2022_spring %>% 
+geocoded_participants <- participants_2022_fall %>% 
   select(city, country) %>% 
   geocode(city = city,
           country = country,
@@ -139,28 +137,28 @@ ggsave(here::here("slides", "images", "map-students.png"),
        height = 5)
 ```
 
+<img src='images/map-students.png'/>
+
 ---
 
 ### How often have folks used R so far?
 
-**TODO: REDO THE SURVEY**
-
-```{r, eval=FALSE, echo=FALSE}
+```{r, eval=TRUE, echo=FALSE}
 pre_survey <- read_sheet("https://docs.google.com/spreadsheets/d/19Ny92IGg0ZzIqiLs7QywaGF-Y85HQZn1iIIXN4I_tpg/edit?resourcekey#gid=1201619159") %>% 
   clean_names()
 ```
 
 
-```{r, eval=FALSE, echo=FALSE, fig.width=12, fig.height=4, dpi=300}
-pre_survey_spring_2022 <- pre_survey %>% 
+```{r, eval=TRUE, echo=FALSE, fig.width=12, fig.height=4, dpi=300}
+pre_survey_fall_2020 <- pre_survey %>% 
   mutate(year = year(timestamp)) %>% 
-  filter(timestamp > ymd("2022-01-01"),
-         timestamp < ymd("2022-07-01"),
+  filter(timestamp > ymd("2022-08-01"),
+         timestamp < ymd("2022-12-31"),
          ! `what_is_your_name` %in% c("David Keyes", "David")) %>% 
   mutate(how_much_have_you_used_r = factor(how_much_have_you_used_r,
                                            levels = c("Never", "Very Infrequently", "Occasionally", "Frequently")))
 
-pre_survey_spring_2022 %>% 
+pre_survey_fall_2020 %>% 
   select(how_much_have_you_used_r) %>% 
   count(how_much_have_you_used_r) %>% 
   ggplot(aes(x = n,
@@ -179,10 +177,8 @@ pre_survey_spring_2022 %>%
 
 ### Expertise with using R for dataviz
 
-**TODO: REDO THE SURVEY**
-
-```{r, eval=FALSE, echo=FALSE, fig.width=12, fig.height=4, dpi=300}
-data_viz_expertise <- pre_survey_spring_2022 %>% 
+```{r, eval=TRUE, echo=FALSE, fig.width=12, fig.height=4, dpi=300}
+data_viz_expertise <- pre_survey_fall_2020 %>% 
   select(how_would_you_rate_your_level_of_expertise_working_with_r_for_data_visualization) %>% 
   count(how_would_you_rate_your_level_of_expertise_working_with_r_for_data_visualization) %>%
   rename(data_viz_expertise = how_would_you_rate_your_level_of_expertise_working_with_r_for_data_visualization) %>% 
@@ -209,10 +205,8 @@ data_viz_expertise %>%
 
 ### How do you feel about the process of learning R?
 
-**TODO: REDO THE SURVEY**
-
-```{r, eval=FALSE, echo=FALSE, fig.width=12, fig.height=4, dpi=300}
-how_terrified <- pre_survey_spring_2022 %>% 
+```{r, eval=TRUE, echo=FALSE, fig.width=12, fig.height=4, dpi=300}
+how_terrified <- pre_survey_fall_2020 %>% 
   select(on_a_scale_from_terrified_to_excited_how_do_you_feel_about_the_process_of_learning_r) %>% 
   count(on_a_scale_from_terrified_to_excited_how_do_you_feel_about_the_process_of_learning_r) %>%
   rename(how_terrified = on_a_scale_from_terrified_to_excited_how_do_you_feel_about_the_process_of_learning_r) %>% 
@@ -375,7 +369,7 @@ Explain motivation
 
 ## Live Sessions
 
-[Thursdays at 10:00am Pacific time](https://us02web.zoom.us/j/81827757156?pwd=SWZOMmVaUTYwUGFNTGFQSnAyQ05xUT09)
+[Thursdays at 10:00am Pacific time](https://us02web.zoom.us/j/82684048094)
 
 --
 
