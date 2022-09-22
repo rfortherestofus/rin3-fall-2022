@@ -21,7 +21,7 @@ Here are some links you’ll use throughout our time together:
 
 -   Live sessions will happen Thursdays at 10am Pacific time. [You can
     join the Zoom call with this
-    link](https://us02web.zoom.us/j/82684048094 "Opens in a new window").
+    link](https://us02web.zoom.us/j/86453661896 "Opens in a new window").
 
 -   Charlie will hold office hours Tuesdays at 12pm Pacific time. [You
     can join with this
@@ -33,33 +33,33 @@ Here are some links you’ll use throughout our time together:
 
 ### Week 01 (2022/09/22): Welcome
 
-| Videos to watch            | Project Assignment                                                                                                 | Live Session                                                                      |
-|:---------------------------|:-------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|
-| Complete “Getting Started” | \- Create an RStudio Project <br> - Create an RMarkdown document <br> - Use GitHub Gists to submit your assignment | \- Introductions and getting to know one another <br> - Getting started questions |
+| Videos to watch            | Project Assignment | Live Session                                                                      |
+|:---------------------------|:-------------------|:----------------------------------------------------------------------------------|
+| Complete “Getting Started” | \- No assignment   | \- Introductions and getting to know one another <br> - Getting started questions |
 
 <hr>
 
 ### Week 02 (2022/09/29): RMarkdown
 
-| Videos to watch                           | Project Assignment                                                                 | Live Session                                                                                                                 |
-|:------------------------------------------|:-----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
-| Complete “Fundamentals RMarkdown lessons” | \- Analyse your dataset in your .Rmd report <br> - Add your data file to your Gist | \- Common issues from last week’s assignment <br> **Group Work** <br> - Sharing projects <br> - Debugging a broken .Rmd file |
+| Videos to watch                           | Project Assignment                                                                                                 | Live Session                                                                                                                 |
+|:------------------------------------------|:-------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| Complete “Fundamentals RMarkdown lessons” | \- Create an RStudio Project <br> - Create an RMarkdown document <br> - Use GitHub Gists to submit your assignment | \- Common issues from last week’s assignment <br> **Group Work** <br> - Sharing projects <br> - Debugging a broken .Rmd file |
 
 <hr>
 
 ### Week 03 (2022/10/06): Data wrangling and analysis
 
-| Videos to watch                                | Project Assignment                             | Live Session                                                                                                                                               |
-|:-----------------------------------------------|:-----------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Complete “Fundamentals data wrangling lessons” | \- Create a data visualisation of your dataset | \- Four tips from last week’s assignment <br> - Code chunk behaviour <br> - Typos happen to everyone <br> - Workflow advice <br> **Group Work** <br> - ??? |
+| Videos to watch                                | Project Assignment                                                                 | Live Session                                                                                                                                               |
+|:-----------------------------------------------|:-----------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Complete “Fundamentals data wrangling lessons” | \- Analyse your dataset in your .Rmd report <br> - Add your data file to your Gist | \- Four tips from last week’s assignment <br> - Code chunk behaviour <br> - Typos happen to everyone <br> - Workflow advice <br> **Group Work** <br> - ??? |
 
 <hr>
 
 ### Week 04 (2022/10/13): Data viz
 
-| Videos to watch                          | Project Assignment                                                           | Live Session                                                                                                  |
-|:-----------------------------------------|:-----------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
-| Complete “Fundamentals data viz lessons” | \- **No new assignment** <br> - Book a 1:1 with Charlie to discuss your work | \- Four tips from last week’s assignment <br> - Work flow advice <br> - Dataviz examples from David & Charlie |
+| Videos to watch                          | Project Assignment                                                                                 | Live Session                                                                                                  |
+|:-----------------------------------------|:---------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
+| Complete “Fundamentals data viz lessons” | \- Create a data visualisation of your dataset <br> - Book a 1:1 with Charlie to discuss your work | \- Four tips from last week’s assignment <br> - Work flow advice <br> - Dataviz examples from David & Charlie |
 
 ### Week 05 (2022/10/20): Catch-up week!
 
