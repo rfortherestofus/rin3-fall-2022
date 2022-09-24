@@ -178,7 +178,7 @@ output:
 
 <br>
 
-There's a [discussion thread explaining the differences between CSS and reference documents](https://github.com/rfortherestofus/rin3-spring-2022/discussions/11) for styling RMarkdown reports.
+There's a [new lesson about CSS and reference documents](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/lessons/styling-rmarkdown-docs/) for styling RMarkdown reports.
 
 ---
 
