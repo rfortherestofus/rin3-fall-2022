@@ -209,8 +209,6 @@ class: inverse, center, middle
 ## Where do `cars` and `pressure` come from?
 
 > Where do the data for cars and for pressure come from? I don’t see them in the getting-started-master folder, nor in the faketucky dataset. summary(cars) is clearly calling that data, but I don’t see how.
->
-> Josh
 
 --
 
@@ -277,6 +275,15 @@ Your RMarkdown document can then read in the *local* version of the file.
 --
 
 This is only good advice if your data file doesn't change over time.
+
+---
+
+# RStudio Projects
+
+Always use RStudio projects!
+
+<div class="muse-video-player" data-video="cXFZUsM" data-logo="0" data-width="600"></div><script src="https://muse.ai/static/js/embed-player.min.js"></script>
+
 
 ---
 
