@@ -102,7 +102,7 @@ In this report we'll look at whether it's common to see movies that fail the tes
 
 ---
 
-#### Bullets with/without spacing
+### Bullets with/without spacing
 
 ... without spacing bullets look scrunched up
 
@@ -295,10 +295,6 @@ class: inverse, center, middle
 
 ## Breakout Groups
 
-1. Discuss your projects (what went well, what confused you, etc.).
-
---
-
 1. Look at the gist at [rfor.us/noknit](https://rfor.us/noknit). Figure out why it's not knitting. 
 
 --
@@ -412,27 +408,6 @@ It's very exciting - but we feel it's worthwhile having some caution about learn
 
 ---
 
-## ... oh, and about RStudio
-
-.pull-left[
-
-RStudio have also rebranded themselves to Posit.
-
-This is because they want to add other people to our community who don't use R.
-
-- The RStudio application is not changing name
-
-- Posit are dedicated to the R community!!
-
-]
-
-.pull-right[
-<img src='images/posit.png'/>
-
-]
-
----
-
 ### Where to find out more about Quarto
 
 .pull-left[
@@ -467,6 +442,29 @@ rep("lots of cats", 5)
 <img src='images/quarto.png'/>
 
 ]
+
+
+---
+
+## ... oh, and about RStudio
+
+.pull-left[
+
+RStudio have also rebranded themselves to Posit.
+
+This is because they want to add other people to our community who don't use R.
+
+- The RStudio application is not changing name
+
+- Posit are dedicated to the R community!!
+
+]
+
+.pull-right[
+<img src='images/posit.png'/>
+
+]
+
 
 ---
 

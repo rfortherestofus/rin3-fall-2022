@@ -1,0 +1,17 @@
+---
+title: "Report"
+output: html_document
+---
+
+### Bechdel Test
+
+The Bechdel test is a simple test of whether a film has **women with agency**:
+
+-   Does the movie contain 2 characters who are women
+
+-   Are they named
+
+-   Do they have a conversation about *something* other than man (or further the plot line of a man)
+
+In this report we'll look at whether it's common to see movies that fail the test.
+

@@ -1,0 +1,38 @@
+---
+title: "Rmd Knit"
+author: "David Keyes"
+date: "3/22/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE,
+                      include = TRUE)
+
+
+```
+
+What will the code chunk below show? What do I need to do to hide its output when knitting?
+
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+The code chunk below is designed to produce a table. What will it show when you knit?
+
+```{r echo = TRUE}
+cars %>% 
+  summarize(avg_speed = mean(speed)) %>% 
+  gt()
+```
+
+The code chunk below this is designed to produce a histogram. What will it show when you knit?
+
+```{r include = FALSE}
+cars %>% 
+  ggplot(aes(speed)) +
+  geom_histogram()
+```
