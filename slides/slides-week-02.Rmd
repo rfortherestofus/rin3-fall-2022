@@ -62,7 +62,7 @@ You can see everyone's feedback here: https://rfortherestofus.com/r-in-3-months-
 
 ???
 
-- Hopefully you've recieved an email with your feedback, let us know if that's not working
+- Hopefully you've received an email with your feedback, let us know if that's not working
 
 - You can see everyone's feedback on the feedback page.
 
@@ -102,7 +102,7 @@ In this report we'll look at whether it's common to see movies that fail the tes
 
 ---
 
-#### Bullets with/without spacing
+### Bullets with/without spacing
 
 ... without spacing bullets look scrunched up
 
@@ -209,8 +209,6 @@ class: inverse, center, middle
 ## Where do `cars` and `pressure` come from?
 
 > Where do the data for cars and for pressure come from? I don’t see them in the getting-started-master folder, nor in the faketucky dataset. summary(cars) is clearly calling that data, but I don’t see how.
->
-> Josh
 
 --
 
@@ -280,6 +278,15 @@ This is only good advice if your data file doesn't change over time.
 
 ---
 
+# RStudio Projects
+
+Always use RStudio projects!
+
+<div class="muse-video-player" data-video="cXFZUsM" data-logo="0" data-width="600"></div><script src="https://muse.ai/static/js/embed-player.min.js"></script>
+
+
+---
+
 class: inverse, center, middle
 
 # Breakout Groups
@@ -287,10 +294,6 @@ class: inverse, center, middle
 ---
 
 ## Breakout Groups
-
-1. Discuss your projects (what went well, what confused you, etc.).
-
---
 
 1. Look at the gist at [rfor.us/noknit](https://rfor.us/noknit). Figure out why it's not knitting. 
 
@@ -405,27 +408,6 @@ It's very exciting - but we feel it's worthwhile having some caution about learn
 
 ---
 
-## ... oh, and about RStudio
-
-.pull-left[
-
-RStudio have also rebranded themselves to Posit.
-
-This is because they want to add other people to our community who don't use R.
-
-- The RStudio application is not changing name
-
-- Posit are dedicated to the R community!!
-
-]
-
-.pull-right[
-<img src='images/posit.png'/>
-
-]
-
----
-
 ### Where to find out more about Quarto
 
 .pull-left[
@@ -460,6 +442,29 @@ rep("lots of cats", 5)
 <img src='images/quarto.png'/>
 
 ]
+
+
+---
+
+## ... oh, and about RStudio
+
+.pull-left[
+
+RStudio have also rebranded themselves to Posit.
+
+This is because they want to add other people to our community who don't use R.
+
+- The RStudio application is not changing name
+
+- Posit are dedicated to the R community!!
+
+]
+
+.pull-right[
+<img src='images/posit.png'/>
+
+]
+
 
 ---
 
