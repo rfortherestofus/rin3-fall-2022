@@ -1,0 +1,45 @@
+---
+title: "Penguins Report"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE,
+                      include = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+# Read in your penguins data here
+```
+
+
+# Average Bill Length by Island
+
+In looking at our penguins data, we can calculate the average bill length by island among penguins in the 2009 sample. 
+
+```{r}
+# This is example code you can adapt for your own use
+penguins %>% 
+  filter(year == 2009) %>% 
+  group_by(island) %>% 
+  summarize(avg_bill_length = mean(bill_length_mm,
+                                   na.rm = TRUE)) %>% 
+  set_names("Island", "Average Bill Length") %>% 
+  gt()
+```
+# Average Body Mass in Pounds by Species Among Female Penguins
+
+```{r}
+# Add code below to make a table that shows average body mass by species in pounds (1 pound = 453.592 grams) among female penguins
+# Add the code `gt()` at the end to get a nice table
+```
+
+
