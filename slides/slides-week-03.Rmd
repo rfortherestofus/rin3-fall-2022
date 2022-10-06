@@ -59,6 +59,10 @@ library(janitor)
 
 --
 
+- Git + GitHub course
+
+--
+
 - Catch-up weeks
 
 
@@ -322,3 +326,7 @@ Make sure you can knit your document!
 --
 
 1. Project assignment: make a graph from your data
+
+--
+
+1. Catch-up week coming up in two weeks!

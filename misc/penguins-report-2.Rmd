@@ -1,0 +1,34 @@
+---
+title: "Penguins Report"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+library(janitor)
+library(gt)
+```
+
+```{r}
+penguins_raw
+```
+
+
+
+```{r}
+penguins_clean <- penguins_raw %>% 
+  clean_names()
+```
+
+```{r}
+penguins_clean %>% 
+  select(sample_number) %>% 
+  gt()
+```
+
