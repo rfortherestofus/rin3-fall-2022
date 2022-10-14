@@ -1,0 +1,102 @@
+---
+title: "Untitled"
+output: html_document
+date: "2022-10-13"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(scales)
+```
+
+
+# rep
+
+```{r}
+rep("cats", 5)
+```
+
+```{r}
+"cats" %>% 
+  rep(5)
+```
+
+```{r}
+msleep %>% 
+  ggplot(aes(x = sleep_total,
+             y = sleep_rem)) +
+  geom_point()
+```
+
+
+# msleep
+
+```{r table-diet-summary}
+msleep %>% 
+  count(vore)
+```
+
+```{r table-sleep-by-diet}
+msleep %>% 
+  group_by(vore) %>% 
+  summarise(mean_sleep = mean(sleep_total))
+```
+
+## add columns
+
+```{r}
+msleep$sleep_perc <- msleep$sleep_total / 24
+
+msleep
+```
+
+```{r}
+msleep %>% 
+  mutate(sleep_perc_tidy = sleep_total / 24,
+         sleep_rem_perc = sleep_rem / 24)
+
+msleep
+```
+
+```{r}
+msleep %>% 
+  mutate(across(starts_with("sleep"),
+                ~ . / 24,
+                .names = "{.col}_perc"))
+```
+
+# scales
+
+```{r}
+percent(0.4)
+```
+
+```{r}
+dollar(30E6)
+```
+
+```{r}
+msleep %>% 
+  select(name, sleep_total) %>% 
+  mutate(sleep_perc = percent(sleep_total / 24))
+```
+
+```{r}
+msleep_vore_cats <- msleep %>% 
+  select(name, vore, sleep_total) %>% 
+  mutate(vore_category = case_when(
+    vore == "carni" ~ "Meat eater",
+    vore %in% c("omni", "insecti") ~ "Kind of also meat eater",
+    vore == "herbi" ~ "Not meat eater"
+  ))
+```
+
+
+```{r}
+label_dollar(prefix = "£")(30)
+```
+
+
+
+
