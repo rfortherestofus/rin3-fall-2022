@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Rin3 Months: Week 6 (Git + GitHub)!</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.17/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+    <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Rin3 Months: Week 6<br>(Git + GitHub)!
+]
+
+---
+
+
+
+
+
+&lt;!---- PLAN
+
+THESE SLIDES USE sli.do FOR POLLS!
+
+USE THIS LINK: https://app.sli.do/event/ndcJPnZgvf18CgCbCp93hn/live/polls
+
+---&gt;
+
+
+
+# Agenda
+
+--
+
+1. Housekeeping
+
+--
+
+1. Tips from feedback
+
+--
+
+1. GitHub
+
+--
+
+1. Next Week
+
+---
+
+# Housekeeping
+
+--
+
+- Catch-up Week
+
+--
+
+---
+
+class: inverse, center, middle
+
+# Tips from feedback
+
+---
+
+## Making beautiful tables in Rmd
+
+While there's one package we recommend for charts ({ggplot2})... the package landscape is more complicated for tables.
+
+David has written a [great blogpost comparing the most widely used packages](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/).
+
+--
+
+.pull-left[
+
+#### Interactive Tables
+
+- [{DT}](https://rstudio.github.io/DT/) is very easy to start with and is somewhat flexible.
+
+- [{reactablefmtr}](https://kcuilla.github.io/reactablefmtr/index.html) extends {reactable} to allow you to build beautiful and highly interactive tables.
+
+&lt;center&gt;&lt;img src="images/reactablefmr-gif.gif" width='300px'/&gt;&lt;/center&gt;
+
+]
+
+--
+
+.pull-right[
+
+#### Printable tables
+
+- [{gt}](https://gt.rstudio.com/) is the most general purpose and flexible solution for making charts. It relies on HTML and CSS.
+
+- [{flextable}](https://davidgohel.github.io/flextable/index.html) is the solution if you need to output to Word documents. We've also found it useful for tables that need to span multiple pages.
+
+]
+
+---
+
+## Why are my columns too big?
+
+Some folks have asked why their bar charts are too large.
+
+
+
+.pull-left[
+
+```r
+bmi_data %&gt;% 
+  ggplot(aes(x = heart_disease,
+             y = avg_bmi)) +
+  geom_col() +
+  facet_wrap(~ sex)
+```
+]
+
+.pull-right[
+&lt;img src="slides-week-06_files/figure-html/unnamed-chunk-4-1.png" height="450px" /&gt;
+]
+
+---
+
+
+The `geom_bar()` geom does counting for us - bars length are calculated from counting how many observations there are:
+
+.pull-left[
+
+```r
+msleep %&gt;% 
+  ggplot(aes(x = vore)) +
+  geom_bar()
+```
+
+&lt;img src="slides-week-06_files/figure-html/unnamed-chunk-5-1.png" height="300px" /&gt;
+]
+
+.pull-right[
+
+
+```r
+msleep %&gt;% 
+  count(vore) %&gt;% 
+  ggplot(aes(x = vore,
+             y = n)) +
+  geom_col()
+```
+
+&lt;img src="slides-week-06_files/figure-html/unnamed-chunk-6-1.png" height="300px" /&gt;
+
+]
+
+---
+
+# mutate() and across()
+
+Sometimes you want to do the same thing to many columns.
+
+This can be achieved by combining `mutate()` with `across()`.
+
+---
+
+## Converting many dates at once
+
+
+```r
+purchase_data &lt;- tribble(
+  ~arrival_date, ~departure_date, ~purchase_date,
+  "20-01-2022", "20-03-2022", "01-01-2022",
+  "17-02-2022", "19-02-2022", "03-01-2022",
+  "30-03-2022", "10-04-2022", "05-02-2022"
+)
+purchase_data
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["arrival_date"],"name":[1],"type":["chr"],"align":["left"]},{"label":["departure_date"],"name":[2],"type":["chr"],"align":["left"]},{"label":["purchase_date"],"name":[3],"type":["chr"],"align":["left"]}],"data":[{"1":"20-01-2022","2":"20-03-2022","3":"01-01-2022"},{"1":"17-02-2022","2":"19-02-2022","3":"03-01-2022"},{"1":"30-03-2022","2":"10-04-2022","3":"05-02-2022"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+---
+
+## Converting many dates at once
+
+
+```r
+library(lubridate)
+purchase_data %&gt;% 
+  mutate(across(contains("date"), ~dmy(.x)))
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["arrival_date"],"name":[1],"type":["date"],"align":["right"]},{"label":["departure_date"],"name":[2],"type":["date"],"align":["right"]},{"label":["purchase_date"],"name":[3],"type":["date"],"align":["right"]}],"data":[{"1":"2022-01-20","2":"2022-03-20","3":"2022-01-01"},{"1":"2022-02-17","2":"2022-02-19","3":"2022-01-03"},{"1":"2022-03-30","2":"2022-04-10","3":"2022-02-05"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+---
+
+class: inverse, center, middle
+
+# Data Viz Examples
+
+---
+
+# library(ggsignif)
+
+.pull-left[
+
+A previous student introduced me to the {ggsignif} package that adds the fancy column comparison line.
+
+]
+
+.pull-right[
+
+![](slides-week-06_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+
+]
+
+---
+
+# Italics in charts (I)
+
+If you google "how to add italics" to ggplot2 charts you'll likely find results that include the function `expression()`.
+
+&gt; But this is a really messy and unfriendly solution
+
+--
+
+
+```r
+penguins %&gt;% 
+  ggplot(aes(flipper_length_mm,
+             bill_length_mm)) +
+  geom_point() +
+  labs(title = expression(paste("Penguins are ", italic("really cool"))))
+```
+
+&lt;img src="slides-week-06_files/figure-html/unnamed-chunk-11-1.png" width="300px" /&gt;
+
+---
+
+# Italics in charts (II)
+
+Later in the course we'll introduce {ggtext} that will allow us to use HTML in {ggplot2} chart elements.
+
+
+```r
+penguins %&gt;% 
+  ggplot(aes(flipper_length_mm,
+             bill_length_mm)) +
+  geom_point() +
+  labs(title = "Penguins are &lt;em&gt;really cool&lt;/em&gt;")
+```
+
+&lt;img src="slides-week-06_files/figure-html/unnamed-chunk-13-1.png" width="300px" /&gt;
+s
+---
+
+class: inverse, center, middle
+
+# Git + GitHub
+
+???
+
+- Have to save files first
+
+---
+
+# GitHub Desktop
+
+The git tab in RStudio is great, it will suit most of your needs.
+
+GitHub Desktop provides some additional tools and capabilities that might be useful for more advanced users.
+
+--
+
+If you can't get RStudio and git to work together then consider trying GitHub Desktop instead.
+
+---
+
+# Editing files in the browser on GitHub
+
+The GitHub website gives you the ability to edit files directly.
+
+Technically, this is exactly the same as making a commit.
+
+Remember you will need to **pull** the changes onto your local machine.
+
+---
+
+class: inverse, center, middle
+
+# Group Work
+
+---
+
+## Group Work
+
+In your groups we'd like you to discuss your datasets with one another and to take a look at your charts.
+
+- Please take it in turns to share your screen
+
+- Share something you're struggling (or want) to do with your data. 
+
+    - Ask if anyone else in the team needs to do something similar
+    
+    - Discuss potential solutions
+    
+    - Add your struggles (and possible solutions) [to this poll](https://app.sli.do/event/ndcJPnZgvf18CgCbCp93hn/embed/polls/4cefc4be-4c0d-42af-a6e9-ace6290f3ab1)
+
+--
+
+- Show a chart you've built to your group 
+
+    - Describe something you'd like to add to your chart
+    
+    - Discuss potential solutions
+    
+    - Add your struggles (and possible solutions) [to this poll](https://app.sli.do/event/ndcJPnZgvf18CgCbCp93hn/embed/polls/2c788ef4-24df-499c-b614-7c6606d79874)
+ 
+???
+
+This is what we did last year:
+
+We need to figure this out. Last time we did:
+
+- In a group, nominate one person to create a new project, add a local Git repository, and then push it to GitHub.
+
+- Have the nominated person share their screen and then walk through the steps as a group
+  
+- Add any questions that come up to [this discussion thread](https://rfortherestofus.com/groups/r-in-3-months-fall-2021/forum/discussion/general-git-github-questions/).
+
+---
+
+class: inverse, center, middle
+
+## Git + GitHub Questions
+
+???
+
+Need to save first in order to commit
+
+Can only commit items that have been modified since last commit
+
+
+---
+
+# Next Week
+&lt;!-- Charlie's example video was built with this gist https://gist.github.com/charliejhadley/b2bc9af0853779093f1ce7308687ef48 --&gt;
+
+--
+
+1. Advanced data wrangling
+
+--
+
+1. The main thing to make sense of is the concept of tidy data (it's a hard concept, but worth the effort to figure it out!)
+
+--
+
+1. Project assignment: figure out ways your data is not tidy and tidy it (sounds simple, but it's not!).
+
+--
+
+1. You'll work in your GitHub repository from now on so you'll submit a link to the code in your repo for Charlie's review
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
