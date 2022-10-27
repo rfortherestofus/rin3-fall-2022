@@ -9,5 +9,3 @@ iris %>%
 iris %>%
   as_tibble() %>%
   mutate(across(c(Sepal.Length, Sepal.Width), round_half_up))
-
-# This is a comment
