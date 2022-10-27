@@ -1,5 +1,5 @@
 ---
-title: "Rin3 Months: Week 6<br>(Git + GitHub)!"
+title: "Rin3 Months: Week 6<br>(Git + GitHub)"
 output:
   xaringan::moon_reader:
     css: ["style.css", "default"]
