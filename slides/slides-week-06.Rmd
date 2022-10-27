@@ -76,7 +76,7 @@ class: inverse, center, middle
 
 ## Making beautiful tables in Rmd
 
-While there's one package we recommend for charts ({ggplot2})... the package landscape is more complicated for tables.
+While there's one package we recommend for charts (`ggplot2`)... the package landscape is more complicated for tables.
 
 David has written a [great blogpost comparing the most widely used packages](https://rfortherestofus.com/2019/11/how-to-make-beautiful-tables-in-r/).
 
@@ -163,7 +163,7 @@ msleep %>%
 
 ---
 
-# mutate() and across()
+## mutate() and across()
 
 Sometimes you want to do the same thing to many columns.
 
@@ -171,140 +171,51 @@ This can be achieved by combining `mutate()` with `across()`.
 
 ---
 
-## Converting many dates at once
+## Converting many columns at once
 
 ```{r}
-purchase_data <- tribble(
-  ~arrival_date, ~departure_date, ~purchase_date,
-  "20-01-2022", "20-03-2022", "01-01-2022",
-  "17-02-2022", "19-02-2022", "03-01-2022",
-  "30-03-2022", "10-04-2022", "05-02-2022"
-)
-purchase_data
+iris %>% 
+  as_tibble()
 ```
 
 ---
 
-## Converting many dates at once
+## Converting many columns at once
 
 ```{r}
-library(lubridate)
-purchase_data %>% 
-  mutate(across(contains("date"), ~dmy(.x)))
+iris %>%
+  as_tibble() %>%
+  mutate(across(c(Sepal.Length, Sepal.Width), round_half_up))
 ```
 
 ---
 
-class: inverse, center, middle
+## Formatted text in charts
 
-# Data Viz Examples
-
----
-
-# library(ggsignif)
-
-.pull-left[
-
-A previous student introduced me to the {ggsignif} package that adds the fancy column comparison line.
-
-]
-
-.pull-right[
-
-```{r, eval=TRUE, echo=FALSE}
-library(ggsignif)
-library(ggtext)
-rin3_week3 <- read_csv(here::here("data", "data-mauricio-week-4.csv"))
-mst_only_means <- rin3_week3 %>% 
-                  filter(cohort_type == "mst") %>% 
-                  summarize(mean_pcl_baseline = mean(pcl_baseline),
-                            mean_pcl_post = mean(pcl_post, na.rm = TRUE))
-
-mst_gg <- data.frame("PCL5_Score" = c(mst_only_means$mean_pcl_baseline,
-                                      mst_only_means$mean_pcl_post),
-                     "Time" = c("Baseline", "Post-Treatment"))
-
-ggplot(data = mst_gg,
-       mapping = aes(x = Time,
-                     y = PCL5_Score,
-                     group = Time,
-                     fill = Time)) +
-  geom_col(show.legend = FALSE) +
-  geom_signif(comparisons = list(c("Baseline", "Post-Treatment")), 
-              annotations = "list(italic(p) < .001, italic(d) == 1.10)", 
-              parse = TRUE, 
-              y_position = 70, 
-              tip_length = 0.03) +
-  geom_text(aes(label = round(PCL5_Score, 1)),
-            vjust = 1.5,
-            color = "white") +
-  scale_fill_manual(values=c("dark green", "#F4B400")) +
-  scale_y_continuous(limits = c(0, 80),
-                     breaks = c(0, 20, 40, 60, 80),
-                     expand = expansion(mult = 0, add = c(0, 1))) +
-  labs(title = "PTSD Symptom Severity in MST Cohorts",
-       y = "PTSD Symptom Severity (PCL-5)",
-       x = "",
-       caption = "<em>N</em> = 200") +
-  theme_minimal() +
-  theme(panel.grid.major = element_blank(),
-        plot.title = element_text(hjust = 0.5),
-        axis.text.x = element_text(face = "bold"), 
-        plot.caption = element_markdown())
-```
-
-]
-
----
-
-# Italics in charts (I)
-
-If you google "how to add italics" to ggplot2 charts you'll likely find results that include the function `expression()`.
-
-> But this is a really messy and unfriendly solution
-
---
+Later in the course we'll introduce the `ggtext` package that will allow us to use HTML in {ggplot2} chart elements.
 
 ```{r, echo=TRUE, eval=FALSE}
-penguins %>% 
-  ggplot(aes(flipper_length_mm,
-             bill_length_mm)) +
+ggplot(data = penguins,
+       aes(x = flipper_length_mm,
+           y = bill_length_mm)) +
   geom_point() +
-  labs(title = expression(paste("Penguins are ", italic("really cool"))))
+  labs(title = "Penguins are *really cool*")
 ```
 
 ```{r, out.width='300px', echo=FALSE}
-penguins %>% 
-  ggplot(aes(flipper_length_mm,
-             bill_length_mm)) +
+ggplot(data = penguins,
+       aes(x = flipper_length_mm,
+           y = bill_length_mm)) +
   geom_point() +
-  labs(title = expression(paste("Penguins are ", italic("really cool")))) +
-  theme(plot.title = element_text(size = 30))
-```
-
----
-
-# Italics in charts (II)
-
-Later in the course we'll introduce {ggtext} that will allow us to use HTML in {ggplot2} chart elements.
-
-```{r, echo=TRUE, eval=FALSE}
-penguins %>% 
-  ggplot(aes(flipper_length_mm,
-             bill_length_mm)) +
-  geom_point() +
-  labs(title = "Penguins are <em>really cool</em>")
-```
-
-```{r, out.width='300px', echo=FALSE}
-penguins %>% 
-  ggplot(aes(flipper_length_mm,
-             bill_length_mm)) +
-  geom_point() +
-  labs(title = "Penguins are <em>really cool</em>") +
+  labs(title = "Penguins are *really cool*") +
   theme(plot.title = element_markdown(size = 30))
 ```
-s
+
+???
+
+I think it’s worth telling the students to abandon any stackoverflow question that mentions using expression() for formatting text
+
+
 ---
 
 class: inverse, center, middle
@@ -313,11 +224,15 @@ class: inverse, center, middle
 
 ???
 
-- Have to save files first
+---
+
+## Save files first
+
+If you don't save your files first, you can't commit them
 
 ---
 
-# GitHub Desktop
+## GitHub Desktop
 
 The git tab in RStudio is great, it will suit most of your needs.
 
@@ -329,7 +244,7 @@ If you can't get RStudio and git to work together then consider trying GitHub De
 
 ---
 
-# Editing files in the browser on GitHub
+## Editing files in the browser on GitHub
 
 The GitHub website gives you the ability to edit files directly.
 
@@ -339,47 +254,15 @@ Remember you will need to **pull** the changes onto your local machine.
 
 ---
 
-class: inverse, center, middle
-
-# Group Work
-
----
-
-## Group Work
-
-In your groups we'd like you to discuss your datasets with one another and to take a look at your charts.
-
-- Please take it in turns to share your screen
-
-- Share something you're struggling (or want) to do with your data. 
-
-    - Ask if anyone else in the team needs to do something similar
-    
-    - Discuss potential solutions
-    
-    - Add your struggles (and possible solutions) [to this poll](https://app.sli.do/event/ndcJPnZgvf18CgCbCp93hn/embed/polls/4cefc4be-4c0d-42af-a6e9-ace6290f3ab1)
+## Other things you can do with Git and GitHub
 
 --
 
-- Show a chart you've built to your group 
+How we publish slides every week
 
-    - Describe something you'd like to add to your chart
-    
-    - Discuss potential solutions
-    
-    - Add your struggles (and possible solutions) [to this poll](https://app.sli.do/event/ndcJPnZgvf18CgCbCp93hn/embed/polls/2c788ef4-24df-499c-b614-7c6606d79874)
- 
-???
+--
 
-This is what we did last year:
-
-We need to figure this out. Last time we did:
-
-- In a group, nominate one person to create a new project, add a local Git repository, and then push it to GitHub.
-
-- Have the nominated person share their screen and then walk through the steps as a group
-  
-- Add any questions that come up to [this discussion thread](https://rfortherestofus.com/groups/r-in-3-months-fall-2021/forum/discussion/general-git-github-questions/).
+How we use issues
 
 ---
 
@@ -387,11 +270,6 @@ class: inverse, center, middle
 
 ## Git + GitHub Questions
 
-???
-
-Need to save first in order to commit
-
-Can only commit items that have been modified since last commit
 
 
 ---
@@ -409,11 +287,11 @@ Can only commit items that have been modified since last commit
 
 --
 
-1. Project assignment: figure out ways your data is not tidy and tidy it (sounds simple, but it's not!).
+1. No project assignment next week
 
 --
 
-1. You'll work in your GitHub repository from now on so you'll submit a link to the code in your repo for Charlie's review
+1. Time change
 
 
 
