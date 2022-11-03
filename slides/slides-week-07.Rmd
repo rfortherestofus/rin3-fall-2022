@@ -51,6 +51,10 @@ class: inverse, center, middle
 
 # Housekeeping
 
+???
+
+Discuss week
+
 ---
 
 class: inverse, center, middle
@@ -189,25 +193,6 @@ acs_poverty_wide <- get_acs(year = 2019,
 acs_poverty_wide
 ```
 
-
-
----
-
-## Is this dataset wide or long?
-
-
-`wdi_dataset`
-
-```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-library(WDI)
-
-WDI(country = 'US', 
-    indicator = c("gdp_per_capita" = "NY.GDP.PCAP.KD",
-                         "population" = "SP.POP.TOTL"),
-    start = 2000,
-    end = 2008)
-```
-
 ---
 
 ## Is this dataset wide or long?
@@ -256,11 +241,11 @@ relig_income %>%
 
 class: inverse, center, middle
 
-# Group Work
+# Exercise
 
 ---
 
-## Group Work
+## Exercise
 
 Copy the code from [this gist](https://gist.githubusercontent.com/dgkeyes/1d5ceb8b607266f1d197a218dd5c6882/raw/3591c9dc6e02ee78e3471bc40753cc948456c4d1/tidy-data-exercise.R) into a new R script file. Then tidy the `gapminder_wide` data.
 
@@ -281,26 +266,6 @@ It's possible to tell `pivot_longer()` to split column names into two "name" col
 gapminder_wide <- read_csv("https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_wide.csv")
 
 gapminder_wide
-```
-
-
----
-
-### Complicated pivot_longer() or mutate()?
-
-In the documentation for `pivot_longer()` there's this example.
-
-Let's walk through what this does and if it's worth getting very deep into `pivot_longer()` or wrangling on your own with `mutate()` etc.
-
-```{r}
-billboard %>%
-  pivot_longer(
-    cols = starts_with("wk"),
-    names_to = "week",
-    names_prefix = "wk",
-    values_to = "rank",
-    values_drop_na = TRUE
-  )
 ```
 
 
@@ -353,6 +318,6 @@ These skills will equip you to deal with more complex and larger scale data wran
 
 ## Project assignment 
 
-Create a function that can help you do your work more efficiently
+Use the `pivot_longer()` function to tidy your data and visualise it with {ggplot2}
 
 <!-- Example from the video https://gist.github.com/charliejhadley/80e3182e76639022b08b75dfa426ff84 -->
