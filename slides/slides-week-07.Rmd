@@ -36,7 +36,7 @@ library(janitor)
 
 --
 
-1. Group work
+1. Exercise
 
 --
 
@@ -63,6 +63,12 @@ class: inverse, center, middle
 
 ---
 
+class: inverse, center, middle
+
+# What questions do you have about tidy data?
+
+---
+
 ## What is tidy data?
 
 > "Tidy datasets are all alike, but every messy dataset is messy in its own way"
@@ -71,7 +77,7 @@ class: inverse, center, middle
 
 --
 
-Tidy data is both a philisophical approach to wrangling data - and a requirement for using parts of the tidyverse.
+Tidy data is both a philosophical approach to wrangling data - and a requirement for using parts of the tidyverse.
 
 ---
 
@@ -91,11 +97,7 @@ From the [tidy data vignette](https://tidyr.tidyverse.org/articles/tidy-data.htm
 
 1. Every cell is a single value.
 
----
 
-class: inverse, center, middle
-
-## What questions do you have about tidy data?
 
 ---
 
