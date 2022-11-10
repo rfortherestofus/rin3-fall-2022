@@ -1,5 +1,5 @@
 ---
-title: "R in 3 Months: Week 8 (More Data Tidying)"
+title: "R in 3 Months<br>Week 8<br>More Data Tidying"
 output:
   xaringan::moon_reader:
     css: ["style.css", "default"]
@@ -63,15 +63,42 @@ Other types of tidy data - surveys! separate()
 
 # Housekeeping
 
---
-
-Next week is another catch-up week and assignment amnesty
 
 ---
 
 class: inverse, center, middle
 
-# Four tips
+# One tip
+
+---
+
+## pivot_longer() complains it can't combine
+
+Often you'll see this error:
+
+```{r}
+# Error in `pivot_longer_spec()`:
+#
+# ! Can't combine `ACO1` <double> and `ACO13` <character>.
+# Run `rlang::last_error()` to see where the error occurred.
+```
+
+Let's walk through an example
+
+---
+
+## pivot_longer() complains it can't combine
+
+We want to combine together all of the columns from `ACO1:ACO28`
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+data_performance <- read_csv(here::here("data", "Performance_Year_Financial_and_Quality_Results_2020.csv")) %>% 
+  select(contains(c("ACO"))) %>% 
+  mutate(across(ACO1:ACO28,
+                ~  ifelse(.x %in% c("^", "~", "-"), 0, .x))) 
+data_performance
+```
+
 
 ---
 class: inverse, center, middle
@@ -177,7 +204,7 @@ tweet_embed("https://twitter.com/charliejhadley/status/1519696924328214528",
 
 # Let's tidy the survey data!
 
-David and I till take turns to read in and tidy the survey data from:
+David and I will take turns to read in and tidy the survey data from:
 
 - Survey Monkey
 
@@ -187,8 +214,23 @@ David and I till take turns to read in and tidy the survey data from:
 
 ---
 
+class: inverse, center, middle
 
 # User-defined functions
+
+---
+
+# User-defined functions
+
+During this week's videos you learned about creating user-defined functions.
+
+This is a really powerful part of learning a programming language like R. They allow you to re-use code to do multiple things, including:
+
+- Clean data files that share the same format (eg yearly reports)
+
+- Create data visualisations of different subsets of your data, eg a line chart showing visitor numbers for each exhibit
+
+- Generate the same report - including lots of different kinds of charts and tables - different subsets of data. This is something we do in consulting projects, eg for [ORS Impact Reports](https://funderscommittee.org/2020censusstatereports/).
 
 ---
 
@@ -198,88 +240,10 @@ class: inverse, center, middle
 
 ---
 
-### Official Assignments Amnesty
+# Next week
 
-Jump back in where it makes sense for you
+- Advanced data visualisation with {ggplot2}, including using {ggtext} for direct labelling
 
---
+- No new project assignment
 
-- Week 4: build a graph of your data, it doesn't matter how beautiful it is.
-
-```{r include=FALSE}
-gg_week_4_col <- msleep %>% 
-  count(vore) %>% 
-  ggplot(aes(x = vore,
-             y = n,
-             fill = vore)) +
-  geom_col()
-
-gg_week_4_scatter <- bechdel %>% 
-  ggplot(aes(x = budget_2013,
-             y = domgross_2013,
-             color = clean_test)) +
-  geom_point()
-
-gg_week_4_export <- gg_week_4_col + gg_week_4_scatter
-
-
-ggsave(here("slides", "images", "gg_week_4_export.png"),
-       gg_week_4_export,
-       width = 10,
-       height = 5)
-
-```
-
-<img src='images/gg_week_4_export.png' width='700px'/>
-
----
-
-### Jump back in where it makes sense for you
-
-- Week 7: is your data long or wide? Use pivot_longer() or pivot_wider() to show us.
-
-```{r, eval=FALSE}
-billboard
-```
-
-```{r, echo=FALSE, eval=TRUE, paged.print=FALSE}
-billboard
-```
-
-
----
-
-### Jump back in where it makes sense for you
-
-- Week 8: user-defined functions, they're much more exciting than they sound. Build a function that does something useful for you.
-
-.pull-left[
-```{r}
-gapminder %>% 
-  filter(year == 2007,
-         continent == "Asia") %>% 
-  ggplot(aes(x = lifeExp,
-             y = gdpPercap)) +
-  geom_point()
-```
-]
-
-.pull-right[
-```{r}
-gg_gapminder_plot <- 
-  function(filter_continent){
-  
-  gapminder %>% 
-  filter(year == 2007,
-         continent == filter_continent) %>% 
-  ggplot(aes(x = lifeExp,
-             y = gdpPercap)) +
-  geom_point()
-  
-}
-
-gg_gapminder_plot("Oceania")
-```
-
-]
-
+- The week of Monday 21st November is another catch-up week
