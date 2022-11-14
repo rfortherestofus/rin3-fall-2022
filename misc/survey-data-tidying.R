@@ -36,38 +36,51 @@ survey_monkey_data_raw %>%
 qualtrics_data_raw <- read_excel("data/qualtrics-data.xlsx",
                                  skip = 1)
 
-last_24_hours_questions <- qualtrics_data_raw %>%
+qualtrics_data_raw %>% 
   clean_names() %>% 
+  mutate(id = row_number()) %>% 
+  select(id, select_all_the_things_youve_done_in_the_past_24hours_selected_choice) %>% 
   separate_rows(select_all_the_things_youve_done_in_the_past_24hours_selected_choice,
-                sep = ",") 
-
-last_24_hours_questions %>% 
-  count(select_all_the_things_youve_done_in_the_past_24hours_selected_choice) %>% 
-  ggplot(aes(x = select_all_the_things_youve_done_in_the_past_24hours_selected_choice,
-             y = n)) +
-  geom_col()
-
+                sep = ",") %>% 
+  count(select_all_the_things_youve_done_in_the_past_24hours_selected_choice)
 
 # Google Forms/Sheets -----------------------------------------------------
 
 google_sheets_raw <- read_excel("data/google-forms-data.xlsx")
 
-last_24_hours_questions_google <- google_sheets_raw %>%
+google_things_last_24 <- google_sheets_raw %>% 
   clean_names() %>% 
+  mutate(id = row_number()) %>% 
+  relocate(id) %>% 
   separate_rows(select_all_the_things_youve_done_in_the_past_24hours,
-                sep = ", ") 
+                sep = ", ")
 
-last_24_hours_questions_google
+choices_last_24hrs <- c("Eaten food", "Slept", "Gone to work", "Cooked food",
+                        "Relaxed with a hobby (TELL US THE HOBBY BY TYPING IN THE OTHER FIELD)",
+                        "Commuted for work")
+
+msleep %>% 
+  relocate(sleep_total, .after = genus)
 
 
-# Google Forms/Sheets Multiple Parts --------------------------------------
 
-google_sheets_raw <- read_excel("data/google-forms-data-part-1.xlsx")
 
-last_24_hours_questions_google <- google_sheets_raw %>% 
-  clean_names() %>% 
-  separate_rows(select_all_the_things_youve_done_in_the_past_24hours,
-                sep = ", ") 
+google_things_last_24 %>% 
+  count(select_all_the_things_youve_done_in_the_past_24hours,
+        sort = TRUE) %>% 
+  filter(n > 3)
+
+
+google_things_last_24 %>% 
+  filter(select_all_the_things_youve_done_in_the_past_24hours %in% choices_last_24hrs) %>% 
+  count(select_all_the_things_youve_done_in_the_past_24hours,
+        sort = TRUE)
+
+
+google_things_last_24 %>% 
+  filter(!select_all_the_things_youve_done_in_the_past_24hours %in% choices_last_24hrs) %>% 
+  count(select_all_the_things_youve_done_in_the_past_24hours,
+        sort = TRUE)
 
 
 tidy_google_sheets_data <- function(raw_excel_file) {
