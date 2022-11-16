@@ -1,0 +1,625 @@
+group,race_ethnicity,group_abbreviation,location,age_group,percent,ratio
+All Persons,Race,NA,National,Under 18,0.073,1 in 14
+All Persons,Race,NA,National,Under 25,0.129,1 in 8
+American Indian or Alaska Native,Race,AIAN,National,Under 18,0.08,1 in 13
+American Indian or Alaska Native,Race,AIAN,National,Under 25,0.131,1 in 8
+Asian or Pacific Islander,Race,API,National,Under 18,0.038,1 in 26
+Asian or Pacific Islander,Race,API,National,Under 25,0.071,1 in 14
+Black or African American,Race,BAA,National,Under 18,0.1,1 in 10
+Black or African American,Race,BAA,National,Under 25,0.168,1 in 6
+White,Race,W,National,Under 18,0.071,1 in 14
+White,Race,W,National,Under 25,0.125,1 in 8
+Hispanic or Latino,Ethnicity,HL,National,Under 18,0.048,1 in 21
+Hispanic or Latino,Ethnicity,HL,National,Under 25,0.083,1 in 12
+All Persons,Race,NA,Alabama,Under 18,0.099,1 in 10
+All Persons,Race,NA,Alabama,Under 25,0.167,1 in 6
+American Indian or Alaska Native,Race,AIAN,Alabama,Under 18,0.043,1 in 23
+American Indian or Alaska Native,Race,AIAN,Alabama,Under 25,0.068,1 in 15
+Asian or Pacific Islander,Race,API,Alabama,Under 18,0.045,1 in 22
+Asian or Pacific Islander,Race,API,Alabama,Under 25,0.08,1 in 12
+Black or African American,Race,BAA,Alabama,Under 18,0.118,1 in 8
+Black or African American,Race,BAA,Alabama,Under 25,0.193,1 in 5
+White,Race,W,Alabama,Under 18,0.093,1 in 11
+White,Race,W,Alabama,Under 25,0.161,1 in 6
+Hispanic or Latino,Ethnicity,HL,Alabama,Under 18,0.048,1 in 21
+Hispanic or Latino,Ethnicity,HL,Alabama,Under 25,0.078,1 in 13
+All Persons,Race,NA,Alaska,Under 18,0.089,1 in 11
+All Persons,Race,NA,Alaska,Under 25,0.148,1 in 7
+American Indian or Alaska Native,Race,AIAN,Alaska,Under 18,0.193,1 in 5
+American Indian or Alaska Native,Race,AIAN,Alaska,Under 25,0.285,1 in 4
+Asian or Pacific Islander,Race,API,Alaska,Under 18,0.048,1 in 21
+Asian or Pacific Islander,Race,API,Alaska,Under 25,0.087,1 in 11
+Black or African American,Race,BAA,Alaska,Under 18,0.082,1 in 12
+Black or African American,Race,BAA,Alaska,Under 25,0.133,1 in 7
+White,Race,W,Alaska,Under 18,0.068,1 in 15
+White,Race,W,Alaska,Under 25,0.121,1 in 8
+Hispanic or Latino,Ethnicity,HL,Alaska,Under 18,0.043,1 in 23
+Hispanic or Latino,Ethnicity,HL,Alaska,Under 25,0.084,1 in 12
+All Persons,Race,NA,Arizona,Under 18,0.075,1 in 13
+All Persons,Race,NA,Arizona,Under 25,0.129,1 in 8
+American Indian or Alaska Native,Race,AIAN,Arizona,Under 18,0.151,1 in 7
+American Indian or Alaska Native,Race,AIAN,Arizona,Under 25,0.239,1 in 4
+Asian or Pacific Islander,Race,API,Arizona,Under 18,0.038,1 in 26
+Asian or Pacific Islander,Race,API,Arizona,Under 25,0.073,1 in 14
+Black or African American,Race,BAA,Arizona,Under 18,0.089,1 in 11
+Black or African American,Race,BAA,Arizona,Under 25,0.147,1 in 7
+White,Race,W,Arizona,Under 18,0.068,1 in 15
+White,Race,W,Arizona,Under 25,0.12,1 in 8
+Hispanic or Latino,Ethnicity,HL,Arizona,Under 18,0.057,1 in 18
+Hispanic or Latino,Ethnicity,HL,Arizona,Under 25,0.095,1 in 11
+All Persons,Race,NA,Arkansas,Under 18,0.089,1 in 11
+All Persons,Race,NA,Arkansas,Under 25,0.152,1 in 7
+American Indian or Alaska Native,Race,AIAN,Arkansas,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Arkansas,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Arkansas,Under 18,0.059,1 in 17
+Asian or Pacific Islander,Race,API,Arkansas,Under 25,0.099,1 in 10
+Black or African American,Race,BAA,Arkansas,Under 18,0.117,1 in 9
+Black or African American,Race,BAA,Arkansas,Under 25,0.196,1 in 5
+White,Race,W,Arkansas,Under 18,0.084,1 in 12
+White,Race,W,Arkansas,Under 25,0.147,1 in 7
+Hispanic or Latino,Ethnicity,HL,Arkansas,Under 18,0.035,1 in 29
+Hispanic or Latino,Ethnicity,HL,Arkansas,Under 25,0.059,1 in 17
+All Persons,Race,NA,California,Under 18,0.056,1 in 18
+All Persons,Race,NA,California,Under 25,0.103,1 in 10
+American Indian or Alaska Native,Race,AIAN,California,Under 18,0.031,1 in 32
+American Indian or Alaska Native,Race,AIAN,California,Under 25,0.058,1 in 17
+Asian or Pacific Islander,Race,API,California,Under 18,0.04,1 in 25
+Asian or Pacific Islander,Race,API,California,Under 25,0.076,1 in 13
+Black or African American,Race,BAA,California,Under 18,0.089,1 in 11
+Black or African American,Race,BAA,California,Under 25,0.156,1 in 6
+White,Race,W,California,Under 18,0.056,1 in 18
+White,Race,W,California,Under 25,0.102,1 in 10
+Hispanic or Latino,Ethnicity,HL,California,Under 18,0.047,1 in 21
+Hispanic or Latino,Ethnicity,HL,California,Under 25,0.083,1 in 12
+All Persons,Race,NA,Colorado,Under 18,0.067,1 in 15
+All Persons,Race,NA,Colorado,Under 25,0.118,1 in 8
+American Indian or Alaska Native,Race,AIAN,Colorado,Under 18,0.054,1 in 18
+American Indian or Alaska Native,Race,AIAN,Colorado,Under 25,0.097,1 in 10
+Asian or Pacific Islander,Race,API,Colorado,Under 18,0.036,1 in 28
+Asian or Pacific Islander,Race,API,Colorado,Under 25,0.066,1 in 15
+Black or African American,Race,BAA,Colorado,Under 18,0.081,1 in 12
+Black or African American,Race,BAA,Colorado,Under 25,0.136,1 in 7
+White,Race,W,Colorado,Under 18,0.068,1 in 15
+White,Race,W,Colorado,Under 25,0.119,1 in 8
+Hispanic or Latino,Ethnicity,HL,Colorado,Under 18,0.062,1 in 16
+Hispanic or Latino,Ethnicity,HL,Colorado,Under 25,0.105,1 in 9
+All Persons,Race,NA,Connecticut,Under 18,0.069,1 in 15
+All Persons,Race,NA,Connecticut,Under 25,0.119,1 in 8
+American Indian or Alaska Native,Race,AIAN,Connecticut,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Connecticut,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Connecticut,Under 18,0.026,1 in 39
+Asian or Pacific Islander,Race,API,Connecticut,Under 25,0.045,1 in 22
+Black or African American,Race,BAA,Connecticut,Under 18,0.072,1 in 14
+Black or African American,Race,BAA,Connecticut,Under 25,0.127,1 in 8
+White,Race,W,Connecticut,Under 18,0.071,1 in 14
+White,Race,W,Connecticut,Under 25,0.121,1 in 8
+Hispanic or Latino,Ethnicity,HL,Connecticut,Under 18,0.053,1 in 19
+Hispanic or Latino,Ethnicity,HL,Connecticut,Under 25,0.092,1 in 11
+All Persons,Race,NA,Delaware,Under 18,0.09,1 in 11
+All Persons,Race,NA,Delaware,Under 25,0.149,1 in 7
+American Indian or Alaska Native,Race,AIAN,Delaware,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Delaware,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Delaware,Under 18,0.033,1 in 30
+Asian or Pacific Islander,Race,API,Delaware,Under 25,0.052,1 in 19
+Black or African American,Race,BAA,Delaware,Under 18,0.102,1 in 10
+Black or African American,Race,BAA,Delaware,Under 25,0.163,1 in 6
+White,Race,W,Delaware,Under 18,0.088,1 in 11
+White,Race,W,Delaware,Under 25,0.146,1 in 7
+Hispanic or Latino,Ethnicity,HL,Delaware,Under 18,0.048,1 in 21
+Hispanic or Latino,Ethnicity,HL,Delaware,Under 25,0.072,1 in 14
+All Persons,Race,NA,District of Columbia,Under 18,0.089,1 in 11
+All Persons,Race,NA,District of Columbia,Under 25,0.181,1 in 6
+American Indian or Alaska Native,Race,AIAN,District of Columbia,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,District of Columbia,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,District of Columbia,Under 18,0.03,1 in 33
+Asian or Pacific Islander,Race,API,District of Columbia,Under 25,0.05,1 in 20
+Black or African American,Race,BAA,District of Columbia,Under 18,0.133,1 in 8
+Black or African American,Race,BAA,District of Columbia,Under 25,0.235,1 in 4
+White,Race,W,District of Columbia,Under 18,0.044,1 in 23
+White,Race,W,District of Columbia,Under 25,0.084,1 in 12
+Hispanic or Latino,Ethnicity,HL,District of Columbia,Under 18,0.04,1 in 25
+Hispanic or Latino,Ethnicity,HL,District of Columbia,Under 25,0.073,1 in 14
+All Persons,Race,NA,Florida,Under 18,0.08,1 in 12
+All Persons,Race,NA,Florida,Under 25,0.139,1 in 7
+American Indian or Alaska Native,Race,AIAN,Florida,Under 18,0.034,1 in 29
+American Indian or Alaska Native,Race,AIAN,Florida,Under 25,0.058,1 in 17
+Asian or Pacific Islander,Race,API,Florida,Under 18,0.038,1 in 27
+Asian or Pacific Islander,Race,API,Florida,Under 25,0.067,1 in 15
+Black or African American,Race,BAA,Florida,Under 18,0.094,1 in 11
+Black or African American,Race,BAA,Florida,Under 25,0.155,1 in 6
+White,Race,W,Florida,Under 18,0.077,1 in 13
+White,Race,W,Florida,Under 25,0.136,1 in 7
+Hispanic or Latino,Ethnicity,HL,Florida,Under 18,0.047,1 in 21
+Hispanic or Latino,Ethnicity,HL,Florida,Under 25,0.081,1 in 12
+All Persons,Race,NA,Georgia,Under 18,0.076,1 in 13
+All Persons,Race,NA,Georgia,Under 25,0.131,1 in 8
+American Indian or Alaska Native,Race,AIAN,Georgia,Under 18,0.014,1 in 69
+American Indian or Alaska Native,Race,AIAN,Georgia,Under 25,0.023,1 in 43
+Asian or Pacific Islander,Race,API,Georgia,Under 18,0.034,1 in 29
+Asian or Pacific Islander,Race,API,Georgia,Under 25,0.063,1 in 16
+Black or African American,Race,BAA,Georgia,Under 18,0.094,1 in 11
+Black or African American,Race,BAA,Georgia,Under 25,0.156,1 in 6
+White,Race,W,Georgia,Under 18,0.071,1 in 14
+White,Race,W,Georgia,Under 25,0.126,1 in 8
+Hispanic or Latino,Ethnicity,HL,Georgia,Under 18,0.038,1 in 26
+Hispanic or Latino,Ethnicity,HL,Georgia,Under 25,0.064,1 in 16
+All Persons,Race,NA,Hawaii,Under 18,0.062,1 in 16
+All Persons,Race,NA,Hawaii,Under 25,0.114,1 in 9
+American Indian or Alaska Native,Race,AIAN,Hawaii,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Hawaii,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Hawaii,Under 18,0.064,1 in 16
+Asian or Pacific Islander,Race,API,Hawaii,Under 25,0.116,1 in 9
+Black or African American,Race,BAA,Hawaii,Under 18,0.052,1 in 19
+Black or African American,Race,BAA,Hawaii,Under 25,0.094,1 in 11
+White,Race,W,Hawaii,Under 18,0.061,1 in 17
+White,Race,W,Hawaii,Under 25,0.114,1 in 9
+Hispanic or Latino,Ethnicity,HL,Hawaii,Under 18,0.056,1 in 18
+Hispanic or Latino,Ethnicity,HL,Hawaii,Under 25,0.104,1 in 10
+All Persons,Race,NA,Idaho,Under 18,0.061,1 in 16
+All Persons,Race,NA,Idaho,Under 25,0.104,1 in 10
+American Indian or Alaska Native,Race,AIAN,Idaho,Under 18,0.091,1 in 11
+American Indian or Alaska Native,Race,AIAN,Idaho,Under 25,0.149,1 in 7
+Asian or Pacific Islander,Race,API,Idaho,Under 18,0.037,1 in 27
+Asian or Pacific Islander,Race,API,Idaho,Under 25,0.068,1 in 15
+Black or African American,Race,BAA,Idaho,Under 18,NA,1 in NA
+Black or African American,Race,BAA,Idaho,Under 25,NA,1 in NA
+White,Race,W,Idaho,Under 18,0.061,1 in 16
+White,Race,W,Idaho,Under 25,0.105,1 in 10
+Hispanic or Latino,Ethnicity,HL,Idaho,Under 18,0.045,1 in 22
+Hispanic or Latino,Ethnicity,HL,Idaho,Under 25,0.075,1 in 13
+All Persons,Race,NA,Illinois,Under 18,0.068,1 in 15
+All Persons,Race,NA,Illinois,Under 25,0.12,1 in 8
+American Indian or Alaska Native,Race,AIAN,Illinois,Under 18,0.012,1 in 83
+American Indian or Alaska Native,Race,AIAN,Illinois,Under 25,0.019,1 in 52
+Asian or Pacific Islander,Race,API,Illinois,Under 18,0.029,1 in 34
+Asian or Pacific Islander,Race,API,Illinois,Under 25,0.056,1 in 18
+Black or African American,Race,BAA,Illinois,Under 18,0.115,1 in 9
+Black or African American,Race,BAA,Illinois,Under 25,0.193,1 in 5
+White,Race,W,Illinois,Under 18,0.064,1 in 16
+White,Race,W,Illinois,Under 25,0.114,1 in 9
+Hispanic or Latino,Ethnicity,HL,Illinois,Under 18,0.044,1 in 23
+Hispanic or Latino,Ethnicity,HL,Illinois,Under 25,0.075,1 in 13
+All Persons,Race,NA,Indiana,Under 18,0.084,1 in 12
+All Persons,Race,NA,Indiana,Under 25,0.142,1 in 7
+American Indian or Alaska Native,Race,AIAN,Indiana,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Indiana,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Indiana,Under 18,0.038,1 in 26
+Asian or Pacific Islander,Race,API,Indiana,Under 25,0.065,1 in 15
+Black or African American,Race,BAA,Indiana,Under 18,0.114,1 in 9
+Black or African American,Race,BAA,Indiana,Under 25,0.187,1 in 5
+White,Race,W,Indiana,Under 18,0.083,1 in 12
+White,Race,W,Indiana,Under 25,0.14,1 in 7
+Hispanic or Latino,Ethnicity,HL,Indiana,Under 18,0.05,1 in 20
+Hispanic or Latino,Ethnicity,HL,Indiana,Under 25,0.082,1 in 12
+All Persons,Race,NA,Iowa,Under 18,0.06,1 in 17
+All Persons,Race,NA,Iowa,Under 25,0.108,1 in 9
+American Indian or Alaska Native,Race,AIAN,Iowa,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Iowa,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Iowa,Under 18,0.041,1 in 24
+Asian or Pacific Islander,Race,API,Iowa,Under 25,0.067,1 in 15
+Black or African American,Race,BAA,Iowa,Under 18,0.09,1 in 11
+Black or African American,Race,BAA,Iowa,Under 25,0.151,1 in 7
+White,Race,W,Iowa,Under 18,0.058,1 in 17
+White,Race,W,Iowa,Under 25,0.106,1 in 9
+Hispanic or Latino,Ethnicity,HL,Iowa,Under 18,0.039,1 in 26
+Hispanic or Latino,Ethnicity,HL,Iowa,Under 25,0.063,1 in 16
+All Persons,Race,NA,Kansas,Under 18,0.07,1 in 14
+All Persons,Race,NA,Kansas,Under 25,0.121,1 in 8
+American Indian or Alaska Native,Race,AIAN,Kansas,Under 18,0.081,1 in 12
+American Indian or Alaska Native,Race,AIAN,Kansas,Under 25,0.131,1 in 8
+Asian or Pacific Islander,Race,API,Kansas,Under 18,0.039,1 in 26
+Asian or Pacific Islander,Race,API,Kansas,Under 25,0.068,1 in 15
+Black or African American,Race,BAA,Kansas,Under 18,0.104,1 in 10
+Black or African American,Race,BAA,Kansas,Under 25,0.167,1 in 6
+White,Race,W,Kansas,Under 18,0.067,1 in 15
+White,Race,W,Kansas,Under 25,0.118,1 in 9
+Hispanic or Latino,Ethnicity,HL,Kansas,Under 18,0.053,1 in 19
+Hispanic or Latino,Ethnicity,HL,Kansas,Under 25,0.086,1 in 12
+All Persons,Race,NA,Kentucky,Under 18,0.097,1 in 10
+All Persons,Race,NA,Kentucky,Under 25,0.164,1 in 6
+American Indian or Alaska Native,Race,AIAN,Kentucky,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Kentucky,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Kentucky,Under 18,0.043,1 in 23
+Asian or Pacific Islander,Race,API,Kentucky,Under 25,0.067,1 in 15
+Black or African American,Race,BAA,Kentucky,Under 18,0.108,1 in 9
+Black or African American,Race,BAA,Kentucky,Under 25,0.18,1 in 6
+White,Race,W,Kentucky,Under 18,0.097,1 in 10
+White,Race,W,Kentucky,Under 25,0.164,1 in 6
+Hispanic or Latino,Ethnicity,HL,Kentucky,Under 18,0.05,1 in 20
+Hispanic or Latino,Ethnicity,HL,Kentucky,Under 25,0.085,1 in 12
+All Persons,Race,NA,Louisiana,Under 18,0.096,1 in 10
+All Persons,Race,NA,Louisiana,Under 25,0.161,1 in 6
+American Indian or Alaska Native,Race,AIAN,Louisiana,Under 18,0.041,1 in 24
+American Indian or Alaska Native,Race,AIAN,Louisiana,Under 25,0.073,1 in 14
+Asian or Pacific Islander,Race,API,Louisiana,Under 18,0.045,1 in 22
+Asian or Pacific Islander,Race,API,Louisiana,Under 25,0.082,1 in 12
+Black or African American,Race,BAA,Louisiana,Under 18,0.121,1 in 8
+Black or African American,Race,BAA,Louisiana,Under 25,0.196,1 in 5
+White,Race,W,Louisiana,Under 18,0.084,1 in 12
+White,Race,W,Louisiana,Under 25,0.146,1 in 7
+Hispanic or Latino,Ethnicity,HL,Louisiana,Under 18,0.05,1 in 20
+Hispanic or Latino,Ethnicity,HL,Louisiana,Under 25,0.087,1 in 12
+All Persons,Race,NA,Maine,Under 18,0.08,1 in 12
+All Persons,Race,NA,Maine,Under 25,0.138,1 in 7
+American Indian or Alaska Native,Race,AIAN,Maine,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Maine,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Maine,Under 18,NA,1 in NA
+Asian or Pacific Islander,Race,API,Maine,Under 25,NA,1 in NA
+Black or African American,Race,BAA,Maine,Under 18,0.092,1 in 11
+Black or African American,Race,BAA,Maine,Under 25,0.152,1 in 7
+White,Race,W,Maine,Under 18,0.079,1 in 13
+White,Race,W,Maine,Under 25,0.134,1 in 7
+Hispanic or Latino,Ethnicity,HL,Maine,Under 18,NA,1 in NA
+Hispanic or Latino,Ethnicity,HL,Maine,Under 25,NA,1 in NA
+All Persons,Race,NA,Maryland,Under 18,0.08,1 in 12
+All Persons,Race,NA,Maryland,Under 25,0.139,1 in 7
+American Indian or Alaska Native,Race,AIAN,Maryland,Under 18,0.016,1 in 61
+American Indian or Alaska Native,Race,AIAN,Maryland,Under 25,0.036,1 in 27
+Asian or Pacific Islander,Race,API,Maryland,Under 18,0.033,1 in 31
+Asian or Pacific Islander,Race,API,Maryland,Under 25,0.06,1 in 17
+Black or African American,Race,BAA,Maryland,Under 18,0.098,1 in 10
+Black or African American,Race,BAA,Maryland,Under 25,0.167,1 in 6
+White,Race,W,Maryland,Under 18,0.076,1 in 13
+White,Race,W,Maryland,Under 25,0.129,1 in 8
+Hispanic or Latino,Ethnicity,HL,Maryland,Under 18,0.042,1 in 24
+Hispanic or Latino,Ethnicity,HL,Maryland,Under 25,0.07,1 in 14
+All Persons,Race,NA,Massachusetts,Under 18,0.071,1 in 14
+All Persons,Race,NA,Massachusetts,Under 25,0.124,1 in 8
+American Indian or Alaska Native,Race,AIAN,Massachusetts,Under 18,0.036,1 in 28
+American Indian or Alaska Native,Race,AIAN,Massachusetts,Under 25,0.054,1 in 18
+Asian or Pacific Islander,Race,API,Massachusetts,Under 18,0.026,1 in 38
+Asian or Pacific Islander,Race,API,Massachusetts,Under 25,0.05,1 in 20
+Black or African American,Race,BAA,Massachusetts,Under 18,0.07,1 in 14
+Black or African American,Race,BAA,Massachusetts,Under 25,0.119,1 in 8
+White,Race,W,Massachusetts,Under 18,0.076,1 in 13
+White,Race,W,Massachusetts,Under 25,0.13,1 in 8
+Hispanic or Latino,Ethnicity,HL,Massachusetts,Under 18,0.059,1 in 17
+Hispanic or Latino,Ethnicity,HL,Massachusetts,Under 25,0.099,1 in 10
+All Persons,Race,NA,Michigan,Under 18,0.082,1 in 12
+All Persons,Race,NA,Michigan,Under 25,0.138,1 in 7
+American Indian or Alaska Native,Race,AIAN,Michigan,Under 18,0.083,1 in 12
+American Indian or Alaska Native,Race,AIAN,Michigan,Under 25,0.138,1 in 7
+Asian or Pacific Islander,Race,API,Michigan,Under 18,0.029,1 in 34
+Asian or Pacific Islander,Race,API,Michigan,Under 25,0.052,1 in 19
+Black or African American,Race,BAA,Michigan,Under 18,0.118,1 in 8
+Black or African American,Race,BAA,Michigan,Under 25,0.192,1 in 5
+White,Race,W,Michigan,Under 18,0.076,1 in 13
+White,Race,W,Michigan,Under 25,0.129,1 in 8
+Hispanic or Latino,Ethnicity,HL,Michigan,Under 18,0.066,1 in 15
+Hispanic or Latino,Ethnicity,HL,Michigan,Under 25,0.108,1 in 9
+All Persons,Race,NA,Minnesota,Under 18,0.057,1 in 18
+All Persons,Race,NA,Minnesota,Under 25,0.102,1 in 10
+American Indian or Alaska Native,Race,AIAN,Minnesota,Under 18,0.16,1 in 6
+American Indian or Alaska Native,Race,AIAN,Minnesota,Under 25,0.253,1 in 4
+Asian or Pacific Islander,Race,API,Minnesota,Under 18,0.043,1 in 23
+Asian or Pacific Islander,Race,API,Minnesota,Under 25,0.078,1 in 13
+Black or African American,Race,BAA,Minnesota,Under 18,0.079,1 in 13
+Black or African American,Race,BAA,Minnesota,Under 25,0.138,1 in 7
+White,Race,W,Minnesota,Under 18,0.052,1 in 19
+White,Race,W,Minnesota,Under 25,0.095,1 in 10
+Hispanic or Latino,Ethnicity,HL,Minnesota,Under 18,0.038,1 in 27
+Hispanic or Latino,Ethnicity,HL,Minnesota,Under 25,0.064,1 in 16
+All Persons,Race,NA,Mississippi,Under 18,0.1,1 in 10
+All Persons,Race,NA,Mississippi,Under 25,0.17,1 in 6
+American Indian or Alaska Native,Race,AIAN,Mississippi,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Mississippi,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Mississippi,Under 18,0.044,1 in 23
+Asian or Pacific Islander,Race,API,Mississippi,Under 25,0.094,1 in 11
+Black or African American,Race,BAA,Mississippi,Under 18,0.114,1 in 9
+Black or African American,Race,BAA,Mississippi,Under 25,0.191,1 in 5
+White,Race,W,Mississippi,Under 18,0.09,1 in 11
+White,Race,W,Mississippi,Under 25,0.154,1 in 6
+Hispanic or Latino,Ethnicity,HL,Mississippi,Under 18,0.036,1 in 28
+Hispanic or Latino,Ethnicity,HL,Mississippi,Under 25,0.064,1 in 16
+All Persons,Race,NA,Missouri,Under 18,0.086,1 in 12
+All Persons,Race,NA,Missouri,Under 25,0.147,1 in 7
+American Indian or Alaska Native,Race,AIAN,Missouri,Under 18,0.043,1 in 23
+American Indian or Alaska Native,Race,AIAN,Missouri,Under 25,0.072,1 in 14
+Asian or Pacific Islander,Race,API,Missouri,Under 18,0.037,1 in 27
+Asian or Pacific Islander,Race,API,Missouri,Under 25,0.065,1 in 15
+Black or African American,Race,BAA,Missouri,Under 18,0.144,1 in 7
+Black or African American,Race,BAA,Missouri,Under 25,0.224,1 in 4
+White,Race,W,Missouri,Under 18,0.078,1 in 13
+White,Race,W,Missouri,Under 25,0.135,1 in 7
+Hispanic or Latino,Ethnicity,HL,Missouri,Under 18,0.043,1 in 23
+Hispanic or Latino,Ethnicity,HL,Missouri,Under 25,0.075,1 in 13
+All Persons,Race,NA,Montana,Under 18,0.082,1 in 12
+All Persons,Race,NA,Montana,Under 25,0.139,1 in 7
+American Indian or Alaska Native,Race,AIAN,Montana,Under 18,0.192,1 in 5
+American Indian or Alaska Native,Race,AIAN,Montana,Under 25,0.307,1 in 3
+Asian or Pacific Islander,Race,API,Montana,Under 18,NA,1 in NA
+Asian or Pacific Islander,Race,API,Montana,Under 25,NA,1 in NA
+Black or African American,Race,BAA,Montana,Under 18,NA,1 in NA
+Black or African American,Race,BAA,Montana,Under 25,NA,1 in NA
+White,Race,W,Montana,Under 18,0.071,1 in 14
+White,Race,W,Montana,Under 25,0.122,1 in 8
+Hispanic or Latino,Ethnicity,HL,Montana,Under 18,0.068,1 in 15
+Hispanic or Latino,Ethnicity,HL,Montana,Under 25,0.114,1 in 9
+All Persons,Race,NA,Nebraska,Under 18,0.059,1 in 17
+All Persons,Race,NA,Nebraska,Under 25,0.105,1 in 9
+American Indian or Alaska Native,Race,AIAN,Nebraska,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Nebraska,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Nebraska,Under 18,0.01,1 in 100
+Asian or Pacific Islander,Race,API,Nebraska,Under 25,0.012,1 in 81
+Black or African American,Race,BAA,Nebraska,Under 18,0.085,1 in 12
+Black or African American,Race,BAA,Nebraska,Under 25,0.149,1 in 7
+White,Race,W,Nebraska,Under 18,0.058,1 in 17
+White,Race,W,Nebraska,Under 25,0.105,1 in 10
+Hispanic or Latino,Ethnicity,HL,Nebraska,Under 18,0.042,1 in 24
+Hispanic or Latino,Ethnicity,HL,Nebraska,Under 25,0.067,1 in 15
+All Persons,Race,NA,Nevada,Under 18,0.072,1 in 14
+All Persons,Race,NA,Nevada,Under 25,0.13,1 in 8
+American Indian or Alaska Native,Race,AIAN,Nevada,Under 18,0.066,1 in 15
+American Indian or Alaska Native,Race,AIAN,Nevada,Under 25,0.115,1 in 9
+Asian or Pacific Islander,Race,API,Nevada,Under 18,0.054,1 in 18
+Asian or Pacific Islander,Race,API,Nevada,Under 25,0.098,1 in 10
+Black or African American,Race,BAA,Nevada,Under 18,0.104,1 in 10
+Black or African American,Race,BAA,Nevada,Under 25,0.178,1 in 6
+White,Race,W,Nevada,Under 18,0.068,1 in 15
+White,Race,W,Nevada,Under 25,0.123,1 in 8
+Hispanic or Latino,Ethnicity,HL,Nevada,Under 18,0.044,1 in 23
+Hispanic or Latino,Ethnicity,HL,Nevada,Under 25,0.076,1 in 13
+All Persons,Race,NA,New Hampshire,Under 18,0.078,1 in 13
+All Persons,Race,NA,New Hampshire,Under 25,0.13,1 in 8
+American Indian or Alaska Native,Race,AIAN,New Hampshire,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,New Hampshire,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,New Hampshire,Under 18,0.026,1 in 38
+Asian or Pacific Islander,Race,API,New Hampshire,Under 25,0.048,1 in 21
+Black or African American,Race,BAA,New Hampshire,Under 18,0.059,1 in 17
+Black or African American,Race,BAA,New Hampshire,Under 25,0.103,1 in 10
+White,Race,W,New Hampshire,Under 18,0.081,1 in 12
+White,Race,W,New Hampshire,Under 25,0.134,1 in 7
+Hispanic or Latino,Ethnicity,HL,New Hampshire,Under 18,0.043,1 in 23
+Hispanic or Latino,Ethnicity,HL,New Hampshire,Under 25,0.071,1 in 14
+All Persons,Race,NA,New Jersey,Under 18,0.068,1 in 15
+All Persons,Race,NA,New Jersey,Under 25,0.121,1 in 8
+American Indian or Alaska Native,Race,AIAN,New Jersey,Under 18,0.005,1 in 188
+American Indian or Alaska Native,Race,AIAN,New Jersey,Under 25,0.011,1 in 91
+Asian or Pacific Islander,Race,API,New Jersey,Under 18,0.026,1 in 39
+Asian or Pacific Islander,Race,API,New Jersey,Under 25,0.05,1 in 20
+Black or African American,Race,BAA,New Jersey,Under 18,0.09,1 in 11
+Black or African American,Race,BAA,New Jersey,Under 25,0.157,1 in 6
+White,Race,W,New Jersey,Under 18,0.07,1 in 14
+White,Race,W,New Jersey,Under 25,0.121,1 in 8
+Hispanic or Latino,Ethnicity,HL,New Jersey,Under 18,0.049,1 in 20
+Hispanic or Latino,Ethnicity,HL,New Jersey,Under 25,0.084,1 in 12
+All Persons,Race,NA,New Mexico,Under 18,0.103,1 in 10
+All Persons,Race,NA,New Mexico,Under 25,0.169,1 in 6
+American Indian or Alaska Native,Race,AIAN,New Mexico,Under 18,0.176,1 in 6
+American Indian or Alaska Native,Race,AIAN,New Mexico,Under 25,0.27,1 in 4
+Asian or Pacific Islander,Race,API,New Mexico,Under 18,0.038,1 in 26
+Asian or Pacific Islander,Race,API,New Mexico,Under 25,0.072,1 in 14
+Black or African American,Race,BAA,New Mexico,Under 18,0.086,1 in 12
+Black or African American,Race,BAA,New Mexico,Under 25,0.14,1 in 7
+White,Race,W,New Mexico,Under 18,0.093,1 in 11
+White,Race,W,New Mexico,Under 25,0.156,1 in 6
+Hispanic or Latino,Ethnicity,HL,New Mexico,Under 18,0.092,1 in 11
+Hispanic or Latino,Ethnicity,HL,New Mexico,Under 25,0.151,1 in 7
+All Persons,Race,NA,New York,Under 18,0.06,1 in 17
+All Persons,Race,NA,New York,Under 25,0.111,1 in 9
+American Indian or Alaska Native,Race,AIAN,New York,Under 18,0.015,1 in 66
+American Indian or Alaska Native,Race,AIAN,New York,Under 25,0.031,1 in 33
+Asian or Pacific Islander,Race,API,New York,Under 18,0.032,1 in 31
+Asian or Pacific Islander,Race,API,New York,Under 25,0.06,1 in 17
+Black or African American,Race,BAA,New York,Under 18,0.069,1 in 15
+Black or African American,Race,BAA,New York,Under 25,0.123,1 in 8
+White,Race,W,New York,Under 18,0.063,1 in 16
+White,Race,W,New York,Under 25,0.115,1 in 9
+Hispanic or Latino,Ethnicity,HL,New York,Under 18,0.046,1 in 22
+Hispanic or Latino,Ethnicity,HL,New York,Under 25,0.083,1 in 12
+All Persons,Race,NA,North Carolina,Under 18,0.078,1 in 13
+All Persons,Race,NA,North Carolina,Under 25,0.133,1 in 8
+American Indian or Alaska Native,Race,AIAN,North Carolina,Under 18,0.078,1 in 13
+American Indian or Alaska Native,Race,AIAN,North Carolina,Under 25,0.126,1 in 8
+Asian or Pacific Islander,Race,API,North Carolina,Under 18,0.034,1 in 30
+Asian or Pacific Islander,Race,API,North Carolina,Under 25,0.063,1 in 16
+Black or African American,Race,BAA,North Carolina,Under 18,0.095,1 in 11
+Black or African American,Race,BAA,North Carolina,Under 25,0.157,1 in 6
+White,Race,W,North Carolina,Under 18,0.076,1 in 13
+White,Race,W,North Carolina,Under 25,0.132,1 in 8
+Hispanic or Latino,Ethnicity,HL,North Carolina,Under 18,0.041,1 in 24
+Hispanic or Latino,Ethnicity,HL,North Carolina,Under 25,0.066,1 in 15
+All Persons,Race,NA,North Dakota,Under 18,0.074,1 in 14
+All Persons,Race,NA,North Dakota,Under 25,0.123,1 in 8
+American Indian or Alaska Native,Race,AIAN,North Dakota,Under 18,0.186,1 in 5
+American Indian or Alaska Native,Race,AIAN,North Dakota,Under 25,0.281,1 in 4
+Asian or Pacific Islander,Race,API,North Dakota,Under 18,0.038,1 in 26
+Asian or Pacific Islander,Race,API,North Dakota,Under 25,0.075,1 in 13
+Black or African American,Race,BAA,North Dakota,Under 18,0.074,1 in 13
+Black or African American,Race,BAA,North Dakota,Under 25,0.13,1 in 8
+White,Race,W,North Dakota,Under 18,0.066,1 in 15
+White,Race,W,North Dakota,Under 25,0.112,1 in 9
+Hispanic or Latino,Ethnicity,HL,North Dakota,Under 18,0.054,1 in 19
+Hispanic or Latino,Ethnicity,HL,North Dakota,Under 25,0.093,1 in 11
+All Persons,Race,NA,Ohio,Under 18,0.092,1 in 11
+All Persons,Race,NA,Ohio,Under 25,0.152,1 in 7
+American Indian or Alaska Native,Race,AIAN,Ohio,Under 18,0.032,1 in 32
+American Indian or Alaska Native,Race,AIAN,Ohio,Under 25,0.058,1 in 17
+Asian or Pacific Islander,Race,API,Ohio,Under 18,0.033,1 in 30
+Asian or Pacific Islander,Race,API,Ohio,Under 25,0.059,1 in 17
+Black or African American,Race,BAA,Ohio,Under 18,0.119,1 in 8
+Black or African American,Race,BAA,Ohio,Under 25,0.19,1 in 5
+White,Race,W,Ohio,Under 18,0.088,1 in 11
+White,Race,W,Ohio,Under 25,0.147,1 in 7
+Hispanic or Latino,Ethnicity,HL,Ohio,Under 18,0.055,1 in 18
+Hispanic or Latino,Ethnicity,HL,Ohio,Under 25,0.091,1 in 11
+All Persons,Race,NA,Oklahoma,Under 18,0.088,1 in 11
+All Persons,Race,NA,Oklahoma,Under 25,0.153,1 in 7
+American Indian or Alaska Native,Race,AIAN,Oklahoma,Under 18,0.106,1 in 9
+American Indian or Alaska Native,Race,AIAN,Oklahoma,Under 25,0.179,1 in 6
+Asian or Pacific Islander,Race,API,Oklahoma,Under 18,0.051,1 in 19
+Asian or Pacific Islander,Race,API,Oklahoma,Under 25,0.088,1 in 11
+Black or African American,Race,BAA,Oklahoma,Under 18,0.112,1 in 9
+Black or African American,Race,BAA,Oklahoma,Under 25,0.185,1 in 5
+White,Race,W,Oklahoma,Under 18,0.081,1 in 12
+White,Race,W,Oklahoma,Under 25,0.143,1 in 7
+Hispanic or Latino,Ethnicity,HL,Oklahoma,Under 18,0.053,1 in 19
+Hispanic or Latino,Ethnicity,HL,Oklahoma,Under 25,0.088,1 in 11
+All Persons,Race,NA,Oregon,Under 18,0.06,1 in 17
+All Persons,Race,NA,Oregon,Under 25,0.113,1 in 9
+American Indian or Alaska Native,Race,AIAN,Oregon,Under 18,0.067,1 in 15
+American Indian or Alaska Native,Race,AIAN,Oregon,Under 25,0.114,1 in 9
+Asian or Pacific Islander,Race,API,Oregon,Under 18,0.043,1 in 23
+Asian or Pacific Islander,Race,API,Oregon,Under 25,0.076,1 in 13
+Black or African American,Race,BAA,Oregon,Under 18,0.073,1 in 14
+Black or African American,Race,BAA,Oregon,Under 25,0.129,1 in 8
+White,Race,W,Oregon,Under 18,0.06,1 in 17
+White,Race,W,Oregon,Under 25,0.111,1 in 9
+Hispanic or Latino,Ethnicity,HL,Oregon,Under 18,0.039,1 in 26
+Hispanic or Latino,Ethnicity,HL,Oregon,Under 25,0.065,1 in 15
+All Persons,Race,NA,Pennsylvania,Under 18,0.083,1 in 12
+All Persons,Race,NA,Pennsylvania,Under 25,0.14,1 in 7
+American Indian or Alaska Native,Race,AIAN,Pennsylvania,Under 18,0.015,1 in 66
+American Indian or Alaska Native,Race,AIAN,Pennsylvania,Under 25,0.03,1 in 33
+Asian or Pacific Islander,Race,API,Pennsylvania,Under 18,0.032,1 in 31
+Asian or Pacific Islander,Race,API,Pennsylvania,Under 25,0.06,1 in 17
+Black or African American,Race,BAA,Pennsylvania,Under 18,0.102,1 in 10
+Black or African American,Race,BAA,Pennsylvania,Under 25,0.17,1 in 6
+White,Race,W,Pennsylvania,Under 18,0.083,1 in 12
+White,Race,W,Pennsylvania,Under 25,0.141,1 in 7
+Hispanic or Latino,Ethnicity,HL,Pennsylvania,Under 18,0.061,1 in 16
+Hispanic or Latino,Ethnicity,HL,Pennsylvania,Under 25,0.101,1 in 10
+All Persons,Race,NA,Rhode Island,Under 18,0.071,1 in 14
+All Persons,Race,NA,Rhode Island,Under 25,0.121,1 in 8
+American Indian or Alaska Native,Race,AIAN,Rhode Island,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Rhode Island,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Rhode Island,Under 18,0.041,1 in 24
+Asian or Pacific Islander,Race,API,Rhode Island,Under 25,0.065,1 in 15
+Black or African American,Race,BAA,Rhode Island,Under 18,0.063,1 in 16
+Black or African American,Race,BAA,Rhode Island,Under 25,0.105,1 in 10
+White,Race,W,Rhode Island,Under 18,0.073,1 in 14
+White,Race,W,Rhode Island,Under 25,0.125,1 in 8
+Hispanic or Latino,Ethnicity,HL,Rhode Island,Under 18,0.046,1 in 22
+Hispanic or Latino,Ethnicity,HL,Rhode Island,Under 25,0.073,1 in 14
+All Persons,Race,NA,South Carolina,Under 18,0.092,1 in 11
+All Persons,Race,NA,South Carolina,Under 25,0.157,1 in 6
+American Indian or Alaska Native,Race,AIAN,South Carolina,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,South Carolina,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,South Carolina,Under 18,0.042,1 in 24
+Asian or Pacific Islander,Race,API,South Carolina,Under 25,0.073,1 in 14
+Black or African American,Race,BAA,South Carolina,Under 18,0.109,1 in 9
+Black or African American,Race,BAA,South Carolina,Under 25,0.182,1 in 6
+White,Race,W,South Carolina,Under 18,0.085,1 in 12
+White,Race,W,South Carolina,Under 25,0.148,1 in 7
+Hispanic or Latino,Ethnicity,HL,South Carolina,Under 18,0.043,1 in 23
+Hispanic or Latino,Ethnicity,HL,South Carolina,Under 25,0.07,1 in 14
+All Persons,Race,NA,South Dakota,Under 18,0.078,1 in 13
+All Persons,Race,NA,South Dakota,Under 25,0.132,1 in 8
+American Indian or Alaska Native,Race,AIAN,South Dakota,Under 18,0.202,1 in 5
+American Indian or Alaska Native,Race,AIAN,South Dakota,Under 25,0.332,1 in 3
+Asian or Pacific Islander,Race,API,South Dakota,Under 18,0.038,1 in 26
+Asian or Pacific Islander,Race,API,South Dakota,Under 25,0.063,1 in 16
+Black or African American,Race,BAA,South Dakota,Under 18,0.069,1 in 14
+Black or African American,Race,BAA,South Dakota,Under 25,0.123,1 in 8
+White,Race,W,South Dakota,Under 18,0.058,1 in 17
+White,Race,W,South Dakota,Under 25,0.102,1 in 10
+Hispanic or Latino,Ethnicity,HL,South Dakota,Under 18,0.042,1 in 24
+Hispanic or Latino,Ethnicity,HL,South Dakota,Under 25,0.076,1 in 13
+All Persons,Race,NA,Tennessee,Under 18,0.093,1 in 11
+All Persons,Race,NA,Tennessee,Under 25,0.16,1 in 6
+American Indian or Alaska Native,Race,AIAN,Tennessee,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Tennessee,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Tennessee,Under 18,0.045,1 in 22
+Asian or Pacific Islander,Race,API,Tennessee,Under 25,0.076,1 in 13
+Black or African American,Race,BAA,Tennessee,Under 18,0.113,1 in 9
+Black or African American,Race,BAA,Tennessee,Under 25,0.185,1 in 5
+White,Race,W,Tennessee,Under 18,0.09,1 in 11
+White,Race,W,Tennessee,Under 25,0.158,1 in 6
+Hispanic or Latino,Ethnicity,HL,Tennessee,Under 18,0.048,1 in 21
+Hispanic or Latino,Ethnicity,HL,Tennessee,Under 25,0.076,1 in 13
+All Persons,Race,NA,Texas,Under 18,0.064,1 in 16
+All Persons,Race,NA,Texas,Under 25,0.114,1 in 9
+American Indian or Alaska Native,Race,AIAN,Texas,Under 18,0.014,1 in 72
+American Indian or Alaska Native,Race,AIAN,Texas,Under 25,0.025,1 in 39
+Asian or Pacific Islander,Race,API,Texas,Under 18,0.034,1 in 29
+Asian or Pacific Islander,Race,API,Texas,Under 25,0.064,1 in 16
+Black or African American,Race,BAA,Texas,Under 18,0.092,1 in 11
+Black or African American,Race,BAA,Texas,Under 25,0.157,1 in 6
+White,Race,W,Texas,Under 18,0.062,1 in 16
+White,Race,W,Texas,Under 25,0.112,1 in 9
+Hispanic or Latino,Ethnicity,HL,Texas,Under 18,0.049,1 in 20
+Hispanic or Latino,Ethnicity,HL,Texas,Under 25,0.087,1 in 11
+All Persons,Race,NA,Utah,Under 18,0.065,1 in 15
+All Persons,Race,NA,Utah,Under 25,0.109,1 in 9
+American Indian or Alaska Native,Race,AIAN,Utah,Under 18,0.109,1 in 9
+American Indian or Alaska Native,Race,AIAN,Utah,Under 25,0.172,1 in 6
+Asian or Pacific Islander,Race,API,Utah,Under 18,0.053,1 in 19
+Asian or Pacific Islander,Race,API,Utah,Under 25,0.089,1 in 11
+Black or African American,Race,BAA,Utah,Under 18,0.062,1 in 16
+Black or African American,Race,BAA,Utah,Under 25,0.11,1 in 9
+White,Race,W,Utah,Under 18,0.064,1 in 16
+White,Race,W,Utah,Under 25,0.106,1 in 9
+Hispanic or Latino,Ethnicity,HL,Utah,Under 18,0.051,1 in 20
+Hispanic or Latino,Ethnicity,HL,Utah,Under 25,0.082,1 in 12
+All Persons,Race,NA,Vermont,Under 18,0.073,1 in 14
+All Persons,Race,NA,Vermont,Under 25,0.124,1 in 8
+American Indian or Alaska Native,Race,AIAN,Vermont,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,Vermont,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,Vermont,Under 18,0.035,1 in 29
+Asian or Pacific Islander,Race,API,Vermont,Under 25,0.073,1 in 14
+Black or African American,Race,BAA,Vermont,Under 18,0.088,1 in 11
+Black or African American,Race,BAA,Vermont,Under 25,0.141,1 in 7
+White,Race,W,Vermont,Under 18,0.074,1 in 14
+White,Race,W,Vermont,Under 25,0.125,1 in 8
+Hispanic or Latino,Ethnicity,HL,Vermont,Under 18,NA,1 in NA
+Hispanic or Latino,Ethnicity,HL,Vermont,Under 25,NA,1 in NA
+All Persons,Race,NA,Virginia,Under 18,0.067,1 in 15
+All Persons,Race,NA,Virginia,Under 25,0.119,1 in 8
+American Indian or Alaska Native,Race,AIAN,Virginia,Under 18,0.026,1 in 39
+American Indian or Alaska Native,Race,AIAN,Virginia,Under 25,0.046,1 in 22
+Asian or Pacific Islander,Race,API,Virginia,Under 18,0.031,1 in 32
+Asian or Pacific Islander,Race,API,Virginia,Under 25,0.057,1 in 18
+Black or African American,Race,BAA,Virginia,Under 18,0.085,1 in 12
+Black or African American,Race,BAA,Virginia,Under 25,0.146,1 in 7
+White,Race,W,Virginia,Under 18,0.066,1 in 15
+White,Race,W,Virginia,Under 25,0.118,1 in 8
+Hispanic or Latino,Ethnicity,HL,Virginia,Under 18,0.035,1 in 28
+Hispanic or Latino,Ethnicity,HL,Virginia,Under 25,0.057,1 in 17
+All Persons,Race,NA,Washington,Under 18,0.059,1 in 17
+All Persons,Race,NA,Washington,Under 25,0.11,1 in 9
+American Indian or Alaska Native,Race,AIAN,Washington,Under 18,0.097,1 in 10
+American Indian or Alaska Native,Race,AIAN,Washington,Under 25,0.163,1 in 6
+Asian or Pacific Islander,Race,API,Washington,Under 18,0.043,1 in 23
+Asian or Pacific Islander,Race,API,Washington,Under 25,0.079,1 in 13
+Black or African American,Race,BAA,Washington,Under 18,0.076,1 in 13
+Black or African American,Race,BAA,Washington,Under 25,0.136,1 in 7
+White,Race,W,Washington,Under 18,0.058,1 in 17
+White,Race,W,Washington,Under 25,0.108,1 in 9
+Hispanic or Latino,Ethnicity,HL,Washington,Under 18,0.043,1 in 23
+Hispanic or Latino,Ethnicity,HL,Washington,Under 25,0.075,1 in 13
+All Persons,Race,NA,West Virginia,Under 18,0.115,1 in 9
+All Persons,Race,NA,West Virginia,Under 25,0.187,1 in 5
+American Indian or Alaska Native,Race,AIAN,West Virginia,Under 18,NA,1 in NA
+American Indian or Alaska Native,Race,AIAN,West Virginia,Under 25,NA,1 in NA
+Asian or Pacific Islander,Race,API,West Virginia,Under 18,NA,1 in NA
+Asian or Pacific Islander,Race,API,West Virginia,Under 25,NA,1 in NA
+Black or African American,Race,BAA,West Virginia,Under 18,0.139,1 in 7
+Black or African American,Race,BAA,West Virginia,Under 25,0.211,1 in 5
+White,Race,W,West Virginia,Under 18,0.115,1 in 9
+White,Race,W,West Virginia,Under 25,0.187,1 in 5
+Hispanic or Latino,Ethnicity,HL,West Virginia,Under 18,NA,1 in NA
+Hispanic or Latino,Ethnicity,HL,West Virginia,Under 25,NA,1 in NA
+All Persons,Race,NA,Wisconsin,Under 18,0.068,1 in 15
+All Persons,Race,NA,Wisconsin,Under 25,0.117,1 in 9
+American Indian or Alaska Native,Race,AIAN,Wisconsin,Under 18,0.112,1 in 9
+American Indian or Alaska Native,Race,AIAN,Wisconsin,Under 25,0.184,1 in 5
+Asian or Pacific Islander,Race,API,Wisconsin,Under 18,0.043,1 in 23
+Asian or Pacific Islander,Race,API,Wisconsin,Under 25,0.078,1 in 13
+Black or African American,Race,BAA,Wisconsin,Under 18,0.113,1 in 9
+Black or African American,Race,BAA,Wisconsin,Under 25,0.187,1 in 5
+White,Race,W,Wisconsin,Under 18,0.062,1 in 16
+White,Race,W,Wisconsin,Under 25,0.107,1 in 9
+Hispanic or Latino,Ethnicity,HL,Wisconsin,Under 18,0.047,1 in 21
+Hispanic or Latino,Ethnicity,HL,Wisconsin,Under 25,0.076,1 in 13
+All Persons,Race,NA,Wyoming,Under 18,0.08,1 in 13
+All Persons,Race,NA,Wyoming,Under 25,0.136,1 in 7
+American Indian or Alaska Native,Race,AIAN,Wyoming,Under 18,0.187,1 in 5
+American Indian or Alaska Native,Race,AIAN,Wyoming,Under 25,0.285,1 in 4
+Asian or Pacific Islander,Race,API,Wyoming,Under 18,NA,1 in NA
+Asian or Pacific Islander,Race,API,Wyoming,Under 25,NA,1 in NA
+Black or African American,Race,BAA,Wyoming,Under 18,0.072,1 in 14
+Black or African American,Race,BAA,Wyoming,Under 25,0.128,1 in 8
+White,Race,W,Wyoming,Under 18,0.076,1 in 13
+White,Race,W,Wyoming,Under 25,0.131,1 in 8
+Hispanic or Latino,Ethnicity,HL,Wyoming,Under 18,0.059,1 in 17
+Hispanic or Latino,Ethnicity,HL,Wyoming,Under 25,0.099,1 in 10
