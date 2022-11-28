@@ -1,5 +1,5 @@
 ---
-title: "R in 3 Months: Week 11 (Advanced Data Viz Part 2)"
+title: "Rin3 Training: Week 11 (Advanced Data Viz Part 2)"
 output:
   xaringan::moon_reader:
     css: ["style.css", "default"]
@@ -26,14 +26,6 @@ library(gapminder)
 library(ggtext)
 ```
 
-<!---- PLAN
-
-2022-05-24: Decypher the dataviz example from before
-
-Group work: give them broken tidytuesday visualisations and they fix the code.
-
-
---->
 
 # Agenda
 
@@ -43,15 +35,8 @@ Group work: give them broken tidytuesday visualisations and they fix the code.
 
 --
 
-1. One quick reminder
-
---
-
 1. Group work
 
---
-
-1. Novel data viz: maps
 
 --
 
@@ -68,7 +53,7 @@ class: inverse, center, middle
 
 ## 1:1 with Charlie
 
-Book another 1:1 with Charlie - [rfor.us/charliechat](https://rfor.us/charliechat)
+Book another 1:1 with Charlie - [https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023](https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023)
 
 
 ---
@@ -81,7 +66,7 @@ Book another 1:1 with Charlie - [rfor.us/charliechat](https://rfor.us/charliecha
 
   - Office hours
   
-  - Live session (December 6)
+  - Live session (December 8th)
   
 --
   
@@ -89,49 +74,19 @@ Book another 1:1 with Charlie - [rfor.us/charliechat](https://rfor.us/charliecha
 
   - Office hours
   
-  - Last Live session (December 13)
+  - Last Live session (December 15th)
 
 --
 
 - Assignments
 
-  - Please submit before end of June
+  - Please submit before end of December
 
 ---
-
-class: inverse, center, middle
-
-# One quick reminder
-
----
-
-## Reminder about tidy evaluation
-
-If you create a function where you provide column names things get complicated
-
-```{r}
-make_sleep_chart <- function(y_axis){
-  
-  msleep %>% 
-  ggplot(aes(x = sleep_total,
-             y = y_axis)) +
-  geom_point()
-  
-}
-```
-
-```{r, eval=FALSE}
-make_sleep_chart(y_axis = sleep_rem)
-# Error in FUN(X[[i]], ...) : object 'sleep_rem' not found
-```
-
-
 
 class: inverse, center, middle
 
 # Group work
-
-???
 
 ---
 
@@ -166,18 +121,11 @@ Your task is decipher how I made [this graph](https://share.rfor.us/v1ub7qWe)
 
 ---
 
-# Maps
-
-
-
-
----
-
 # Next Week
 
 --
 
-Course assignment: Advanced RMarkdown
+Course assignment: Tell us what you've learned during the course with a 5minute video recorded with [loom.com](https://loom.com)
 
 --
 
