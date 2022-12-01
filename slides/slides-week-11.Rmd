@@ -1,5 +1,5 @@
 ---
-title: "Rin3 Training: Week 11 (Advanced Data Viz Part 2)"
+title: "R in 3 Months<br>Week 11<br>Advanced Data Viz Part 2"
 output:
   xaringan::moon_reader:
     css: ["style.css", "default"]
@@ -35,8 +35,11 @@ library(ggtext)
 
 --
 
-1. Group work
+1. `ggtext` example
 
+--
+
+1. Group work
 
 --
 
@@ -53,7 +56,7 @@ class: inverse, center, middle
 
 ## 1:1 with Charlie
 
-Book another 1:1 with Charlie - [https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023](https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023)
+[Book another 1:1 with Charlie in January](https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023)
 
 
 ---
@@ -113,7 +116,7 @@ Our colleague Cara Thompson ran an incredible workshop at NHS-R in November 2022
 
 <br>
 
-You can watch the video and view Cara's slides on her website - [cararthompson.com/talks/nhsr2022-level-up/](https://www.cararthompson.com/talks/nhsr2022-level-up).
+You can watch the video and view Cara's slides [on her website](https://www.cararthompson.com/talks/nhsr2022-level-up).
 
 ]
 
@@ -166,9 +169,5 @@ Your task is decipher how I made [this graph](https://share.rfor.us/v1ub7qWe)
 
 --
 
-Course assignment: Tell us what you've learned during the course with a 5minute video recorded with [loom.com](https://loom.com)
-
---
-
-Project assignment: Switch your report to some other format (slides, dashboard, etc)
+Course assignment: Complete lessons on advanced RMarkdown
 
