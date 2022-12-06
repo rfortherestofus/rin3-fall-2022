@@ -28,16 +28,6 @@ library(ggtext)
 ```
 
 
-<!---- PLAN
-
-Get everyone to say what they wish they'd been able to do.
-
-We don't care what YOU HAVE been able to do. What's next? Put everyone at the same level (as many will be behind)
-
-just do this in Zoom chat.
-
---->
-
 # Agenda
 
 1. Housekeeping
@@ -45,6 +35,10 @@ just do this in Zoom chat.
 --
 
 1. What else can RMarkdown do?
+
+--
+
+1. Quarto
 
 --
 
@@ -189,6 +183,107 @@ https://rfortherestofus.com/2020/10/parameterized-reporting-with-rmarkdown/
 
 ---
 
+class: inverse, center, middle
+
+# Quarto...
+
+---
+
+### Quarto is the next generation of RMarkdown
+
+.pull-left[
+
+Quarto is a new technology that will be the future of RMarkdown.
+
+It's not **quite** stable enough for us to switch our teaching materials from RMarkdown to Quarto.
+
+> And RMarkdown is **not** going away. RMarkdown will continue to be supported and developed into the future.
+
+]
+
+.pull-right[
+<img src='images/quarto.png'/>
+
+]
+
+---
+
+### Why does Quarto exist?
+
+.pull-left[
+
+RMarkdown is quite limited in that it's only useful for folks in the R community.
+
+Quarto is designed from the ground up to work for R, Python and Julia users.
+
+It's very exciting - but we feel it's worthwhile having some caution about learning it right now.
+]
+
+.pull-right[
+<img src='images/quarto.png'/>
+
+]
+
+---
+
+## ... oh, and about RStudio
+
+.pull-left[
+
+RStudio have also rebranded themselves to Posit.
+
+This is because they want to add other people to our community who don't use R.
+
+- The RStudio application is not changing name
+
+- Posit are dedicated to the R community!!
+
+]
+
+.pull-right[
+<img src='images/posit.png'/>
+
+]
+
+---
+
+### Where to find out more about Quarto
+
+.pull-left[
+
+[Tom Mock](https://twitter.com/thomas_mock) from Posit gave a [great 2h workshop on Quarto](https://www.youtube.com/watch?v=yvi5uXQMvu4) we'd recommend.
+
+Actually using Quarto is not much different from RMarkdown
+
+````{verbatim}
+---
+title: "Untitled"
+format: html
+---
+
+Everything's the same except:
+
+- We use `format` instead of `output` in the YAML header
+
+- Code chunk options are written differently
+
+```{r}
+#| echo: false
+rep("lots of cats", 5)
+```
+````
+
+
+
+]
+
+.pull-right[
+<img src='images/quarto.png'/>
+
+]
+
+---
+
 # Final Week
 
 Charlie will host her office hours as usual at 12pm Wednesday.
@@ -242,7 +337,7 @@ There are two ways we want to collect feedback:
 
 --
 
-2. [Post-survey that shows your skill now](https://rfor.us/rin3-fall22-feedback) (we'll compare this to what you told us in the pre-survey) and allows you to provide anonymous feedback.
+2. [Post-survey that shows your skill now](rfor.us/rin3-fall22-feedback) (we'll compare this to what you told us in the pre-survey) and allows you to provide anonymous feedback.
 
 
 ---
