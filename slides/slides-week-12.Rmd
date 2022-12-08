@@ -1,5 +1,5 @@
 ---
-title: "R in 3 Months: Week 12 (Advanced RMarkdown)"
+title: "R in 3 Months<br>Week 12<br>Advanced RMarkdown"
 output:
   xaringan::moon_reader:
     css: ["style.css", "default"]
@@ -28,16 +28,6 @@ library(ggtext)
 ```
 
 
-<!---- PLAN
-
-Get everyone to say what they wish they'd been able to do.
-
-We don't care what YOU HAVE been able to do. What's next? Put everyone at the same level (as many will be behind)
-
-just do this in Zoom chat.
-
---->
-
 # Agenda
 
 1. Housekeeping
@@ -45,6 +35,10 @@ just do this in Zoom chat.
 --
 
 1. What else can RMarkdown do?
+
+--
+
+1. Quarto
 
 --
 
@@ -100,6 +94,12 @@ We've seen that you can make the following:
 
 ---
 
+class: inverse, center, middle
+
+# Books
+
+---
+
 ## Beautiful books with `bookdown`
 
 .pull-left[
@@ -114,6 +114,13 @@ The `bookdown` package was used for writing R for Data Science and many other ex
 ???
 
 https://rfortherestofus.com/2022/04/bookdown/
+https://book.rwithoutstatistics.com/
+
+---
+
+class: inverse, center, middle
+
+# PDF Reports
 
 
 ---
@@ -124,6 +131,8 @@ https://rfortherestofus.com/2022/04/bookdown/
 The `pagedown` package is designed to simplify designing documents you need to print.
 
 Instead of learning `LaTeX` you can use HTML and CSS!
+
+[Blog post on customizing `pagedown`](https://rfortherestofus.com/2022/11/no-designer-needed/)
 
 ]
 
@@ -150,38 +159,33 @@ R for the Rest of Us has created a package called [`pagedreport`](https://pagedr
 
 class: inverse, center, middle
 
-## Websites created all in RMarkdown
+# Websites
 
 ---
 
+[![](images/westchester-covid-site.png)](https://westchester-covid.mattherman.info/)
+
+
+
+---
+
+
 ## `distill` for websites (and blogs)
 
-Using `distill` is the easiest way to create a fully functioning data blog with RMarkdown.
+Using `distill` is the easiest way to create a fully functioning website with RMarkdown.
 
---
 
-We'll put together a thorough discussion thread about this.
+---
 
+class: inverse, center, middle
+
+# Parameterized reports
 
 ---
 
 ## Parameterized reports
 
-Use [parametrized RMarkdown reporting](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html) to make a separate report for each region
-
-```{yaml}
----
-params:
-  state: "Alaska"
-title: "`r params$state` Report"
----
-  
-```
-
-```{r eval = FALSE}
-qualitative_data %>% 
-  filter(state == params$state)
-```
+Use [parametrized RMarkdown reporting](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html) to make a separate report for each group
 
 ???
 
@@ -189,9 +193,110 @@ https://rfortherestofus.com/2020/10/parameterized-reporting-with-rmarkdown/
 
 ---
 
+class: inverse, center, middle
+
+# Quarto...
+
+---
+
+### Quarto is the next generation of RMarkdown
+
+.pull-left[
+
+Quarto is a new technology that will be the future of RMarkdown.
+
+It's not **quite** stable enough for us to switch our teaching materials from RMarkdown to Quarto.
+
+> And RMarkdown is **not** going away. RMarkdown will continue to be supported and developed into the future.
+
+]
+
+.pull-right[
+<img src='images/quarto.png'/>
+
+]
+
+---
+
+### Why does Quarto exist?
+
+.pull-left[
+
+RMarkdown is quite limited in that it's only useful for folks in the R community.
+
+Quarto is designed from the ground up to work for R, Python and Julia users.
+
+It's very exciting - but we feel it's worthwhile having some caution about learning it right now.
+]
+
+.pull-right[
+<img src='images/quarto.png'/>
+
+]
+
+---
+
+## ... oh, and about RStudio
+
+.pull-left[
+
+RStudio have also rebranded themselves to Posit.
+
+This is because they want to add other people to our community who don't use R.
+
+- The RStudio application is not changing name
+
+- Posit are dedicated to the R community!!
+
+]
+
+.pull-right[
+<img src='images/posit.png'/>
+
+]
+
+---
+
+### Where to find out more about Quarto
+
+.pull-left[
+
+[Tom Mock](https://twitter.com/thomas_mock) from Posit gave a [great 2h workshop on Quarto](https://www.youtube.com/watch?v=yvi5uXQMvu4) we'd recommend.
+
+Actually using Quarto is not much different from RMarkdown
+
+````{verbatim}
+---
+title: "Untitled"
+format: html
+---
+
+Everything's the same except:
+
+- We use `format` instead of `output` in the YAML header
+
+- Code chunk options are written differently
+
+```{r}
+#| echo: false
+rep("lots of cats", 5)
+```
+````
+
+
+
+]
+
+.pull-right[
+<img src='images/quarto.png'/>
+
+]
+
+---
+
 # Final Week
 
-Charlie will host her office hours as usual at 12pm Wednesday.
+Charlie will host her office hours as usual at 12pm Tuesday.
 
 --
 
@@ -207,7 +312,7 @@ In the final live session we'll cover:
 
 class: inverse, center, middle
 
-## Final assignment:<br>Show us what you can do!
+# Final assignment
 
 ---
 
@@ -223,34 +328,18 @@ We'd like you to record a 5 minute video showing something you can now do with y
 
 > [Loom.com](https://www.loom.com/pricing) has a free tier that will allow you to record and share 5 minute videos.
 
-There's a form to fill on [Week 13's assignment submission page](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/lessons/r-in-3-months-sfall-2022-final-project-assignment/).
+There's a form to fill on [Week 13's assignment submission page](https://rfortherestofus.com/courses/vsa-r-training-fall-2022/lessons/vsa-final-assignment/).
 
 
 ---
 
 # Feedback
 
-We love doing R in 3 Months and want to continually improve it.
+We love doing this type of training and want to continually improve it.
 
 --
 
-There are two ways we want to collect feedback:
-
---
-
-1. Open-ended discussion of what went well, what can be improved, etc XXX[DECIDE WHERE TO DO THIS!!]
-
---
-
-2. [Post-survey that shows your skill now](https://rfor.us/rin3-fall22-feedback) (we'll compare this to what you told us in the pre-survey) and allows you to provide anonymous feedback.
-
-
----
-
-## Post-Survey
-
-🔗 [rfor.us/rin3-fall22-feedback](https://rfor.us/rin3-fall22-feedback)
-
+Please fill out this [post-survey that shows your skill now](https://docs.google.com/forms/d/e/1FAIpQLSf_J9lmld48qKxYlj2RVeyuw8FfdMuJhqD_3R7ePX5tGH0_0g/viewform?usp=sf_link) (we'll compare this to what you told us in the pre-survey) and allows you to provide anonymous feedback.
 
 ---
 
@@ -262,15 +351,11 @@ There are two ways we want to collect feedback:
 
 --
 
-- Record a <5 minutes video showing what you've learned
+- Record a <5-minute video showing what you've learned
 
 --
 
-- Please provide any feedback to reflection thread David will create
-
---
-
-- Please complete post-survey [rfor.us/rin3-fall22-feedback](https://rfor.us/rin3-fall22-feedback)
+- Please complete [post-survey](https://docs.google.com/forms/d/e/1FAIpQLSf_J9lmld48qKxYlj2RVeyuw8FfdMuJhqD_3R7ePX5tGH0_0g/viewform?usp=sf_link)
 
 --
 

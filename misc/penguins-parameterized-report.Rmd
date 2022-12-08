@@ -1,0 +1,38 @@
+---
+title: "`r params$species` Report"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+library(scales)
+```
+
+This is a report about `r params$species` penguins.
+
+```{r}
+penguins_filtered <- penguins %>% 
+  filter(species == params$species)
+```
+
+We can make a scatterplot that shows bill length and bill depth.
+
+```{r}
+penguins_filtered %>% 
+  ggplot(aes(x = bill_length_mm,
+             y = bill_depth_mm)) +
+  geom_point() +
+  theme_minimal() +
+  labs(title = str_glue("Bill length and bill depth of {params$species} penguins"))
+```
+
+
+
+

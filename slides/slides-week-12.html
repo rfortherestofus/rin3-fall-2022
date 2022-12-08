@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>R in 3 Months Week 12 Advanced RMarkdown</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.17/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+    <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# R in 3 Months<br>Week 12<br>Advanced RMarkdown
+]
+
+---
+
+
+
+
+
+
+# Agenda
+
+1. Housekeeping
+
+--
+
+1. What else can RMarkdown do?
+
+--
+
+1. Quarto
+
+--
+
+1. Final assignment: show us what you can do!
+
+--
+
+1. Final week: let's see what you did!
+
+---
+
+class: inverse, center, middle
+
+# What else can RMarkdown do?
+
+---
+
+## RMarkdown can do a lot...
+
+We've seen that you can make the following:
+
+--
+
+.pull-left[
+
+- HTML reports
+
+- PDF reports
+
+- Word reports
+
+... but there's a lot more.
+]
+
+--
+
+.pull-right[
+
+- Beautiful books with `bookdown`
+
+- Beautiful reports with `pagedown`
+
+- Beautiful slides with `xaringan`
+
+- Programmatically generated reports
+
+- Dashboards (... and even shiny apps!)
+
+- Websites all in RMarkdown!
+
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Books
+
+---
+
+## Beautiful books with `bookdown`
+
+.pull-left[
+The `bookdown` package was used for writing R for Data Science and many other extremely useful R books.
+]
+
+.pull-right[
+&lt;img src='https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png' height='300px'/&gt;
+&lt;img src='https://www.tidytextmining.com/images/cover.png' style='align:right' height='300px'/&gt;
+]
+
+???
+
+https://rfortherestofus.com/2022/04/bookdown/
+https://book.rwithoutstatistics.com/
+
+---
+
+class: inverse, center, middle
+
+# PDF Reports
+
+
+---
+
+## Beautiful reports with `pagedown`
+
+.pull-left[
+The `pagedown` package is designed to simplify designing documents you need to print.
+
+Instead of learning `LaTeX` you can use HTML and CSS!
+
+[Blog post on customizing `pagedown`](https://rfortherestofus.com/2022/11/no-designer-needed/)
+
+]
+
+.pull-right[
+&lt;center&gt;&lt;img src='https://raw.githubusercontent.com/rstudio/hex-stickers/master/SVG/pagedown.svg' height='300px'/&gt;&lt;/center&gt;
+]
+
+---
+
+## `pagedreport`
+
+.pull-left[
+R for the Rest of Us has created a package called [`pagedreport`](https://pagedreport.rfortherestofus.com/) that adds several templates to `pagedown`.
+
+]
+
+.pull-right[
+&lt;center&gt;&lt;img src='https://camo.githubusercontent.com/f0956be0c95edd980629ffe24ae98167d9727caf38f58299de86f4f1eabe3a1d/68747470733a2f2f6d6b3072666f72746865726573746f306f3038712e6b696e73746163646e2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032312f30312f677269642e676966' height='300px'/&gt;&lt;/center&gt;
+]
+
+
+
+---
+
+class: inverse, center, middle
+
+# Websites
+
+---
+
+[![](images/westchester-covid-site.png)](https://westchester-covid.mattherman.info/)
+
+
+
+---
+
+
+## `distill` for websites (and blogs)
+
+Using `distill` is the easiest way to create a fully functioning website with RMarkdown.
+
+
+---
+
+class: inverse, center, middle
+
+# Parameterized reports
+
+---
+
+## Parameterized reports
+
+Use [parametrized RMarkdown reporting](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html) to make a separate report for each group
+
+???
+
+https://rfortherestofus.com/2020/10/parameterized-reporting-with-rmarkdown/
+
+---
+
+class: inverse, center, middle
+
+# Quarto...
+
+---
+
+### Quarto is the next generation of RMarkdown
+
+.pull-left[
+
+Quarto is a new technology that will be the future of RMarkdown.
+
+It's not **quite** stable enough for us to switch our teaching materials from RMarkdown to Quarto.
+
+&gt; And RMarkdown is **not** going away. RMarkdown will continue to be supported and developed into the future.
+
+]
+
+.pull-right[
+&lt;img src='images/quarto.png'/&gt;
+
+]
+
+---
+
+### Why does Quarto exist?
+
+.pull-left[
+
+RMarkdown is quite limited in that it's only useful for folks in the R community.
+
+Quarto is designed from the ground up to work for R, Python and Julia users.
+
+It's very exciting - but we feel it's worthwhile having some caution about learning it right now.
+]
+
+.pull-right[
+&lt;img src='images/quarto.png'/&gt;
+
+]
+
+---
+
+## ... oh, and about RStudio
+
+.pull-left[
+
+RStudio have also rebranded themselves to Posit.
+
+This is because they want to add other people to our community who don't use R.
+
+- The RStudio application is not changing name
+
+- Posit are dedicated to the R community!!
+
+]
+
+.pull-right[
+&lt;img src='images/posit.png'/&gt;
+
+]
+
+---
+
+### Where to find out more about Quarto
+
+.pull-left[
+
+[Tom Mock](https://twitter.com/thomas_mock) from Posit gave a [great 2h workshop on Quarto](https://www.youtube.com/watch?v=yvi5uXQMvu4) we'd recommend.
+
+Actually using Quarto is not much different from RMarkdown
+
+
+````default
+---
+title: "Untitled"
+format: html
+---
+
+Everything's the same except:
+
+- We use `format` instead of `output` in the YAML header
+
+- Code chunk options are written differently
+
+```{r}
+#| echo: false
+rep("lots of cats", 5)
+```
+````
+
+
+
+]
+
+.pull-right[
+&lt;img src='images/quarto.png'/&gt;
+
+]
+
+---
+
+# Final Week
+
+Charlie will host her office hours as usual at 12pm Tuesday.
+
+--
+
+In the final live session we'll cover:
+
+- What resources to use next.
+
+- How to ask reproducible questions with {reprex}
+
+- Highlighted assignment submissions from **you folks**!
+
+---
+
+class: inverse, center, middle
+
+# Final assignment
+
+---
+
+### Final assignment
+
+We'd love to understand how the VSA R Training is going to help you with your work/datasets.
+
+--
+
+We'd like you to record a 5 minute video showing something you can now do with your real data/project.
+
+--
+
+&gt; [Loom.com](https://www.loom.com/pricing) has a free tier that will allow you to record and share 5 minute videos.
+
+There's a form to fill on [Week 13's assignment submission page](https://rfortherestofus.com/courses/vsa-r-training-fall-2022/lessons/vsa-final-assignment/).
+
+
+---
+
+# Feedback
+
+We love doing this type of training and want to continually improve it.
+
+--
+
+Please fill out this [post-survey that shows your skill now](https://docs.google.com/forms/d/e/1FAIpQLSf_J9lmld48qKxYlj2RVeyuw8FfdMuJhqD_3R7ePX5tGH0_0g/viewform?usp=sf_link) (we'll compare this to what you told us in the pre-survey) and allows you to provide anonymous feedback.
+
+---
+
+# Next Week
+
+--
+
+- No course assignments
+
+--
+
+- Record a &lt;5-minute video showing what you've learned
+
+--
+
+- Please complete [post-survey](https://docs.google.com/forms/d/e/1FAIpQLSf_J9lmld48qKxYlj2RVeyuw8FfdMuJhqD_3R7ePX5tGH0_0g/viewform?usp=sf_link)
+
+--
+
+- Charlie's office hours are still on
+
+--
+
+- The live session will give you pointers of where to go next
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
