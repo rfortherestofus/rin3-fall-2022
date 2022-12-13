@@ -76,7 +76,7 @@ library(tidyverse)
 library(janitor)
 library(scales)
 
-pre_survey <- read_sheet("https://docs.google.com/spreadsheets/d/19Ny92IGg0ZzIqiLs7QywaGF-Y85HQZn1iIIXN4I_tpg") %>% 
+pre_survey <- read_sheet("https://docs.google.com/spreadsheets/d/19Ny92IGg0ZzIqiLs7QywaGF-Y85HQZn1iIIXN4I_tpg/edit?resourcekey#gid=1201619159") %>% 
   clean_names()
 
 pre_survey_tidy <- pre_survey %>% 
@@ -85,7 +85,7 @@ pre_survey_tidy <- pre_survey %>%
   pivot_longer(cols = everything()) %>% 
   mutate(timing = "Pre")
 
-post_survey <- read_sheet("https://docs.google.com/spreadsheets/d/1dOVpnbdFOz5swIH1YQCMcF4BWmUX-0g9FIOzSV04O64/edit?resourcekey#gid=900919916") %>% 
+post_survey <- read_sheet("https://docs.google.com/spreadsheets/d/1dOVpnbdFOz5swIH1YQCMcF4BWmUX-0g9FIOzSV04O64") %>% 
   clean_names()
 
 post_survey_tidy <- post_survey %>% 
@@ -140,8 +140,6 @@ pre_post_plot("visualization")
 ```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3, eval=FALSE}
 pre_post_plot("scared")
 ```
-
-
 
 ---
 
@@ -337,6 +335,90 @@ class: inverse, center, middle
 
 ---
 
+# Julia's annotated barchart
+
+```{r, include=FALSE}
+# Charlie will use this 
+msleep %>% 
+  count(vore) %>% 
+  mutate(vore = fct_relevel(vore,
+                            c("carni", "omni", "insecti", "herbi"))) %>% 
+  ggplot(aes(x = n,
+             y = vore)) +
+  geom_col() +
+  annotate("rect",
+           xmin = 0,
+           xmax = Inf,
+           ymin = 0,
+           ymax = 2.5,
+           fill = "orange",
+           alpha = 0.3)
+```
+
+
+<img src='images/example_julia.png' height='500px'/>
+
+---
+
+# Ordered faceted chart
+
+<img src='images/example_eva.png' height='500px'/>
+
+```{r, include=FALSE}
+# Charlie will use this 
+library(gapminder)
+
+gapminder %>% 
+  filter(year > 1980) %>% 
+  filter(continent == "Europe") %>% 
+  ggplot(aes(x = year,
+             y = pop)) +
+  geom_col() +
+  facet_wrap(~ country)
+```
+
+---
+
+# Functions and second axes (I)
+
+<img src='images/example_kristen.png' height='500px'/>
+
+---
+
+# Functions and second axes (II)
+
+```{r, eval=FALSE}
+graph_price_and_postings <- function(city_name) {
+  city_rent %>%
+    filter(city == "alameda") %>%
+    ggplot()  +
+    geom_bar(aes(x = year, y = number_postings),
+             stat = "identity",
+             fill = "black") +
+    geom_line(aes(x = year, y = .1 * avg_price),
+              stat = "identity",
+              color = "purple") +
+    labs(title = "Rental Listings & Average Cost in" ,
+         x = "Year",
+         y = "Number of Listings") +
+    scale_y_continuous(sec.axis = sec_axis( ~ . * 100, name = "Average Price"))
+}
+```
+
+---
+
+# Dumbell chart
+
+<img src='images/example_dumbell-chart.png' height='500px'/>
+
+---
+
+# ggtext title
+
+<img src='images/example_hsin-yi.png' height='500px'/>
+
+---
+
 class: inverse, center, middle
 
 # What happens next
@@ -345,28 +427,24 @@ class: inverse, center, middle
 
 ## Your feedback
 
-We would love to hear your reflections on the course in the discussion forum TODO: SET THIS UP
+We have a very short post-course survey - [https://forms.gle/mhSr1JuCyLAQwy5P8](https://forms.gle/mhSr1JuCyLAQwy5P8)
 
 --
 
-We also have a very short post-course survey - [rfor.us/rin3-fall22-feedback](https://rfor.us/rin3-fall22-feedback)
-
---
-
-We'd also like to ask you to record a ~5min video with [loom.com](https://loom.com) about something you've learned thanks to R in 3 Months and submit it on the [final project submission page](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/lessons/r-in-3-months-fall-2022-final-project-assignment/).
+We'd also like to ask you to record a ~5min video with [loom.com](https://loom.com) about something you've learned thanks to R in 3 Months and submit it on the [final project submission page](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/lessons/rin3-fall-2022-final-project/).
 
 
 ---
 
 ## Book 1:1 sessions with Charlie
 
-You can book a 1:1 anytime **before June 30th 2022** - [rfor.us/charliechat](https://rfor.us/charliechat).
+You can book a 1:1 with Charlie from January 2023 - [https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023](https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023).
 
 ---
 
 ## Assignment submissions
 
-Charlie will provide feedback on all submissions made before June 30th 2022.
+Charlie will provide feedback on all submissions made before December 31st 2022.
 
 ---
 
@@ -375,17 +453,9 @@ class: middle, center, inverse
 # Any final questions?
 
 
-
 ---
 
 class: middle, center
 
 # Thank you for making this fun!
-
-
-
-
-
-
-
 

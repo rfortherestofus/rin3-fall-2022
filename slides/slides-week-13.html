@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>R in 3 Months: Week 13 (Wrap-up)</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.17/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+    <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# R in 3 Months: Week 13 (Wrap-up)
+]
+
+---
+
+
+
+
+&lt;!-- 
+
+Show parameterised reports.
+
+- Publish online with netlify
+
+--&gt;
+
+# Agenda
+
+--
+
+1. How far you've come
+
+--
+
+1. Where to ask questions
+
+--
+
+1. How to ask good questions
+
+--
+
+1. Twitter and #rstats
+
+--
+
+1. Highlight stuff from everyone!
+
+---
+
+class: inverse, center, middle
+
+# How far you've come
+
+---
+
+
+
+## Data Analysis
+
+
+
+
+
+---
+
+## Data Visualization
+
+
+
+---
+
+## How Scared/Excited You Are to Learn R
+
+
+
+---
+
+class: inverse, center, middle
+
+# Where to ask questions
+
+---
+
+## Where to ask questions
+
+There are three popular question and answer communities for (R) code questions:
+
+---
+
+## [stackoverflow.com](https://stackoverflow.com)
+
+- This is a general purpose code Q&amp;A website.
+
+- Unfortunately, it has a well-earned reputation for not being welcoming to new users.
+
+---
+
+## [community.rstudio.com](https://community.rstudio.com/)
+
+- This community is run by RStudio and is specifically for R users.
+
+- The admins do work to make the site a welcoming place for all users.
+
+---
+
+## [R for Data Science Learning Community](https://www.rfordatasci.com/)
+
+- Slack community that is very welcoming to newbies
+
+- Has regular office hours where you can get 1-on-1 help
+
+---
+
+## Bonus: [R-Ladies](https://rladies.org/)
+
+- "A worldwide organization whose mission is to promote gender diversity in the R community"
+
+- Extremely welcoming
+
+- Have local chapters that often host events
+
+---
+
+class: inverse, center, middle
+
+# How to ask good (code) questions
+
+---
+
+## How to ask good (code) questions
+
+The most important part of asking good questions about code is to provide **reproducible examples**.
+
+&gt; A **reproducible example** contains all necessary code to reproduce your error or to customise your chart.
+
+The `{reprex}` package is designed to help guarantee your examples are reproducible.
+
+---
+
+## Good code examples are *minimal*
+
+In addition to making your code reproducible you should try to make it *minimal*.
+
+This usually means creating a *minimal* dataset instead of sharing a 9,000 row dataset.
+
+---
+
+## Create datasets with `tribble()`
+
+One of the simplest ways to create minimal datasets is with the `tribble()` function.
+
+This allows you to create datasets by **row** instead of column:
+
+
+```r
+tribble(
+  ~city, ~customer_type, ~customer_count,
+  "Oregon", "Free trial", 10
+)
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["city"],"name":[1],"type":["chr"],"align":["left"]},{"label":["customer_type"],"name":[2],"type":["chr"],"align":["left"]},{"label":["customer_count"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Oregon","2":"Free trial","3":"10"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+---
+
+## Solving your own Qs with `tribble()`
+
+I often discover that by creating reprexes with `tribble()` I end up solving my own question.
+
+.pull-left[
+Here's a real life example from several years ago...
+]
+
+.pull-right[
+&lt;img src="slides-week-13_files/figure-html/unnamed-chunk-7-1.png" width="350px" /&gt;
+
+]
+
+---
+
+## Create datasets with `{wakefield}`
+
+We mentioned earlier in the course the `{wakefield}` package to create fake datasets:
+
+
+```r
+set.seed(1980)
+r_data_frame(50,
+             id,
+             name,
+             gender_inclusive(x = c("Male", "Female", "Trans", "Nonbinary"),
+                              prob = c(50.52, 48.08, 1, 0.4)),
+             hair,
+             died)
+```
+
+```
+## Warning: `tbl_df()` was deprecated in dplyr 1.0.0.
+## ℹ Please use `tibble::as_tibble()` instead.
+## ℹ The deprecated feature was likely used in the wakefield package.
+##   Please report the issue at &lt;]8;;https://github.com/trinker/wakefield/issueshttps://github.com/trinker/wakefield/issues]8;;&gt;.
+```
+
+&lt;div data-pagedtable="false"&gt;
+  &lt;script data-pagedtable-source type="application/json"&gt;
+{"columns":[{"label":["ID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Name"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Gender"],"name":[3],"type":["fct"],"align":["left"]},{"label":["Hair"],"name":[4],"type":["fct"],"align":["left"]},{"label":["Died"],"name":[5],"type":["lgl"],"align":["right"]}],"data":[{"1":"01","2":"Beverlyann","3":"Female","4":"Black","5":"TRUE"},{"1":"02","2":"Marymar","3":"Male","4":"Brown","5":"TRUE"},{"1":"03","2":"Kenya","3":"Female","4":"Brown","5":"TRUE"},{"1":"04","2":"Chardai","3":"Female","4":"Red","5":"TRUE"},{"1":"05","2":"Merly","3":"Female","4":"Black","5":"FALSE"},{"1":"06","2":"Ferna","3":"Female","4":"Black","5":"FALSE"},{"1":"07","2":"Dustine","3":"Male","4":"Blonde","5":"FALSE"},{"1":"08","2":"Tammylee","3":"Female","4":"Brown","5":"FALSE"},{"1":"09","2":"Osman","3":"Female","4":"Red","5":"TRUE"},{"1":"10","2":"Diavionne","3":"Male","4":"Blonde","5":"FALSE"},{"1":"11","2":"Annissia","3":"Nonbinary","4":"Black","5":"FALSE"},{"1":"12","2":"Kinnard","3":"Male","4":"Red","5":"TRUE"},{"1":"13","2":"Kimako","3":"Female","4":"Black","5":"FALSE"},{"1":"14","2":"Ciro","3":"Female","4":"Brown","5":"TRUE"},{"1":"15","2":"Alexandera","3":"Male","4":"Brown","5":"TRUE"},{"1":"16","2":"Sabion","3":"Male","4":"Black","5":"TRUE"},{"1":"17","2":"Syndel","3":"Female","4":"Red","5":"FALSE"},{"1":"18","2":"Leanie","3":"Male","4":"Black","5":"FALSE"},{"1":"19","2":"Ademide","3":"Female","4":"Brown","5":"TRUE"},{"1":"20","2":"Johrdan","3":"Female","4":"Brown","5":"FALSE"},{"1":"21","2":"Roxa","3":"Female","4":"Brown","5":"FALSE"},{"1":"22","2":"Jeramya","3":"Male","4":"Brown","5":"FALSE"},{"1":"23","2":"Chanavia","3":"Female","4":"Blonde","5":"TRUE"},{"1":"24","2":"Wava","3":"Male","4":"Red","5":"TRUE"},{"1":"25","2":"Dalet","3":"Male","4":"Black","5":"FALSE"},{"1":"26","2":"Kase","3":"Trans","4":"Brown","5":"TRUE"},{"1":"27","2":"Desmend","3":"Female","4":"Black","5":"TRUE"},{"1":"28","2":"Rosalene","3":"Female","4":"Red","5":"TRUE"},{"1":"29","2":"Doyla","3":"Male","4":"Black","5":"FALSE"},{"1":"30","2":"Adeleigh","3":"Female","4":"Brown","5":"FALSE"},{"1":"31","2":"Johnryan","3":"Male","4":"Blonde","5":"FALSE"},{"1":"32","2":"Sisley","3":"Male","4":"Black","5":"TRUE"},{"1":"33","2":"Dasie","3":"Female","4":"Black","5":"FALSE"},{"1":"34","2":"Kaiti","3":"Male","4":"Black","5":"TRUE"},{"1":"35","2":"Egor","3":"Female","4":"Brown","5":"FALSE"},{"1":"36","2":"Vanellope","3":"Female","4":"Red","5":"TRUE"},{"1":"37","2":"Bryler","3":"Male","4":"Brown","5":"FALSE"},{"1":"38","2":"Kentae","3":"Male","4":"Brown","5":"TRUE"},{"1":"39","2":"Nana","3":"Female","4":"Red","5":"TRUE"},{"1":"40","2":"Pernetta","3":"Male","4":"Black","5":"TRUE"},{"1":"41","2":"Vihaanreddy","3":"Male","4":"Blonde","5":"TRUE"},{"1":"42","2":"Roniyah","3":"Female","4":"Brown","5":"FALSE"},{"1":"43","2":"Kasai","3":"Female","4":"Blonde","5":"TRUE"},{"1":"44","2":"Linze","3":"Female","4":"Black","5":"TRUE"},{"1":"45","2":"Sereniti","3":"Female","4":"Blonde","5":"TRUE"},{"1":"46","2":"Rewa","3":"Female","4":"Brown","5":"TRUE"},{"1":"47","2":"Lecretia","3":"Male","4":"Blonde","5":"TRUE"},{"1":"48","2":"Keyatta","3":"Female","4":"Brown","5":"TRUE"},{"1":"49","2":"Kaydense","3":"Female","4":"Blonde","5":"FALSE"},{"1":"50","2":"Brailin","3":"Female","4":"Brown","5":"FALSE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  &lt;/script&gt;
+&lt;/div&gt;
+
+---
+
+## Using the `{reprex}` package (I)
+
+The `{reprex}` package includes an "RStudio Addin" that gives you an interactive tool for creating your reproducible examples.
+
+![](https://p218.p3.n0.cdn.getcloudapp.com/items/7KuoyYYX/9bea35c6-62b7-4b52-b568-62fabe2f94f9.jpg?v=ed03f80d4e8224246d8f8e6612007c22)
+
+---
+
+## Using the `{reprex}` package (II)
+
+1. Select the code that makes your reprex
+
+1. Open the Addins menu and select "Render reprex..."
+
+1. Choose the options for where you're asking your question
+
+1. Copy and paste the output in the Viewer tab into your question
+
+---
+
+class: inverse, center, middle
+
+# Twitter
+
+---
+
+
+## Twitter and #rstats
+
+Twitter is a great place to learn about R and to ask (280 character) questions!
+
+The most widely used hashtags are:
+
+- \#rstats for general questions
+
+- \#tidytuesday for tweets about Tidy Tuesday
+
+---
+
+# Palette cleanser
+
+We're covering lots of topics today, so let's take a 2-minute breather.
+
+If you want to take the opportunity to follow us on Twitter please do - and we'll follow you back.
+
+.pull-left[
+![](https://p218.p3.n0.cdn.getcloudapp.com/items/jkuPnzlv/9c1418bb-c8c4-4362-b627-e27581535202.jpg?v=93c2370cffb5a2ec70a0a931157407ca)
+]
+
+.pull-right[
+![](https://p218.p3.n0.cdn.getcloudapp.com/items/nOuPmAel/025f96ed-8782-4fb9-9851-43eb8afc96b6.jpg?v=382011e59c338db21ea4346b9746012b)
+]
+
+---
+
+class: inverse, center, middle
+
+# Examples from you
+
+---
+
+# Julia's annotated barchart
+
+
+
+
+&lt;img src='images/example_julia.png' height='500px'/&gt;
+
+---
+
+# Ordered faceted chart
+
+&lt;img src='images/example_eva.png' height='500px'/&gt;
+
+
+
+---
+
+# Functions and second axes (I)
+
+&lt;img src='images/example_kristen.png' height='500px'/&gt;
+
+---
+
+# Functions and second axes (II)
+
+
+```r
+graph_price_and_postings &lt;- function(city_name) {
+  city_rent %&gt;%
+    filter(city == "alameda") %&gt;%
+    ggplot()  +
+    geom_bar(aes(x = year, y = number_postings),
+             stat = "identity",
+             fill = "black") +
+    geom_line(aes(x = year, y = .1 * avg_price),
+              stat = "identity",
+              color = "purple") +
+    labs(title = "Rental Listings &amp; Average Cost in" ,
+         x = "Year",
+         y = "Number of Listings") +
+    scale_y_continuous(sec.axis = sec_axis( ~ . * 100, name = "Average Price"))
+}
+```
+
+---
+
+# Dumbell chart
+
+&lt;img src='images/example_dumbell-chart.png' height='500px'/&gt;
+
+---
+
+# ggtext title
+
+&lt;img src='images/example_hsin-yi.png' height='500px'/&gt;
+
+---
+
+class: inverse, center, middle
+
+# What happens next
+
+---
+
+## Your feedback
+
+We have a very short post-course survey - [https://forms.gle/mhSr1JuCyLAQwy5P8](https://forms.gle/mhSr1JuCyLAQwy5P8)
+
+--
+
+We'd also like to ask you to record a ~5min video with [loom.com](https://loom.com) about something you've learned thanks to R in 3 Months and submit it on the [final project submission page](https://rfortherestofus.com/courses/r-in-3-months-fall-2022/lessons/rin3-fall-2022-final-project/).
+
+
+---
+
+## Book 1:1 sessions with Charlie
+
+You can book a 1:1 with Charlie from January 2023 - [https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023](https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023).
+
+---
+
+## Assignment submissions
+
+Charlie will provide feedback on all submissions made before December 31st 2022.
+
+---
+
+class: middle, center, inverse
+
+# Any final questions?
+
+
+---
+
+class: middle, center
+
+# Thank you for making this fun!
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
