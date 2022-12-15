@@ -66,17 +66,20 @@ class: inverse, center, middle
 
 
 
-
+![](slides-week-13_files/figure-html/unnamed-chunk-3-1.png)&lt;!-- --&gt;
 
 ---
 
 ## Data Visualization
 
-
+![](slides-week-13_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
 
 ---
 
 ## How Scared/Excited You Are to Learn R
+
+
+![](slides-week-13_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
 
 
 
@@ -189,37 +192,6 @@ Here's a real life example from several years ago...
 
 ---
 
-## Create datasets with `{wakefield}`
-
-We mentioned earlier in the course the `{wakefield}` package to create fake datasets:
-
-
-```r
-set.seed(1980)
-r_data_frame(50,
-             id,
-             name,
-             gender_inclusive(x = c("Male", "Female", "Trans", "Nonbinary"),
-                              prob = c(50.52, 48.08, 1, 0.4)),
-             hair,
-             died)
-```
-
-```
-## Warning: `tbl_df()` was deprecated in dplyr 1.0.0.
-## ℹ Please use `tibble::as_tibble()` instead.
-## ℹ The deprecated feature was likely used in the wakefield package.
-##   Please report the issue at &lt;]8;;https://github.com/trinker/wakefield/issueshttps://github.com/trinker/wakefield/issues]8;;&gt;.
-```
-
-&lt;div data-pagedtable="false"&gt;
-  &lt;script data-pagedtable-source type="application/json"&gt;
-{"columns":[{"label":["ID"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Name"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Gender"],"name":[3],"type":["fct"],"align":["left"]},{"label":["Hair"],"name":[4],"type":["fct"],"align":["left"]},{"label":["Died"],"name":[5],"type":["lgl"],"align":["right"]}],"data":[{"1":"01","2":"Beverlyann","3":"Female","4":"Black","5":"TRUE"},{"1":"02","2":"Marymar","3":"Male","4":"Brown","5":"TRUE"},{"1":"03","2":"Kenya","3":"Female","4":"Brown","5":"TRUE"},{"1":"04","2":"Chardai","3":"Female","4":"Red","5":"TRUE"},{"1":"05","2":"Merly","3":"Female","4":"Black","5":"FALSE"},{"1":"06","2":"Ferna","3":"Female","4":"Black","5":"FALSE"},{"1":"07","2":"Dustine","3":"Male","4":"Blonde","5":"FALSE"},{"1":"08","2":"Tammylee","3":"Female","4":"Brown","5":"FALSE"},{"1":"09","2":"Osman","3":"Female","4":"Red","5":"TRUE"},{"1":"10","2":"Diavionne","3":"Male","4":"Blonde","5":"FALSE"},{"1":"11","2":"Annissia","3":"Nonbinary","4":"Black","5":"FALSE"},{"1":"12","2":"Kinnard","3":"Male","4":"Red","5":"TRUE"},{"1":"13","2":"Kimako","3":"Female","4":"Black","5":"FALSE"},{"1":"14","2":"Ciro","3":"Female","4":"Brown","5":"TRUE"},{"1":"15","2":"Alexandera","3":"Male","4":"Brown","5":"TRUE"},{"1":"16","2":"Sabion","3":"Male","4":"Black","5":"TRUE"},{"1":"17","2":"Syndel","3":"Female","4":"Red","5":"FALSE"},{"1":"18","2":"Leanie","3":"Male","4":"Black","5":"FALSE"},{"1":"19","2":"Ademide","3":"Female","4":"Brown","5":"TRUE"},{"1":"20","2":"Johrdan","3":"Female","4":"Brown","5":"FALSE"},{"1":"21","2":"Roxa","3":"Female","4":"Brown","5":"FALSE"},{"1":"22","2":"Jeramya","3":"Male","4":"Brown","5":"FALSE"},{"1":"23","2":"Chanavia","3":"Female","4":"Blonde","5":"TRUE"},{"1":"24","2":"Wava","3":"Male","4":"Red","5":"TRUE"},{"1":"25","2":"Dalet","3":"Male","4":"Black","5":"FALSE"},{"1":"26","2":"Kase","3":"Trans","4":"Brown","5":"TRUE"},{"1":"27","2":"Desmend","3":"Female","4":"Black","5":"TRUE"},{"1":"28","2":"Rosalene","3":"Female","4":"Red","5":"TRUE"},{"1":"29","2":"Doyla","3":"Male","4":"Black","5":"FALSE"},{"1":"30","2":"Adeleigh","3":"Female","4":"Brown","5":"FALSE"},{"1":"31","2":"Johnryan","3":"Male","4":"Blonde","5":"FALSE"},{"1":"32","2":"Sisley","3":"Male","4":"Black","5":"TRUE"},{"1":"33","2":"Dasie","3":"Female","4":"Black","5":"FALSE"},{"1":"34","2":"Kaiti","3":"Male","4":"Black","5":"TRUE"},{"1":"35","2":"Egor","3":"Female","4":"Brown","5":"FALSE"},{"1":"36","2":"Vanellope","3":"Female","4":"Red","5":"TRUE"},{"1":"37","2":"Bryler","3":"Male","4":"Brown","5":"FALSE"},{"1":"38","2":"Kentae","3":"Male","4":"Brown","5":"TRUE"},{"1":"39","2":"Nana","3":"Female","4":"Red","5":"TRUE"},{"1":"40","2":"Pernetta","3":"Male","4":"Black","5":"TRUE"},{"1":"41","2":"Vihaanreddy","3":"Male","4":"Blonde","5":"TRUE"},{"1":"42","2":"Roniyah","3":"Female","4":"Brown","5":"FALSE"},{"1":"43","2":"Kasai","3":"Female","4":"Blonde","5":"TRUE"},{"1":"44","2":"Linze","3":"Female","4":"Black","5":"TRUE"},{"1":"45","2":"Sereniti","3":"Female","4":"Blonde","5":"TRUE"},{"1":"46","2":"Rewa","3":"Female","4":"Brown","5":"TRUE"},{"1":"47","2":"Lecretia","3":"Male","4":"Blonde","5":"TRUE"},{"1":"48","2":"Keyatta","3":"Female","4":"Brown","5":"TRUE"},{"1":"49","2":"Kaydense","3":"Female","4":"Blonde","5":"FALSE"},{"1":"50","2":"Brailin","3":"Female","4":"Brown","5":"FALSE"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  &lt;/script&gt;
-&lt;/div&gt;
-
----
-
 ## Using the `{reprex}` package (I)
 
 The `{reprex}` package includes an "RStudio Addin" that gives you an interactive tool for creating your reproducible examples.
@@ -259,9 +231,7 @@ The most widely used hashtags are:
 
 ---
 
-# Palette cleanser
-
-We're covering lots of topics today, so let's take a 2-minute breather.
+## Charlie and David on Twitter (for now)
 
 If you want to take the opportunity to follow us on Twitter please do - and we'll follow you back.
 
@@ -281,64 +251,6 @@ class: inverse, center, middle
 
 ---
 
-# Julia's annotated barchart
-
-
-
-
-&lt;img src='images/example_julia.png' height='500px'/&gt;
-
----
-
-# Ordered faceted chart
-
-&lt;img src='images/example_eva.png' height='500px'/&gt;
-
-
-
----
-
-# Functions and second axes (I)
-
-&lt;img src='images/example_kristen.png' height='500px'/&gt;
-
----
-
-# Functions and second axes (II)
-
-
-```r
-graph_price_and_postings &lt;- function(city_name) {
-  city_rent %&gt;%
-    filter(city == "alameda") %&gt;%
-    ggplot()  +
-    geom_bar(aes(x = year, y = number_postings),
-             stat = "identity",
-             fill = "black") +
-    geom_line(aes(x = year, y = .1 * avg_price),
-              stat = "identity",
-              color = "purple") +
-    labs(title = "Rental Listings &amp; Average Cost in" ,
-         x = "Year",
-         y = "Number of Listings") +
-    scale_y_continuous(sec.axis = sec_axis( ~ . * 100, name = "Average Price"))
-}
-```
-
----
-
-# Dumbell chart
-
-&lt;img src='images/example_dumbell-chart.png' height='500px'/&gt;
-
----
-
-# ggtext title
-
-&lt;img src='images/example_hsin-yi.png' height='500px'/&gt;
-
----
-
 class: inverse, center, middle
 
 # What happens next
@@ -347,7 +259,7 @@ class: inverse, center, middle
 
 ## Your feedback
 
-We have a very short post-course survey - [https://forms.gle/mhSr1JuCyLAQwy5P8](https://forms.gle/mhSr1JuCyLAQwy5P8)
+[We have a very short post-course survey](https://forms.gle/7B7F6gfDsQ1i7Zz37)
 
 --
 
@@ -358,7 +270,7 @@ We'd also like to ask you to record a ~5min video with [loom.com](https://loom.c
 
 ## Book 1:1 sessions with Charlie
 
-You can book a 1:1 with Charlie from January 2023 - [https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023](https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023).
+[You can book a 1:1 with Charlie from January 2023](https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023).
 
 ---
 
@@ -378,6 +290,13 @@ class: middle, center, inverse
 class: middle, center
 
 # Thank you for making this fun!
+
+
+
+
+
+
+
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>

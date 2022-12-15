@@ -1,5 +1,5 @@
 ---
-title: "VSA R Training: Week 13 (Wrap-up)"
+title: "R in 3 Months: Week 13 (Wrap-up)"
 output:
   xaringan::moon_reader:
     css: ["style.css", "default"]
