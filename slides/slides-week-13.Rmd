@@ -1,5 +1,5 @@
 ---
-title: "R in 3 Months: Week 13 (Wrap-up)"
+title: "VSA R Training: Week 13 (Wrap-up)"
 output:
   xaringan::moon_reader:
     css: ["style.css", "default"]
@@ -70,14 +70,15 @@ class: inverse, center, middle
 
 ## Data Analysis
 
-```{r echo = FALSE, warning=FALSE, message=FALSE, eval=FALSE}
+```{r echo = FALSE, warning=FALSE, message=FALSE}
 library(googlesheets4)
 library(tidyverse)
 library(janitor)
 library(scales)
 
 pre_survey <- read_sheet("https://docs.google.com/spreadsheets/d/19Ny92IGg0ZzIqiLs7QywaGF-Y85HQZn1iIIXN4I_tpg/edit?resourcekey#gid=1201619159") %>% 
-  clean_names()
+  clean_names() %>% 
+  filter(timestamp > as.Date("2022-08-01"))
 
 pre_survey_tidy <- pre_survey %>% 
   select(contains("rate"), contains("terrified")) %>% 
@@ -85,8 +86,9 @@ pre_survey_tidy <- pre_survey %>%
   pivot_longer(cols = everything()) %>% 
   mutate(timing = "Pre")
 
-post_survey <- read_sheet("https://docs.google.com/spreadsheets/d/1dOVpnbdFOz5swIH1YQCMcF4BWmUX-0g9FIOzSV04O64") %>% 
-  clean_names()
+post_survey <- read_sheet("https://docs.google.com/spreadsheets/d/1dOVpnbdFOz5swIH1YQCMcF4BWmUX-0g9FIOzSV04O64/edit?resourcekey#gid=900919916") %>% 
+  clean_names() %>% 
+  filter(timestamp > as.Date("2022-12-01"))
 
 post_survey_tidy <- post_survey %>% 
   select(contains("rate"), contains("terrified")) %>% 
@@ -95,33 +97,32 @@ post_survey_tidy <- post_survey %>%
   mutate(timing = "Post")
 
 pre_post_plot <- function(area) {
-pre_survey_tidy %>% 
-  bind_rows(post_survey_tidy) %>% 
-  group_by(timing, name) %>% 
-  summarize(avg_response = mean(value, na.rm = TRUE)) %>% 
-  ungroup() %>% 
-  mutate(timing = fct_rev(timing)) %>% 
-  mutate(avg_response_formatted = number(avg_response, 0.1)) %>% 
+  pre_survey_tidy %>% 
+    bind_rows(post_survey_tidy) %>% 
+    group_by(timing, name) %>% 
+    summarize(avg_response = mean(value, na.rm = TRUE)) %>% 
+    ungroup() %>% 
+    mutate(timing = fct_rev(timing)) %>% 
+    mutate(avg_response_formatted = number(avg_response, 0.1)) %>% 
     filter(name == area) %>% 
-  ggplot(aes(timing, avg_response,
-             color = timing,
-             group = 1,
-             label = avg_response_formatted)) +
-  geom_line(color = "grey") +
-  geom_point(size = 10) +
-  geom_text(color = "white") +
-  theme_minimal(base_family = "Inter") +
-  theme(panel.grid.minor = element_blank(),
-        axis.title = element_blank(),
-        legend.position = "none",
-        axis.text.y = element_blank()) +
-  scale_y_continuous(limits = c(1, 10),
-                     breaks = seq(1, 10, 1)) +
+    ggplot(aes(timing, avg_response,
+               color = timing,
+               group = 1,
+               label = avg_response_formatted)) +
+    geom_line(color = "grey") +
+    geom_point(size = 10) +
+    geom_text(color = "white") +
+    theme_minimal(base_family = "Inter") +
+    theme(panel.grid.minor = element_blank(),
+          axis.title = element_blank(),
+          legend.position = "none") +
+    scale_y_continuous(limits = c(1, 10),
+                       breaks = seq(1, 10, 1)) +
     scale_color_manual(values = rev(c("#6cabdd", "#ff7400")))
 }
 ```
 
-```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3, eval=FALSE}
+```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3}
 pre_post_plot("data_analysis")
 ```
 
@@ -129,7 +130,7 @@ pre_post_plot("data_analysis")
 
 ## Data Visualization
 
-```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3, eval=FALSE}
+```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3}
 pre_post_plot("visualization")
 ```
 
@@ -137,9 +138,12 @@ pre_post_plot("visualization")
 
 ## How Scared/Excited You Are to Learn R
 
-```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3, eval=FALSE}
+
+```{r echo = FALSE, warning=FALSE, message=FALSE, dpi = 300, fig.height=3}
 pre_post_plot("scared")
 ```
+
+
 
 ---
 
@@ -257,23 +261,6 @@ count_party_by_marital %>%
 
 ---
 
-## Create datasets with `{wakefield}`
-
-We mentioned earlier in the course the `{wakefield}` package to create fake datasets:
-
-```{r, eval=TRUE}
-set.seed(1980)
-r_data_frame(50,
-             id,
-             name,
-             gender_inclusive(x = c("Male", "Female", "Trans", "Nonbinary"),
-                              prob = c(50.52, 48.08, 1, 0.4)),
-             hair,
-             died)
-```
-
----
-
 ## Using the `{reprex}` package (I)
 
 The `{reprex}` package includes an "RStudio Addin" that gives you an interactive tool for creating your reproducible examples.
@@ -313,9 +300,7 @@ The most widely used hashtags are:
 
 ---
 
-# Palette cleanser
-
-We're covering lots of topics today, so let's take a 2-minute breather.
+## Charlie and David on Twitter (for now)
 
 If you want to take the opportunity to follow us on Twitter please do - and we'll follow you back.
 
@@ -335,90 +320,6 @@ class: inverse, center, middle
 
 ---
 
-# Julia's annotated barchart
-
-```{r, include=FALSE}
-# Charlie will use this 
-msleep %>% 
-  count(vore) %>% 
-  mutate(vore = fct_relevel(vore,
-                            c("carni", "omni", "insecti", "herbi"))) %>% 
-  ggplot(aes(x = n,
-             y = vore)) +
-  geom_col() +
-  annotate("rect",
-           xmin = 0,
-           xmax = Inf,
-           ymin = 0,
-           ymax = 2.5,
-           fill = "orange",
-           alpha = 0.3)
-```
-
-
-<img src='images/example_julia.png' height='500px'/>
-
----
-
-# Ordered faceted chart
-
-<img src='images/example_eva.png' height='500px'/>
-
-```{r, include=FALSE}
-# Charlie will use this 
-library(gapminder)
-
-gapminder %>% 
-  filter(year > 1980) %>% 
-  filter(continent == "Europe") %>% 
-  ggplot(aes(x = year,
-             y = pop)) +
-  geom_col() +
-  facet_wrap(~ country)
-```
-
----
-
-# Functions and second axes (I)
-
-<img src='images/example_kristen.png' height='500px'/>
-
----
-
-# Functions and second axes (II)
-
-```{r, eval=FALSE}
-graph_price_and_postings <- function(city_name) {
-  city_rent %>%
-    filter(city == "alameda") %>%
-    ggplot()  +
-    geom_bar(aes(x = year, y = number_postings),
-             stat = "identity",
-             fill = "black") +
-    geom_line(aes(x = year, y = .1 * avg_price),
-              stat = "identity",
-              color = "purple") +
-    labs(title = "Rental Listings & Average Cost in" ,
-         x = "Year",
-         y = "Number of Listings") +
-    scale_y_continuous(sec.axis = sec_axis( ~ . * 100, name = "Average Price"))
-}
-```
-
----
-
-# Dumbell chart
-
-<img src='images/example_dumbell-chart.png' height='500px'/>
-
----
-
-# ggtext title
-
-<img src='images/example_hsin-yi.png' height='500px'/>
-
----
-
 class: inverse, center, middle
 
 # What happens next
@@ -427,7 +328,7 @@ class: inverse, center, middle
 
 ## Your feedback
 
-We have a very short post-course survey - [https://forms.gle/mhSr1JuCyLAQwy5P8](https://forms.gle/mhSr1JuCyLAQwy5P8)
+[We have a very short post-course survey](https://forms.gle/7B7F6gfDsQ1i7Zz37)
 
 --
 
@@ -438,7 +339,7 @@ We'd also like to ask you to record a ~5min video with [loom.com](https://loom.c
 
 ## Book 1:1 sessions with Charlie
 
-You can book a 1:1 with Charlie from January 2023 - [https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023](https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023).
+[You can book a 1:1 with Charlie from January 2023](https://savvycal.com/charliejhadley-r-for-the-rest-of-us/2nd-1to1-jan-2023).
 
 ---
 
@@ -458,4 +359,11 @@ class: middle, center, inverse
 class: middle, center
 
 # Thank you for making this fun!
+
+
+
+
+
+
+
 
