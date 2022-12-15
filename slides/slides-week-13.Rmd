@@ -320,6 +320,61 @@ class: inverse, center, middle
 
 ---
 
+## Annotated barchart
+
+```{r, include=FALSE}
+# Charlie will use this 
+msleep %>% 
+  count(vore) %>% 
+  mutate(vore = fct_relevel(vore,
+                            c("carni", "omni", "insecti", "herbi"))) %>% 
+  ggplot(aes(x = n,
+             y = vore)) +
+  geom_col() +
+  annotate("rect",
+           xmin = 0,
+           xmax = Inf,
+           ymin = 0,
+           ymax = 2.5,
+           fill = "orange",
+           alpha = 0.3)
+```
+
+
+<img src='images/example_julia.png' height='500px'/>
+
+---
+
+## Ordered faceted chart
+
+<img src='images/example_eva.png' height='500px'/>
+
+```{r, include=FALSE}
+# Charlie will use this 
+library(gapminder)
+
+gapminder %>% 
+  filter(year > 1980) %>% 
+  filter(continent == "Europe") %>% 
+  ggplot(aes(x = year,
+             y = pop)) +
+  geom_col() +
+  facet_wrap(~ country)
+```
+
+---
+
+## Dumbell chart
+
+<img src='images/example_dumbell-chart.png' height='500px'/>
+
+---
+
+## ggtext title
+
+<img src='images/example_hsin-yi.png' height='500px'/>
+
+
 class: inverse, center, middle
 
 # What happens next
